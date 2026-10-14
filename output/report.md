@@ -2,11 +2,13 @@
 
 - **Entrada:** URL configurada en M3U_URL
 - **Canales analizados:** 123
-- **Logos reparados o añadidos:** 35
-- **Logos funcionales conservados:** 11
-- **Canales sin reparar:** 77
+- **Logos reparados o añadidos:** 19
+- **Logos funcionales conservados:** 5
+- **Canales sin reparar:** 99
 
 > La verificación confirma que la URL entrega un archivo con firma de imagen; no garantiza por sí sola que el logo represente visualmente el canal correcto.
+
+[Logos reparados o añadidos](#logos-reparados-o-añadidos) · [Logos funcionales conservados](#logos-funcionales-conservados) · [Canales sin reparar](#canales-sin-reparar)
 
 ## Logos reparados o añadidos
 
@@ -15,326 +17,176 @@
 ![Logo de Señal colombia](https://i.imgur.com/Y9x16vl.png)
 
 - **Estado:** logo añadido
-- **Identificación:** nombre exacto
+- **Identificación:** nombre/alias exacto registrado: Señal colombia
 - **Logo:** https://i.imgur.com/Y9x16vl.png
-- **Detalle:** Reemplazo verificado: válido (image/png); identificación: nombre exacto
+- **Detalle:** Reemplazo verificado: válido (image/png); identificación: nombre/alias exacto registrado: Señal colombia
 
 ### canal institucional
 
 ![Logo de canal institucional](https://i.imgur.com/CKnf3Ua.png)
 
 - **Estado:** logo añadido
-- **Identificación:** nombre exacto
+- **Identificación:** nombre/alias exacto registrado: canal institucional
 - **Logo:** https://i.imgur.com/CKnf3Ua.png
-- **Detalle:** Reemplazo verificado: válido (image/png); identificación: nombre exacto
+- **Detalle:** Reemplazo verificado: válido (image/png); identificación: nombre/alias exacto registrado: canal institucional
 
 ### canal congreso
 
 ![Logo de canal congreso](https://i.imgur.com/erJDwtY.jpeg)
 
 - **Estado:** logo añadido
-- **Identificación:** nombre exacto
+- **Identificación:** nombre/alias exacto registrado: canal congreso
 - **Logo:** https://i.imgur.com/erJDwtY.jpeg
-- **Detalle:** Reemplazo verificado: válido (image/jpeg); identificación: nombre exacto
-
-### teleislas
-
-![Logo de teleislas](https://i.imgur.com/aKHGRyk.png)
-
-- **Estado:** logo añadido
-- **Identificación:** nombre exacto
-- **Logo:** https://i.imgur.com/aKHGRyk.png
-- **Detalle:** Reemplazo verificado: válido (image/png); identificación: nombre exacto
-
-### citytv
-
-![Logo de citytv](https://upload.wikimedia.org/wikipedia/commons/9/9e/Citytv_logo.svg)
-
-- **Estado:** logo añadido
-- **Identificación:** nombre exacto
-- **Logo:** https://upload.wikimedia.org/wikipedia/commons/9/9e/Citytv_logo.svg
-- **Detalle:** Reemplazo verificado: válido (image/svg+xml); identificación: nombre exacto
+- **Detalle:** Reemplazo verificado: válido (image/jpeg); identificación: nombre/alias exacto registrado: canal congreso
 
 ### canal capital
 
 ![Logo de canal capital](https://i.imgur.com/zAYtbYi.png)
 
 - **Estado:** logo añadido
-- **Identificación:** nombre exacto
+- **Identificación:** nombre/alias exacto registrado: canal capital
 - **Logo:** https://i.imgur.com/zAYtbYi.png
-- **Detalle:** Reemplazo verificado: válido (image/png); identificación: nombre exacto
-
-### telepacifico
-
-![Logo de telepacifico](https://i.imgur.com/39hy97J.png)
-
-- **Estado:** logo añadido
-- **Identificación:** nombre exacto
-- **Logo:** https://i.imgur.com/39hy97J.png
-- **Detalle:** Reemplazo verificado: válido (image/png); identificación: nombre exacto
+- **Detalle:** Reemplazo verificado: válido (image/png); identificación: nombre/alias exacto registrado: canal capital
 
 ### las estrellas
 
 ![Logo de las estrellas](https://i.imgur.com/g5ShxZ7.png)
 
 - **Estado:** logo añadido
-- **Identificación:** nombre exacto
+- **Identificación:** nombre/alias exacto registrado: las estrellas
 - **Logo:** https://i.imgur.com/g5ShxZ7.png
-- **Detalle:** Reemplazo verificado: válido (image/png); identificación: nombre exacto
+- **Detalle:** Reemplazo verificado: válido (image/png); identificación: nombre/alias exacto registrado: las estrellas
 
 ### América paraguay
 
 ![Logo de América paraguay](https://i.imgur.com/rCEu3fM.png)
 
 - **Estado:** logo añadido
-- **Identificación:** nombre exacto
+- **Identificación:** nombre/alias exacto registrado: América paraguay
 - **Logo:** https://i.imgur.com/rCEu3fM.png
-- **Detalle:** Reemplazo verificado: válido (image/png); identificación: nombre exacto
+- **Detalle:** Reemplazo verificado: válido (image/png); identificación: nombre/alias exacto registrado: América paraguay
 
 ### TV zoom
 
 ![Logo de TV zoom](https://i.imgur.com/jCGrjf5.png)
 
 - **Estado:** logo añadido
-- **Identificación:** nombre exacto
+- **Identificación:** nombre/alias exacto registrado: TV zoom
 - **Logo:** https://i.imgur.com/jCGrjf5.png
-- **Detalle:** Reemplazo verificado: válido (image/png); identificación: nombre exacto
+- **Detalle:** Reemplazo verificado: válido (image/png); identificación: nombre/alias exacto registrado: TV zoom
 
 ### Caracol TV
 
 ![Logo de Caracol TV](https://i.imgur.com/WbfdJbk.png)
 
 - **Estado:** logo añadido
-- **Identificación:** nombre exacto
+- **Identificación:** nombre/alias exacto registrado: Caracol TV
 - **Logo:** https://i.imgur.com/WbfdJbk.png
-- **Detalle:** Reemplazo verificado: válido (image/png); identificación: nombre exacto
+- **Detalle:** Reemplazo verificado: válido (image/png); identificación: nombre/alias exacto registrado: Caracol TV
 
-### usa
+### claro musica
 
-![Logo de usa](https://i.imgur.com/5WBWruX.png)
-
-- **Estado:** logo añadido
-- **Identificación:** nombre exacto
-- **Logo:** https://i.imgur.com/5WBWruX.png
-- **Detalle:** Reemplazo verificado: válido (image/png); identificación: nombre exacto
-
-### Golden
-
-![Logo de Golden](https://i.imgur.com/NNd1lYl.png)
+![Logo de claro musica](https://i.imgur.com/vrSFUwv.png)
 
 - **Estado:** logo añadido
-- **Identificación:** nombre exacto
-- **Logo:** https://i.imgur.com/NNd1lYl.png
-- **Detalle:** Reemplazo verificado: válido (image/png); identificación: nombre exacto
-
-### SPACE HD
-
-![Logo de SPACE HD](https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/SpaceLogo.svg/960px-SpaceLogo.svg.png)
-
-- **Estado:** logo añadido
-- **Identificación:** nombre exacto
-- **Logo:** https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/SpaceLogo.svg/960px-SpaceLogo.svg.png
-- **Detalle:** Reemplazo verificado: válido (image/png); identificación: nombre exacto
+- **Identificación:** similitud alta (89%) con nombre registrado 'claro musica tv' a partir de 'claro musica'
+- **Logo:** https://i.imgur.com/vrSFUwv.png
+- **Detalle:** Reemplazo verificado: válido (image/png); identificación: similitud alta (89%) con nombre registrado 'claro musica tv' a partir de 'claro musica'
 
 ### RCN NOVELAs
 
 ![Logo de RCN NOVELAs](https://i.imgur.com/9wxdWNQ.png)
 
 - **Estado:** logo añadido
-- **Identificación:** nombre exacto
+- **Identificación:** nombre/alias exacto registrado: RCN NOVELAs
 - **Logo:** https://i.imgur.com/9wxdWNQ.png
-- **Detalle:** Reemplazo verificado: válido (image/png); identificación: nombre exacto
+- **Detalle:** Reemplazo verificado: válido (image/png); identificación: nombre/alias exacto registrado: RCN NOVELAs
 
 ### La Kalle
 
 ![Logo de La Kalle](https://www.tdtparatodos.tv/sites/default/files/la_kalle.png)
 
 - **Estado:** logo añadido
-- **Identificación:** nombre exacto
+- **Identificación:** nombre/alias exacto registrado: La Kalle
 - **Logo:** https://www.tdtparatodos.tv/sites/default/files/la_kalle.png
-- **Detalle:** Reemplazo verificado: válido (image/png); identificación: nombre exacto
+- **Detalle:** Reemplazo verificado: válido (image/png); identificación: nombre/alias exacto registrado: La Kalle
 
 ### Cine Hispano
 
 ![Logo de Cine Hispano](https://i.imgur.com/tfgyfrw.png)
 
 - **Estado:** logo añadido
-- **Identificación:** nombre exacto
+- **Identificación:** nombre/alias exacto registrado: Cine Hispano
 - **Logo:** https://i.imgur.com/tfgyfrw.png
-- **Detalle:** Reemplazo verificado: válido (image/png); identificación: nombre exacto
-
-### Teleantioquia
-
-![Logo de Teleantioquia](https://i.imgur.com/6WMV2Az.png)
-
-- **Estado:** logo añadido
-- **Identificación:** nombre exacto
-- **Logo:** https://i.imgur.com/6WMV2Az.png
-- **Detalle:** Reemplazo verificado: válido (image/png); identificación: nombre exacto
-
-### h
-
-![Logo de h](https://i.imgur.com/IowmetH.png)
-
-- **Estado:** logo añadido
-- **Identificación:** nombre exacto
-- **Logo:** https://i.imgur.com/IowmetH.png
-- **Detalle:** Reemplazo verificado: válido (image/png); identificación: nombre exacto
-
-### h
-
-![Logo de h](https://i.imgur.com/IowmetH.png)
-
-- **Estado:** logo añadido
-- **Identificación:** nombre exacto
-- **Logo:** https://i.imgur.com/IowmetH.png
-- **Detalle:** Reemplazo verificado: válido (image/png); identificación: nombre exacto
-
-### tooncast
-
-![Logo de tooncast](https://i.imgur.com/3yXRbQy.png)
-
-- **Estado:** logo añadido
-- **Identificación:** nombre exacto
-- **Logo:** https://i.imgur.com/3yXRbQy.png
-- **Detalle:** Reemplazo verificado: válido (image/png); identificación: nombre exacto
-
-### h
-
-![Logo de h](https://i.imgur.com/IowmetH.png)
-
-- **Estado:** logo añadido
-- **Identificación:** nombre exacto
-- **Logo:** https://i.imgur.com/IowmetH.png
-- **Detalle:** Reemplazo verificado: válido (image/png); identificación: nombre exacto
-
-### h
-
-![Logo de h](https://i.imgur.com/IowmetH.png)
-
-- **Estado:** logo añadido
-- **Identificación:** nombre exacto
-- **Logo:** https://i.imgur.com/IowmetH.png
-- **Detalle:** Reemplazo verificado: válido (image/png); identificación: nombre exacto
+- **Detalle:** Reemplazo verificado: válido (image/png); identificación: nombre/alias exacto registrado: Cine Hispano
 
 ### Telemundo internacional
 
 ![Logo de Telemundo internacional](https://i.imgur.com/j2O4ndp.png)
 
 - **Estado:** logo añadido
-- **Identificación:** nombre exacto
+- **Identificación:** nombre/alias exacto registrado: Telemundo internacional
 - **Logo:** https://i.imgur.com/j2O4ndp.png
-- **Detalle:** Reemplazo verificado: válido (image/png); identificación: nombre exacto
+- **Detalle:** Reemplazo verificado: válido (image/png); identificación: nombre/alias exacto registrado: Telemundo internacional
 
 ### vía X
 
 ![Logo de vía X](https://upload.wikimedia.org/wikipedia/commons/d/d3/VIAX-oficial.png)
 
 - **Estado:** logo añadido
-- **Identificación:** nombre exacto
+- **Identificación:** nombre/alias exacto registrado: vía X
 - **Logo:** https://upload.wikimedia.org/wikipedia/commons/d/d3/VIAX-oficial.png
-- **Detalle:** Reemplazo verificado: válido (image/png); identificación: nombre exacto
+- **Detalle:** Reemplazo verificado: válido (image/png); identificación: nombre/alias exacto registrado: vía X
 
 ### TNT Novelas
 
 ![Logo de TNT Novelas](https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/TNT_Novelas_2025.svg/1920px-TNT_Novelas_2025.svg.png)
 
 - **Estado:** logo añadido
-- **Identificación:** nombre exacto
+- **Identificación:** nombre/alias exacto registrado: TNT Novelas
 - **Logo:** https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/TNT_Novelas_2025.svg/1920px-TNT_Novelas_2025.svg.png
-- **Detalle:** Reemplazo verificado: válido (image/png); identificación: nombre exacto
-
-### h
-
-![Logo de h](https://i.imgur.com/IowmetH.png)
-
-- **Estado:** logo añadido
-- **Identificación:** nombre exacto
-- **Logo:** https://i.imgur.com/IowmetH.png
-- **Detalle:** Reemplazo verificado: válido (image/png); identificación: nombre exacto
-
-### bitme
-
-![Logo de bitme](https://i.imgur.com/79hrcx8.png)
-
-- **Estado:** logo añadido
-- **Identificación:** nombre exacto
-- **Logo:** https://i.imgur.com/79hrcx8.png
-- **Detalle:** Reemplazo verificado: válido (image/png); identificación: nombre exacto
-
-### telepacifico
-
-![Logo de telepacifico](https://i.imgur.com/39hy97J.png)
-
-- **Estado:** logo añadido
-- **Identificación:** nombre exacto
-- **Logo:** https://i.imgur.com/39hy97J.png
-- **Detalle:** Reemplazo verificado: válido (image/png); identificación: nombre exacto
-
-### Bitme
-
-![Logo de Bitme](https://i.imgur.com/79hrcx8.png)
-
-- **Estado:** logo añadido
-- **Identificación:** nombre exacto
-- **Logo:** https://i.imgur.com/79hrcx8.png
-- **Detalle:** Reemplazo verificado: válido (image/png); identificación: nombre exacto
-
-### BabyFirst
-
-![Logo de BabyFirst](https://i.imgur.com/WxLHBwu.png)
-
-- **Estado:** logo añadido
-- **Identificación:** nombre exacto
-- **Logo:** https://i.imgur.com/WxLHBwu.png
-- **Detalle:** Reemplazo verificado: válido (image/png); identificación: nombre exacto
-
-### h
-
-![Logo de h](https://i.imgur.com/IowmetH.png)
-
-- **Estado:** logo añadido
-- **Identificación:** nombre exacto
-- **Logo:** https://i.imgur.com/IowmetH.png
-- **Detalle:** Reemplazo verificado: válido (image/png); identificación: nombre exacto
+- **Detalle:** Reemplazo verificado: válido (image/png); identificación: nombre/alias exacto registrado: TNT Novelas
 
 ### Max anime
 
 ![Logo de Max anime](https://i.imgur.com/Oj3hEBh.jpg)
 
 - **Estado:** logo añadido
-- **Identificación:** nombre exacto
+- **Identificación:** nombre/alias exacto registrado: Max anime
 - **Logo:** https://i.imgur.com/Oj3hEBh.jpg
-- **Detalle:** Reemplazo verificado: válido (image/jpeg); identificación: nombre exacto
+- **Detalle:** Reemplazo verificado: válido (image/jpeg); identificación: nombre/alias exacto registrado: Max anime
+
+### tutv el salvador
+
+![Logo de tutv el salvador](https://i.imgur.com/fyCC8R6.png)
+
+- **Estado:** logo añadido
+- **Identificación:** similitud alta (90%) con nombre registrado 'tvm el salvador' a partir de 'tutv el salvador'
+- **Logo:** https://i.imgur.com/fyCC8R6.png
+- **Detalle:** Reemplazo verificado: válido (image/png); identificación: similitud alta (90%) con nombre registrado 'tvm el salvador' a partir de 'tutv el salvador'
 
 ### EnerGeek Fan:
 
 ![Logo de EnerGeek Fan:](https://cdn.energeek.cl/logos/EG-Fan-2025_pfp.png)
 
 - **Estado:** logo añadido
-- **Identificación:** nombre exacto
+- **Identificación:** nombre/alias exacto registrado: EnerGeek Fan:
 - **Logo:** https://cdn.energeek.cl/logos/EG-Fan-2025_pfp.png
-- **Detalle:** Reemplazo verificado: válido (image/png); identificación: nombre exacto
+- **Detalle:** Reemplazo verificado: válido (image/png); identificación: nombre/alias exacto registrado: EnerGeek Fan:
 
 ### Extrema Kids TV
 
 ![Logo de Extrema Kids TV](https://www.vivalivetv.com/public/files/shows/0/1/3027-294x165-FFFFFF.jpg)
 
 - **Estado:** logo añadido
-- **Identificación:** nombre exacto
+- **Identificación:** nombre/alias exacto registrado: Extrema Kids TV
 - **Logo:** https://www.vivalivetv.com/public/files/shows/0/1/3027-294x165-FFFFFF.jpg
-- **Detalle:** Reemplazo verificado: válido (image/png); identificación: nombre exacto
+- **Detalle:** Reemplazo verificado: válido (image/png); identificación: nombre/alias exacto registrado: Extrema Kids TV
 
 ## Logos funcionales conservados
 
-- **Disney Channel SD** — ![Logo de Disney Channel SD](https://1000logos.net/wp-content/uploads/2020/09/Disney-Channel-Logo.png)
-- **Disney Channel HD (Opc.5)** — ![Logo de Disney Channel HD (Opc.5)](https://1000logos.net/wp-content/uploads/2020/09/Disney-Channel-Logo.png)
-- **Disney Channel HD (Opc.6)** — ![Logo de Disney Channel HD (Opc.6)](https://1000logos.net/wp-content/uploads/2020/09/Disney-Channel-Logo.png)
-- **Disney Channel SD (opc.7)** — ![Logo de Disney Channel SD (opc.7)](https://1000logos.net/wp-content/uploads/2020/09/Disney-Channel-Logo.png)
 - **Estudio + TV HD** — ![Logo de Estudio + TV HD](https://carjocosa.space/studio/logo.png)
-- **** — ![Logo de ](https://i.imgur.com/8AKW7Uu.png\\)
-- **adult swim HD** — ![Logo de adult swim HD](https://logos-world.net/wp-content/uploads/2023/01/Adult-Swim-Logo.jpg)
-- **MTV** — ![Logo de MTV](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsi-NGZhblCE0Ll0cwiUyR6XY5SadlILuEEOtxG3EVdg&s=10)
+- **Disney Jr . Latin America South [opc.2]** — ![Logo de Disney Jr . Latin America South [opc.2]](https://upload.wikimedia.org/wikipedia/commons/e/e3/2024_Disney_Jr._Logo.svg)
 - **Claro Sports 1 SD** — ![Logo de Claro Sports 1 SD](https://pbs.twimg.com/profile_images/412626363011457024/s87vGCpO_400x400.jpeg)
 - **Claro Sports 2 SD** — ![Logo de Claro Sports 2 SD](https://pbs.twimg.com/profile_images/412626363011457024/s87vGCpO_400x400.jpeg)
 - **Claro Cinema** — ![Logo de Claro Cinema](https://images.ctfassets.net/ack3kcrk3cz6/6UiRtTSHJVoMgRVFLdlND7/f043a423429dfae262daabbf115fa3be/41_ClaroCinema.png)
@@ -343,388 +195,498 @@
 
 ### canal 1
 
-- **Motivo:** No tiene tvg-logo; no se identificó el canal de forma inequívoca, por seguridad no se adivinó el logo.
+- **Motivo:** El nombre 'canal 1' no coincide con ningún nombre único registrado; se dejó sin logo para evitar una asignación incorrecta.
 - **Logo actual:** No tenía logo
 
 ### RCN
 
-- **Motivo:** No tiene tvg-logo; no se identificó el canal de forma inequívoca, por seguridad no se adivinó el logo.
+- **Motivo:** El nombre 'RCN' no coincide con ningún nombre único registrado; se dejó sin logo para evitar una asignación incorrecta.
+- **Logo actual:** No tenía logo
+
+### teleislas
+
+- **Motivo:** El nombre 'teleislas' no coincide con ningún nombre único registrado; se dejó sin logo para evitar una asignación incorrecta.
+- **Logo actual:** No tenía logo
+
+### citytv
+
+- **Motivo:** El nombre 'citytv' no coincide con ningún nombre único registrado; se dejó sin logo para evitar una asignación incorrecta.
 - **Logo actual:** No tenía logo
 
 ### rcnHD2
 
-- **Motivo:** No tiene tvg-logo; no se identificó el canal de forma inequívoca, por seguridad no se adivinó el logo.
+- **Motivo:** El nombre 'rcnHD2' no coincide con ningún nombre único registrado; se dejó sin logo para evitar una asignación incorrecta.
 - **Logo actual:** No tenía logo
 
 ### caracol hd
 
-- **Motivo:** No tiene tvg-logo; no se identificó el canal de forma inequívoca, por seguridad no se adivinó el logo.
+- **Motivo:** El nombre 'caracol hd' no coincide con ningún nombre único registrado; se dejó sin logo para evitar una asignación incorrecta.
 - **Logo actual:** No tenía logo
 
 ### Discovery turbo
 
-- **Motivo:** No tiene tvg-logo; no se identificó el canal de forma inequívoca, por seguridad no se adivinó el logo.
+- **Motivo:** El nombre 'Discovery turbo' no coincide con ningún nombre único registrado; se dejó sin logo para evitar una asignación incorrecta.
+- **Logo actual:** No tenía logo
+
+### telepacifico
+
+- **Motivo:** El nombre 'telepacifico' no coincide con ningún nombre único registrado; se dejó sin logo para evitar una asignación incorrecta.
 - **Logo actual:** No tenía logo
 
 ### discovery hyh
 
-- **Motivo:** No tiene tvg-logo; no se identificó el canal de forma inequívoca, por seguridad no se adivinó el logo.
+- **Motivo:** El nombre 'discovery hyh' no coincide con ningún nombre único registrado; se dejó sin logo para evitar una asignación incorrecta.
 - **Logo actual:** No tenía logo
 
 ### Gol Caracol HD
 
-- **Motivo:** No tiene tvg-logo; no se identificó el canal de forma inequívoca, por seguridad no se adivinó el logo.
+- **Motivo:** El nombre 'Gol Caracol HD' no coincide con ningún nombre único registrado; se dejó sin logo para evitar una asignación incorrecta.
 - **Logo actual:** No tenía logo
 
 ### discovery ID
 
-- **Motivo:** No tiene tvg-logo; no se identificó el canal de forma inequívoca, por seguridad no se adivinó el logo.
+- **Motivo:** El nombre 'discovery ID' no coincide con ningún nombre único registrado; se dejó sin logo para evitar una asignación incorrecta.
 - **Logo actual:** No tenía logo
 
 ### animal planet
 
-- **Motivo:** No tiene tvg-logo; no se identificó el canal de forma inequívoca, por seguridad no se adivinó el logo.
+- **Motivo:** El nombre 'animal planet' no coincide con ningún nombre único registrado; se dejó sin logo para evitar una asignación incorrecta.
 - **Logo actual:** No tenía logo
 
 ### tlnovelas
 
-- **Motivo:** No tiene tvg-logo; no se identificó el canal de forma inequívoca, por seguridad no se adivinó el logo.
+- **Motivo:** El nombre 'tlnovelas' no coincide con ningún nombre único registrado; se dejó sin logo para evitar una asignación incorrecta.
 - **Logo actual:** No tenía logo
 
 ### canal Tro
 
-- **Motivo:** No tiene tvg-logo; no se identificó el canal de forma inequívoca, por seguridad no se adivinó el logo.
+- **Motivo:** El nombre 'canal Tro' no coincide con ningún nombre único registrado; se dejó sin logo para evitar una asignación incorrecta.
 - **Logo actual:** No tenía logo
 
 ### History channel
 
-- **Motivo:** No tiene tvg-logo; no se identificó el canal de forma inequívoca, por seguridad no se adivinó el logo.
+- **Motivo:** El nombre 'History channel' no coincide con ningún nombre único registrado; se dejó sin logo para evitar una asignación incorrecta.
 - **Logo actual:** No tenía logo
 
 ### discovery channel
 
-- **Motivo:** No tiene tvg-logo; no se identificó el canal de forma inequívoca, por seguridad no se adivinó el logo.
+- **Motivo:** El nombre 'discovery channel' no coincide con ningún nombre único registrado; se dejó sin logo para evitar una asignación incorrecta.
 - **Logo actual:** No tenía logo
 
 ### nacional geografy
 
-- **Motivo:** No tiene tvg-logo; no se identificó el canal de forma inequívoca, por seguridad no se adivinó el logo.
-- **Logo actual:** No tenía logo
-
-### claro musica
-
-- **Motivo:** No tiene tvg-logo; no se identificó el canal de forma inequívoca, por seguridad no se adivinó el logo.
+- **Motivo:** El nombre 'nacional geografy' no coincide con ningún nombre único registrado; se dejó sin logo para evitar una asignación incorrecta.
 - **Logo actual:** No tenía logo
 
 ### RCN HD
 
-- **Motivo:** No tiene tvg-logo; no se identificó el canal de forma inequívoca, por seguridad no se adivinó el logo.
+- **Motivo:** El nombre 'RCN HD' no coincide con ningún nombre único registrado; se dejó sin logo para evitar una asignación incorrecta.
 - **Logo actual:** No tenía logo
 
 ### g
 
-- **Motivo:** No tiene tvg-logo; no se identificó el canal de forma inequívoca, por seguridad no se adivinó el logo.
+- **Motivo:** Nombre 'g' demasiado corto o ambiguo; no coincide de forma segura con un canal. Se dejó sin logo.
+- **Logo actual:** No tenía logo
+
+### usa
+
+- **Motivo:** El nombre 'usa' no coincide con ningún nombre único registrado; se dejó sin logo para evitar una asignación incorrecta.
 - **Logo actual:** No tenía logo
 
 ### Cinemax
 
-- **Motivo:** No tiene tvg-logo; no se identificó el canal de forma inequívoca, por seguridad no se adivinó el logo.
+- **Motivo:** El nombre 'Cinemax' no coincide con ningún nombre único registrado; se dejó sin logo para evitar una asignación incorrecta.
 - **Logo actual:** No tenía logo
 
 ### Sony channel
 
-- **Motivo:** No tiene tvg-logo; no se identificó el canal de forma inequívoca, por seguridad no se adivinó el logo.
+- **Motivo:** El nombre 'Sony channel' no coincide con ningún nombre único registrado; se dejó sin logo para evitar una asignación incorrecta.
 - **Logo actual:** No tenía logo
 
 ### axn
 
-- **Motivo:** No tiene tvg-logo; no se identificó el canal de forma inequívoca, por seguridad no se adivinó el logo.
+- **Motivo:** El nombre 'axn' no coincide con ningún nombre único registrado; se dejó sin logo para evitar una asignación incorrecta.
 - **Logo actual:** No tenía logo
 
 ### fx
 
-- **Motivo:** No tiene tvg-logo; no se identificó el canal de forma inequívoca, por seguridad no se adivinó el logo.
+- **Motivo:** Nombre 'fx' demasiado corto o ambiguo; no coincide de forma segura con un canal. Se dejó sin logo.
 - **Logo actual:** No tenía logo
 
 ### wb TV
 
-- **Motivo:** No tiene tvg-logo; no se identificó el canal de forma inequívoca, por seguridad no se adivinó el logo.
+- **Motivo:** El nombre 'wb TV' no coincide con ningún nombre único registrado; se dejó sin logo para evitar una asignación incorrecta.
+- **Logo actual:** No tenía logo
+
+### Golden
+
+- **Motivo:** El nombre 'Golden' no coincide con ningún nombre único registrado; se dejó sin logo para evitar una asignación incorrecta.
 - **Logo actual:** No tenía logo
 
 ### tlc
 
-- **Motivo:** No tiene tvg-logo; no se identificó el canal de forma inequívoca, por seguridad no se adivinó el logo.
+- **Motivo:** El nombre 'tlc' no coincide con ningún nombre único registrado; se dejó sin logo para evitar una asignación incorrecta.
 - **Logo actual:** No tenía logo
 
 ### HBO FAMILY
 
-- **Motivo:** No tiene tvg-logo; no se identificó el canal de forma inequívoca, por seguridad no se adivinó el logo.
+- **Motivo:** El nombre 'HBO FAMILY' no coincide con ningún nombre único registrado; se dejó sin logo para evitar una asignación incorrecta.
 - **Logo actual:** No tenía logo
 
 ### HBO 2
 
-- **Motivo:** No tiene tvg-logo; no se identificó el canal de forma inequívoca, por seguridad no se adivinó el logo.
+- **Motivo:** El nombre 'HBO 2' no coincide con ningún nombre único registrado; se dejó sin logo para evitar una asignación incorrecta.
+- **Logo actual:** No tenía logo
+
+### SPACE HD
+
+- **Motivo:** El nombre 'SPACE HD' no coincide con ningún nombre único registrado; se dejó sin logo para evitar una asignación incorrecta.
 - **Logo actual:** No tenía logo
 
 ### DISCOVERY EI
 
-- **Motivo:** No tiene tvg-logo; no se identificó el canal de forma inequívoca, por seguridad no se adivinó el logo.
+- **Motivo:** El nombre 'DISCOVERY EI' no coincide con ningún nombre único registrado; se dejó sin logo para evitar una asignación incorrecta.
 - **Logo actual:** No tenía logo
 
 ### Origen Telepacifico
 
-- **Motivo:** No tiene tvg-logo; no se identificó el canal de forma inequívoca, por seguridad no se adivinó el logo.
+- **Motivo:** El nombre 'Origen Telepacifico' no coincide con ningún nombre único registrado; se dejó sin logo para evitar una asignación incorrecta.
 - **Logo actual:** No tenía logo
 
 ### win sport colombia
 
-- **Motivo:** No tiene tvg-logo; no se identificó el canal de forma inequívoca, por seguridad no se adivinó el logo.
+- **Motivo:** El nombre 'win sport colombia' no coincide con ningún nombre único registrado; se dejó sin logo para evitar una asignación incorrecta.
 - **Logo actual:** No tenía logo
 
 ### ESPN 6
 
-- **Motivo:** No tiene tvg-logo; no se identificó el canal de forma inequívoca, por seguridad no se adivinó el logo.
+- **Motivo:** El nombre 'ESPN 6' no coincide con ningún nombre único registrado; se dejó sin logo para evitar una asignación incorrecta.
 - **Logo actual:** No tenía logo
 
 ### ESPN 7
 
-- **Motivo:** No tiene tvg-logo; no se identificó el canal de forma inequívoca, por seguridad no se adivinó el logo.
+- **Motivo:** El nombre 'ESPN 7' no coincide con ningún nombre único registrado; se dejó sin logo para evitar una asignación incorrecta.
 - **Logo actual:** No tenía logo
 
 ### ESPN
 
-- **Motivo:** No tiene tvg-logo; no se identificó el canal de forma inequívoca, por seguridad no se adivinó el logo.
+- **Motivo:** El nombre 'ESPN' no coincide con ningún nombre único registrado; se dejó sin logo para evitar una asignación incorrecta.
 - **Logo actual:** No tenía logo
 
 ### ESPN
 
-- **Motivo:** No tiene tvg-logo; no se identificó el canal de forma inequívoca, por seguridad no se adivinó el logo.
+- **Motivo:** El nombre 'ESPN' no coincide con ningún nombre único registrado; se dejó sin logo para evitar una asignación incorrecta.
 - **Logo actual:** No tenía logo
 
 ### ESPN7
 
-- **Motivo:** No tiene tvg-logo; no se identificó el canal de forma inequívoca, por seguridad no se adivinó el logo.
+- **Motivo:** El nombre 'ESPN7' no coincide con ningún nombre único registrado; se dejó sin logo para evitar una asignación incorrecta.
 - **Logo actual:** No tenía logo
 
 ### ESPN 3
 
-- **Motivo:** No tiene tvg-logo; no se identificó el canal de forma inequívoca, por seguridad no se adivinó el logo.
+- **Motivo:** El nombre 'ESPN 3' no coincide con ningún nombre único registrado; se dejó sin logo para evitar una asignación incorrecta.
 - **Logo actual:** No tenía logo
 
 ### ESPN
 
-- **Motivo:** No tiene tvg-logo; no se identificó el canal de forma inequívoca, por seguridad no se adivinó el logo.
+- **Motivo:** El nombre 'ESPN' no coincide con ningún nombre único registrado; se dejó sin logo para evitar una asignación incorrecta.
 - **Logo actual:** No tenía logo
 
 ### A&E
 
-- **Motivo:** No tiene tvg-logo; no se identificó el canal de forma inequívoca, por seguridad no se adivinó el logo.
+- **Motivo:** El nombre 'A&E' no coincide con ningún nombre único registrado; se dejó sin logo para evitar una asignación incorrecta.
 - **Logo actual:** No tenía logo
 
 ### ESPN 2
 
-- **Motivo:** No tiene tvg-logo; no se identificó el canal de forma inequívoca, por seguridad no se adivinó el logo.
+- **Motivo:** El nombre 'ESPN 2' no coincide con ningún nombre único registrado; se dejó sin logo para evitar una asignación incorrecta.
 - **Logo actual:** No tenía logo
 
 ### g
 
-- **Motivo:** No tiene tvg-logo; no se identificó el canal de forma inequívoca, por seguridad no se adivinó el logo.
+- **Motivo:** Nombre 'g' demasiado corto o ambiguo; no coincide de forma segura con un canal. Se dejó sin logo.
+- **Logo actual:** No tenía logo
+
+### Teleantioquia
+
+- **Motivo:** El nombre 'Teleantioquia' no coincide con ningún nombre único registrado; se dejó sin logo para evitar una asignación incorrecta.
 - **Logo actual:** No tenía logo
 
 ### g
 
-- **Motivo:** No tiene tvg-logo; no se identificó el canal de forma inequívoca, por seguridad no se adivinó el logo.
+- **Motivo:** Nombre 'g' demasiado corto o ambiguo; no coincide de forma segura con un canal. Se dejó sin logo.
 - **Logo actual:** No tenía logo
 
 ### g
 
-- **Motivo:** No tiene tvg-logo; no se identificó el canal de forma inequívoca, por seguridad no se adivinó el logo.
+- **Motivo:** Nombre 'g' demasiado corto o ambiguo; no coincide de forma segura con un canal. Se dejó sin logo.
 - **Logo actual:** No tenía logo
 
 ### trece
 
-- **Motivo:** No tiene tvg-logo; no se identificó el canal de forma inequívoca, por seguridad no se adivinó el logo.
+- **Motivo:** El nombre 'trece' no coincide con ningún nombre único registrado; se dejó sin logo para evitar una asignación incorrecta.
 - **Logo actual:** No tenía logo
 
 ### g
 
-- **Motivo:** No tiene tvg-logo; no se identificó el canal de forma inequívoca, por seguridad no se adivinó el logo.
+- **Motivo:** Nombre 'g' demasiado corto o ambiguo; no coincide de forma segura con un canal. Se dejó sin logo.
+- **Logo actual:** No tenía logo
+
+### h
+
+- **Motivo:** Nombre 'h' demasiado corto o ambiguo; no coincide de forma segura con un canal. Se dejó sin logo.
 - **Logo actual:** No tenía logo
 
 ### g
 
-- **Motivo:** No tiene tvg-logo; no se identificó el canal de forma inequívoca, por seguridad no se adivinó el logo.
+- **Motivo:** Nombre 'g' demasiado corto o ambiguo; no coincide de forma segura con un canal. Se dejó sin logo.
 - **Logo actual:** No tenía logo
 
 ### Disney channel HD
 
-- **Motivo:** No tiene tvg-logo; no se identificó el canal de forma inequívoca, por seguridad no se adivinó el logo.
+- **Motivo:** El nombre 'Disney channel HD' no coincide con ningún nombre único registrado; se dejó sin logo para evitar una asignación incorrecta.
 - **Logo actual:** No tenía logo
 
 ### Disney JR
 
-- **Motivo:** No tiene tvg-logo; no se identificó el canal de forma inequívoca, por seguridad no se adivinó el logo.
+- **Motivo:** El nombre 'Disney JR' no coincide con ningún nombre único registrado; se dejó sin logo para evitar una asignación incorrecta.
 - **Logo actual:** No tenía logo
 
 ### g
 
-- **Motivo:** No tiene tvg-logo; no se identificó el canal de forma inequívoca, por seguridad no se adivinó el logo.
+- **Motivo:** Nombre 'g' demasiado corto o ambiguo; no coincide de forma segura con un canal. Se dejó sin logo.
 - **Logo actual:** No tenía logo
 
 ### Discovery Kids
 
-- **Motivo:** No tiene tvg-logo; no se identificó el canal de forma inequívoca, por seguridad no se adivinó el logo.
+- **Motivo:** El nombre 'Discovery Kids' no coincide con ningún nombre único registrado; se dejó sin logo para evitar una asignación incorrecta.
+- **Logo actual:** No tenía logo
+
+### h
+
+- **Motivo:** Nombre 'h' demasiado corto o ambiguo; no coincide de forma segura con un canal. Se dejó sin logo.
+- **Logo actual:** No tenía logo
+
+### tooncast
+
+- **Motivo:** El nombre 'tooncast' no coincide con ningún nombre único registrado; se dejó sin logo para evitar una asignación incorrecta.
 - **Logo actual:** No tenía logo
 
 ### Nick jr
 
-- **Motivo:** No tiene tvg-logo; no se identificó el canal de forma inequívoca, por seguridad no se adivinó el logo.
+- **Motivo:** El nombre 'Nick jr' no coincide con ningún nombre único registrado; se dejó sin logo para evitar una asignación incorrecta.
 - **Logo actual:** No tenía logo
 
 ### g
 
-- **Motivo:** No tiene tvg-logo; no se identificó el canal de forma inequívoca, por seguridad no se adivinó el logo.
+- **Motivo:** Nombre 'g' demasiado corto o ambiguo; no coincide de forma segura con un canal. Se dejó sin logo.
 - **Logo actual:** No tenía logo
 
 ### g
 
-- **Motivo:** No tiene tvg-logo; no se identificó el canal de forma inequívoca, por seguridad no se adivinó el logo.
+- **Motivo:** Nombre 'g' demasiado corto o ambiguo; no coincide de forma segura con un canal. Se dejó sin logo.
 - **Logo actual:** No tenía logo
 
 ### tin
 
-- **Motivo:** No tiene tvg-logo; no se identificó el canal de forma inequívoca, por seguridad no se adivinó el logo.
+- **Motivo:** El nombre 'tin' no coincide con ningún nombre único registrado; se dejó sin logo para evitar una asignación incorrecta.
+- **Logo actual:** No tenía logo
+
+### h
+
+- **Motivo:** Nombre 'h' demasiado corto o ambiguo; no coincide de forma segura con un canal. Se dejó sin logo.
+- **Logo actual:** No tenía logo
+
+### h
+
+- **Motivo:** Nombre 'h' demasiado corto o ambiguo; no coincide de forma segura con un canal. Se dejó sin logo.
 - **Logo actual:** No tenía logo
 
 ### estudio universal
 
-- **Motivo:** No tiene tvg-logo; no se identificó el canal de forma inequívoca, por seguridad no se adivinó el logo.
+- **Motivo:** El nombre 'estudio universal' no coincide con ningún nombre único registrado; se dejó sin logo para evitar una asignación incorrecta.
 - **Logo actual:** No tenía logo
 
 ### g
 
-- **Motivo:** No tiene tvg-logo; no se identificó el canal de forma inequívoca, por seguridad no se adivinó el logo.
+- **Motivo:** Nombre 'g' demasiado corto o ambiguo; no coincide de forma segura con un canal. Se dejó sin logo.
 - **Logo actual:** No tenía logo
 
 ### g
 
-- **Motivo:** No tiene tvg-logo; no se identificó el canal de forma inequívoca, por seguridad no se adivinó el logo.
+- **Motivo:** Nombre 'g' demasiado corto o ambiguo; no coincide de forma segura con un canal. Se dejó sin logo.
 - **Logo actual:** No tenía logo
 
 ### Universal Tv
 
-- **Motivo:** No tiene tvg-logo; no se identificó el canal de forma inequívoca, por seguridad no se adivinó el logo.
+- **Motivo:** El nombre 'Universal Tv' no coincide con ningún nombre único registrado; se dejó sin logo para evitar una asignación incorrecta.
 - **Logo actual:** No tenía logo
 
 ### g
 
-- **Motivo:** No tiene tvg-logo; no se identificó el canal de forma inequívoca, por seguridad no se adivinó el logo.
+- **Motivo:** Nombre 'g' demasiado corto o ambiguo; no coincide de forma segura con un canal. Se dejó sin logo.
 - **Logo actual:** No tenía logo
 
 ### cnn
 
-- **Motivo:** No tiene tvg-logo; no se identificó el canal de forma inequívoca, por seguridad no se adivinó el logo.
+- **Motivo:** El nombre 'cnn' no coincide con ningún nombre único registrado; se dejó sin logo para evitar una asignación incorrecta.
 - **Logo actual:** No tenía logo
 
 ### esne
 
-- **Motivo:** No tiene tvg-logo; no se identificó el canal de forma inequívoca, por seguridad no se adivinó el logo.
+- **Motivo:** El nombre 'esne' no coincide con ningún nombre único registrado; se dejó sin logo para evitar una asignación incorrecta.
+- **Logo actual:** No tenía logo
+
+### h
+
+- **Motivo:** Nombre 'h' demasiado corto o ambiguo; no coincide de forma segura con un canal. Se dejó sin logo.
 - **Logo actual:** No tenía logo
 
 ### g
 
-- **Motivo:** No tiene tvg-logo; no se identificó el canal de forma inequívoca, por seguridad no se adivinó el logo.
+- **Motivo:** Nombre 'g' demasiado corto o ambiguo; no coincide de forma segura con un canal. Se dejó sin logo.
+- **Logo actual:** No tenía logo
+
+### bitme
+
+- **Motivo:** El nombre 'bitme' no coincide con ningún nombre único registrado; se dejó sin logo para evitar una asignación incorrecta.
 - **Logo actual:** No tenía logo
 
 ### MiMusicaHits
 
-- **Motivo:** No tiene tvg-logo; no se identificó el canal de forma inequívoca, por seguridad no se adivinó el logo.
+- **Motivo:** El nombre 'MiMusicaHits' no coincide con ningún nombre único registrado; se dejó sin logo para evitar una asignación incorrecta.
+- **Logo actual:** No tenía logo
+
+### telepacifico
+
+- **Motivo:** El nombre 'telepacifico' no coincide con ningún nombre único registrado; se dejó sin logo para evitar una asignación incorrecta.
+- **Logo actual:** No tenía logo
+
+### Bitme
+
+- **Motivo:** El nombre 'Bitme' no coincide con ningún nombre único registrado; se dejó sin logo para evitar una asignación incorrecta.
 - **Logo actual:** No tenía logo
 
 ### Win sport colombia
 
-- **Motivo:** No tiene tvg-logo; no se identificó el canal de forma inequívoca, por seguridad no se adivinó el logo.
+- **Motivo:** El nombre 'Win sport colombia' no coincide con ningún nombre único registrado; se dejó sin logo para evitar una asignación incorrecta.
+- **Logo actual:** No tenía logo
+
+### BabyFirst
+
+- **Motivo:** El nombre 'BabyFirst' no coincide con ningún nombre único registrado; se dejó sin logo para evitar una asignación incorrecta.
 - **Logo actual:** No tenía logo
 
 ### Cartoon network
 
-- **Motivo:** No tiene tvg-logo; no se identificó el canal de forma inequívoca, por seguridad no se adivinó el logo.
+- **Motivo:** El nombre 'Cartoon network' no coincide con ningún nombre único registrado; se dejó sin logo para evitar una asignación incorrecta.
 - **Logo actual:** No tenía logo
 
 ### Nick jr
 
-- **Motivo:** No tiene tvg-logo; no se identificó el canal de forma inequívoca, por seguridad no se adivinó el logo.
+- **Motivo:** El nombre 'Nick jr' no coincide con ningún nombre único registrado; se dejó sin logo para evitar una asignación incorrecta.
 - **Logo actual:** No tenía logo
 
 ### g
 
-- **Motivo:** No tiene tvg-logo; no se identificó el canal de forma inequívoca, por seguridad no se adivinó el logo.
+- **Motivo:** Nombre 'g' demasiado corto o ambiguo; no coincide de forma segura con un canal. Se dejó sin logo.
 - **Logo actual:** No tenía logo
 
 ### g
 
-- **Motivo:** No tiene tvg-logo; no se identificó el canal de forma inequívoca, por seguridad no se adivinó el logo.
+- **Motivo:** Nombre 'g' demasiado corto o ambiguo; no coincide de forma segura con un canal. Se dejó sin logo.
 - **Logo actual:** No tenía logo
 
 ### g
 
-- **Motivo:** No tiene tvg-logo; no se identificó el canal de forma inequívoca, por seguridad no se adivinó el logo.
+- **Motivo:** Nombre 'g' demasiado corto o ambiguo; no coincide de forma segura con un canal. Se dejó sin logo.
 - **Logo actual:** No tenía logo
 
 ### t
 
-- **Motivo:** No tiene tvg-logo; no se identificó el canal de forma inequívoca, por seguridad no se adivinó el logo.
+- **Motivo:** Nombre 't' demasiado corto o ambiguo; no coincide de forma segura con un canal. Se dejó sin logo.
+- **Logo actual:** No tenía logo
+
+### h
+
+- **Motivo:** Nombre 'h' demasiado corto o ambiguo; no coincide de forma segura con un canal. Se dejó sin logo.
 - **Logo actual:** No tenía logo
 
 ### ESPN 2 opc
 
-- **Motivo:** No tiene tvg-logo; no se identificó el canal de forma inequívoca, por seguridad no se adivinó el logo.
+- **Motivo:** El nombre 'ESPN 2 opc' no coincide con ningún nombre único registrado; se dejó sin logo para evitar una asignación incorrecta.
 - **Logo actual:** No tenía logo
 
-### Disney Jr . Latin America South [opc.2]
+### Disney Channel SD
 
-- **Motivo:** HTTP 429; no se identificó el canal de forma inequívoca, por seguridad no se adivinó el logo.
-- **Logo actual:** https://upload.wikimedia.org/wikipedia/commons/e/e3/2024_Disney_Jr._Logo.svg
+- **Motivo:** El nombre 'Disney Channel SD' no coincide con ningún nombre único registrado; se dejó sin logo para evitar una asignación incorrecta.
+- **Logo actual:** https://1000logos.net/wp-content/uploads/2020/09/Disney-Channel-Logo.png
+
+### Disney Channel HD (Opc.5)
+
+- **Motivo:** El nombre 'Disney Channel HD (Opc.5)' no coincide con ningún nombre único registrado; se dejó sin logo para evitar una asignación incorrecta.
+- **Logo actual:** https://1000logos.net/wp-content/uploads/2020/09/Disney-Channel-Logo.png
+
+### Disney Channel HD (Opc.6)
+
+- **Motivo:** El nombre 'Disney Channel HD (Opc.6)' no coincide con ningún nombre único registrado; se dejó sin logo para evitar una asignación incorrecta.
+- **Logo actual:** https://1000logos.net/wp-content/uploads/2020/09/Disney-Channel-Logo.png
+
+### Disney Channel SD (opc.7)
+
+- **Motivo:** El nombre 'Disney Channel SD (opc.7)' no coincide con ningún nombre único registrado; se dejó sin logo para evitar una asignación incorrecta.
+- **Logo actual:** https://1000logos.net/wp-content/uploads/2020/09/Disney-Channel-Logo.png
 
 ### Disney.JR HD  problemas de buffer se queda mucho
 
-- **Motivo:** HTTP 429; no se identificó el canal de forma inequívoca, por seguridad no se adivinó el logo.
+- **Motivo:** El nombre 'Disney.JR HD  problemas de buffer se queda mucho' no coincide con ningún nombre único registrado; se dejó sin logo para evitar una asignación incorrecta.
 - **Logo actual:** https://upload.wikimedia.org/wikipedia/commons/e/e3/2024_Disney_Jr._Logo.svg
+
+### (sin nombre)
+
+- **Motivo:** Canal sin nombre: no se asignó logo porque no se puede identificar.
+- **Logo actual:** https://i.imgur.com/8AKW7Uu.png\\
 
 ### animal planet
 
-- **Motivo:** No tiene tvg-logo; no se identificó el canal de forma inequívoca, por seguridad no se adivinó el logo.
+- **Motivo:** El nombre 'animal planet' no coincide con ningún nombre único registrado; se dejó sin logo para evitar una asignación incorrecta.
 - **Logo actual:** No tenía logo
 
 ### asult swin
 
-- **Motivo:** No tiene tvg-logo; no se identificó el canal de forma inequívoca, por seguridad no se adivinó el logo.
+- **Motivo:** El nombre 'asult swin' no coincide con ningún nombre único registrado; se dejó sin logo para evitar una asignación incorrecta.
 - **Logo actual:** No tenía logo
 
 ### asult swim OPC 2
 
-- **Motivo:** No tiene tvg-logo; no se identificó el canal de forma inequívoca, por seguridad no se adivinó el logo.
+- **Motivo:** El nombre 'asult swim OPC 2' no coincide con ningún nombre único registrado; se dejó sin logo para evitar una asignación incorrecta.
 - **Logo actual:** No tenía logo
 
-### tutv el salvador
+### adult swim HD
 
-- **Motivo:** No tiene tvg-logo; no se identificó el canal de forma inequívoca, por seguridad no se adivinó el logo.
-- **Logo actual:** No tenía logo
+- **Motivo:** El nombre 'adult swim HD' no coincide con ningún nombre único registrado; se dejó sin logo para evitar una asignación incorrecta.
+- **Logo actual:** https://logos-world.net/wp-content/uploads/2023/01/Adult-Swim-Logo.jpg
 
 ### EnerGeek Retro (Chile):
 
-- **Motivo:** No tiene tvg-logo; no se identificó el canal de forma inequívoca, por seguridad no se adivinó el logo.
+- **Motivo:** El nombre 'EnerGeek Retro (Chile):' no coincide con ningún nombre único registrado; se dejó sin logo para evitar una asignación incorrecta.
 - **Logo actual:** No tenía logo
 
 ### pandamax
 
-- **Motivo:** No tiene tvg-logo; no se identificó el canal de forma inequívoca, por seguridad no se adivinó el logo.
+- **Motivo:** El nombre 'pandamax' no coincide con ningún nombre único registrado; se dejó sin logo para evitar una asignación incorrecta.
 - **Logo actual:** No tenía logo
 
 ### MTV LATINO SRT
 
-- **Motivo:** No tiene tvg-logo; no se identificó el canal de forma inequívoca, por seguridad no se adivinó el logo.
+- **Motivo:** El nombre 'MTV LATINO SRT' no coincide con ningún nombre único registrado; se dejó sin logo para evitar una asignación incorrecta.
 - **Logo actual:** No tenía logo
+
+### MTV
+
+- **Motivo:** El nombre 'MTV' no coincide con ningún nombre único registrado; se dejó sin logo para evitar una asignación incorrecta.
+- **Logo actual:** https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsi-NGZhblCE0Ll0cwiUyR6XY5SadlILuEEOtxG3EVdg&s=10
 
 ## Archivos generados
 
