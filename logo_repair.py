@@ -162,35 +162,48 @@ def unique_channel(candidates):
 
 def identify_channel(display_name, attributes, channel_by_id,
                      channel_name_index, feed_name_index):
-    # No asignar logos por tvg-id solamente: el nombre visible debe identificar
-    # inequívocamente el canal. Los nombres vacíos o demasiado cortos son ambiguos.
-    key = norm(display_name)
-    if len(key.replace(" ", "")) < 3:
-        return None, "", "nombre vacío o demasiado corto/ambiguo"
+    """Identifica por nombre exacto registrado; prueba también tvg-name.
 
-    channel = unique_channel(channel_name_index.get(key, []))
-    if channel:
-        return channel, "", "nombre exacto"
+    No adivina coincidencias parciales. Nombres vacíos o demasiado cortos se
+    rechazan. Se permiten variantes exactas registradas en alt_names y feeds.
+    """
+    names_to_check = [display_name, attributes.get("tvg-name", "")]
+    checked = set()
+    for candidate_name in names_to_check:
+        key = norm(candidate_name)
+        if not key or key in checked:
+            continue
+        checked.add(key)
+        if len(key.replace(" ", "")) < 3:
+            continue
 
-    feed_candidates = feed_name_index.get(key, [])
-    feed_ids = {
-        str(feed.get("channel") or "")
-        for feed in feed_candidates
-        if str(feed.get("channel") or "") in channel_by_id
-    }
-    if len(feed_ids) == 1:
-        channel_id = next(iter(feed_ids))
-        matched_feeds = [
-            feed for feed in feed_candidates
-            if str(feed.get("channel") or "") == channel_id
-        ]
-        feed_id = (
-            str(matched_feeds[0].get("id") or "")
-            if len(matched_feeds) == 1 else ""
-        )
-        return channel_by_id[channel_id], feed_id, "nombre exacto de feed"
+        channel = unique_channel(channel_name_index.get(key, []))
+        if channel:
+            return channel, "", f"nombre exacto registrado: {candidate_name.strip()}"
 
-    return None, "", "sin coincidencia inequívoca"
+        feed_candidates = feed_name_index.get(key, [])
+        feed_ids = {
+            str(feed.get("channel") or "")
+            for feed in feed_candidates
+            if str(feed.get("channel") or "") in channel_by_id
+        }
+        if len(feed_ids) == 1:
+            channel_id = next(iter(feed_ids))
+            matched_feeds = [
+                feed for feed in feed_candidates
+                if str(feed.get("channel") or "") == channel_id
+            ]
+            feed_id = (
+                str(matched_feeds[0].get("id") or "")
+                if len(matched_feeds) == 1 else ""
+            )
+            return channel_by_id[channel_id], feed_id, f"feed exacto registrado: {candidate_name.strip()}"
+
+    if not display_name.strip():
+        return None, "", "nombre vacío"
+    if len(norm(display_name).replace(" ", "")) < 3:
+        return None, "", "nombre demasiado corto o ambiguo"
+    return None, "", "el nombre no está registrado de forma inequívoca en el catálogo ni en tvg-name"
 
 
 def candidate_logos(channel_id, feed_id, logos):
@@ -320,7 +333,9 @@ def main():
             elif len(norm(display_name).replace(" ", "")) < 3:
                 detail = f"Nombre '{display_name}' demasiado corto o ambiguo; no coincide de forma segura con un canal. Se dejó sin logo."
             else:
-                detail = f"El nombre '{display_name}' no coincide con un nombre único del catálogo; se dejó sin logo para evitar una asignación incorrecta."
+                tvg_name = original_attrs.get("tvg-name", "").strip()
+                extra = f" Se comprobó también tvg-name='{tvg_name}', sin coincidencia exacta registrada." if tvg_name else ""
+                detail = f"El nombre '{display_name}' no coincide con ningún nombre único registrado; se dejó sin logo para evitar una asignación incorrecta.{extra}"
         elif current_logo:
             current_ok, current_result = verify_logo(current_logo)
         else:
