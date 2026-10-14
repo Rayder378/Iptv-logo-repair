@@ -119,7 +119,7 @@ http://181.143.237.211:85/tsfile/live/1057_1.m3u8?key=txiptv&playlive=1&authid=0
 http://181.143.237.211:85/tsfile/live/1058_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1,g
 http://181.143.237.211:85/tsfile/live/1059_1.m3u8?key=txiptv&playlive=1&authid=0
-#EXTINF:-1 tvg-logo="https://i.imgur.com/IowmetH.png",h
+#EXTINF:-1,h
 http://181.143.237.211:85/tsfile/live/1061_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1,g
 http://181.143.237.211:85/tsfile/live/1062_1.m3u8?key=txiptv&playlive=1&authid=0
@@ -131,7 +131,7 @@ http://181.143.237.211:85/tsfile/live/1064_1.m3u8?key=txiptv&playlive=1&authid=0
 http://181.143.237.211:85/tsfile/live/1065_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 group-title="Infantiles",Discovery Kids
 http://181.143.237.211:85/tsfile/live/1066_1.m3u8?key=txiptv&playlive=1&authid=0
-#EXTINF:-1 tvg-logo="https://i.imgur.com/IowmetH.png",h
+#EXTINF:-1,h
 http://181.143.237.211:85/tsfile/live/1067_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 group-title="Infantiles" tvg-logo="https://i.imgur.com/3yXRbQy.png",tooncast
 http://181.143.237.211:85/tsfile/live/1068_1.m3u8?key=txiptv&playlive=1&authid=2
@@ -143,9 +143,9 @@ http://181.143.237.211:85/tsfile/live/1070_1.m3u8?key=txiptv&playlive=1&authid=0
 http://181.143.237.211:85/tsfile/live/1071_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 group-title="musica",tin
 http://181.143.237.211:85/tsfile/live/1072_1.m3u8?key=txiptv&playlive=1&authid=0
-#EXTINF:-1 tvg-logo="https://i.imgur.com/IowmetH.png",h
+#EXTINF:-1,h
 http://181.143.237.211:85/tsfile/live/1073_1.m3u8?key=txiptv&playlive=1&authid=0
-#EXTINF:-1 tvg-logo="https://i.imgur.com/IowmetH.png",h
+#EXTINF:-1,h
 http://181.143.237.211:85/tsfile/live/1074_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 group-title="peliculas",estudio universal
 http://181.143.237.211:85/tsfile/live/1075_1.m3u8?key=txiptv&playlive=1&authid=0
@@ -167,7 +167,7 @@ http://181.143.237.211:85/tsfile/live/1082_1.m3u8?key=txiptv&playlive=1&authid=0
 http://181.143.237.211:85/tsfile/live/1083_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 group-title="entregenimiento",esne
 http://181.143.237.211:85/tsfile/live/1084_1.m3u8?key=txiptv&playlive=1&authid=0
-#EXTINF:-1 tvg-logo="https://i.imgur.com/IowmetH.png",h
+#EXTINF:-1,h
 http://181.143.237.211:85/tsfile/live/1085_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1,g
 http://181.143.237.211:85/tsfile/live/1086_1.m3u8?key=txiptv&playlive=1&authid=0
@@ -195,25 +195,25 @@ http://181.143.237.211:85/tsfile/live/1096_1.m3u8?key=txiptv&playlive=1&authid=0
 http://181.143.237.211:85/tsfile/live/1097_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1,t
 http://181.143.237.211:85/tsfile/live/1098_1.m3u8?key=txiptv&playlive=2&authid=0
-#EXTINF:-1 tvg-logo="https://i.imgur.com/IowmetH.png",h
+#EXTINF:-1,h
 http://181.143.237.211:85/tsfile/live/1099_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 group-title="ESPN",ESPN 2 opc
 https://khala.futlivehd.com/global/espn2/index.m3u8
-#EXTINF:-1 tvg-logo="https://1000logos.net/wp-content/uploads/2020/09/Disney-Channel-Logo.png" group-title="Infantiles",Disney Channel SD
+#EXTINF:-1 group-title="Infantiles",Disney Channel SD
 http://45.166.93.156:9999/play/a0f3/index.m3u8
-#EXTINF:-1 tvg-logo="https://1000logos.net/wp-content/uploads/2020/09/Disney-Channel-Logo.png" group-title="Infantiles",Disney Channel HD (Opc.5)
+#EXTINF:-1 group-title="Infantiles",Disney Channel HD (Opc.5)
 http://45.134.141.161:2200/ARG/Disney_Channel/index.m3u8
-#EXTINF:-1 tvg-logo="https://1000logos.net/wp-content/uploads/2020/09/Disney-Channel-Logo.png" group-title="Infantiles",Disney Channel HD (Opc.6)
+#EXTINF:-1 group-title="Infantiles",Disney Channel HD (Opc.6)
 http://190.11.225.124:5000/live/disney_hd/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://1000logos.net/wp-content/uploads/2020/09/Disney-Channel-Logo.png" group-title="Infantiles",Disney Channel SD (opc.7)
+#EXTINF:-1 group-title="Infantiles",Disney Channel SD (opc.7)
 http://181.143.237.211:85/tsfile/live/1063_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1 tvg-logo="https://carjocosa.space/studio/logo.png" group-title="Documentales y Cultura",Estudio + TV HD
 https://vd01.streaminghd.net.ar:3113/hybrid/play.m3u8
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/e/e3/2024_Disney_Jr._Logo.svg" group-title="Infantiles",Disney Jr . Latin America South [opc.2]
+#EXTINF:-1 group-title="Infantiles",Disney Jr . Latin America South [opc.2]
 http://bantel-cdn1.iptvperu.tv:1935/btnscrtn/disney_jr.stream/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/e/e3/2024_Disney_Jr._Logo.svg" group-title="Infantiles",Disney.JR HD  problemas de buffer se queda mucho
+#EXTINF:-1 group-title="Infantiles",Disney.JR HD  problemas de buffer se queda mucho
 http://190.11.225.124:5000/live/disney_jr_hd/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/8AKW7Uu.png\\""" group-title="Entretenimiento Premium" " group-title="Entretenimiento Premium",tlnovelas SD [Opc.4],
+#EXTINF:-1 "" group-title="Entretenimiento Premium" " group-title="Entretenimiento Premium",tlnovelas SD [Opc.4],
 http://181.143.237.211:85/tsfile/live/1018_1.m3u8?key=txiptv&playlive=1&authid=0
 #EXTINF:-1,animal planet
 https://full-online.xyz/proxy/ssl/?url=http://181.119.215.61:8000/play/a0gq/index.m3u8
@@ -221,7 +221,7 @@ https://full-online.xyz/proxy/ssl/?url=http://181.119.215.61:8000/play/a0gq/inde
 https://full-online.xyz/proxy/ssl/?url=http://181.119.215.61:8000/play/a05v/index.m3u8
 #EXTINF:-1,asult swim OPC 2
 http://api.toonamiaftermath.com:3000/est/playlist.m3u8
-#EXTINF:-1 tvg-logo="https://logos-world.net/wp-content/uploads/2023/01/Adult-Swim-Logo.jpg",adult swim HD
+#EXTINF:-1,adult swim HD
 http://181.119.215.61:8000/play/a05v/index.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/Oj3hEBh.jpg",Max anime
 https://cdnlive.klicgo.net/maxanime/live/playlist.m3u8
@@ -237,11 +237,11 @@ https://stream.wifiexpert.cl/telenorte/pandamaxch/playlist.m3u8
 https://627bb251f23c7.streamlock.net:444/ExtremaKids/ExtremaKids/playlist.m3u8
 #EXTINF:-1,MTV LATINO SRT
 http://45.182.22.53:8000/play/a0dh/index.m3u8?fbclid=Iwb21leAUpZV5jbGNrBSllUmV4dG4DYWVtAjExAHBkb2YFc3J0YwZhcHBfaWQMMzUwNjg1NTMxNzI4AAEe6T7KyltuhxZUKGf2hFi8JWpnhnH0S2NIFUXX4PA0TJvdNKiyJ6xMB_cKg58_aem_3yQIfSJ_A-clU4K8PJSj7w
-#EXTINF:-1 tvg-logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsi-NGZhblCE0Ll0cwiUyR6XY5SadlILuEEOtxG3EVdg&s=10" group-title="-",MTV
+#EXTINF:-1 group-title="-",MTV
 http://191.97.55.72:8000/play/a0027/index.m3u8?fbclid=Iwb21leAUjB1pjbGNrBSMHTmV4dG4DYWVtAjExAHBkb2YFc3J0YwZhcHBfaWQMMzUwNjg1NTMxNzI4AAEevq11NHFG8cYgMb3kQDPg0lyKXBvYEfo0FpTZ1bFGrHSyx5Vg6Vwo3A4_W7E_aem_H3jQTGjdo4T7MS10ehEGfg
-#EXTINF:-1 tvg-logo="https://pbs.twimg.com/profile_images/412626363011457024/s87vGCpO_400x400.jpeg",Claro Sports 1 SD
+#EXTINF:-1,Claro Sports 1 SD
 http://45.182.22.53:8000/play/a0c2/index.m3u8?fbclid=Iwb21leAUpZV5jbGNrBSllUmV4dG4DYWVtAjExAHBkb2YFc3J0YwZhcHBfaWQMMzUwNjg1NTMxNzI4AAEe6T7KyltuhxZUKGf2hFi8JWpnhnH0S2NIFUXX4PA0TJvdNKiyJ6xMB_cKg58_aem_3yQIfSJ_A-clU4K8PJSj7w
-#EXTINF:-1 tvg-logo="https://pbs.twimg.com/profile_images/412626363011457024/s87vGCpO_400x400.jpeg",Claro Sports 2 SD
+#EXTINF:-1,Claro Sports 2 SD
 http://45.182.22.53:8000/play/a09x/index.m3u8?fbclid=Iwb21leAUpZV5jbGNrBSllUmV4dG4DYWVtAjExAHBkb2YFc3J0YwZhcHBfaWQMMzUwNjg1NTMxNzI4AAEe6T7KyltuhxZUKGf2hFi8JWpnhnH0S2NIFUXX4PA0TJvdNKiyJ6xMB_cKg58_aem_3yQIfSJ_A-clU4K8PJSj7w
 #EXTINF:-1 tvg-logo="https://images.ctfassets.net/ack3kcrk3cz6/6UiRtTSHJVoMgRVFLdlND7/f043a423429dfae262daabbf115fa3be/41_ClaroCinema.png",Claro Cinema
 http://45.182.22.53:8000/play/a0b1/index.m3u8?fbclid=Iwb21leAUpZV5jbGNrBSllUmV4dG4DYWVtAjExAHBkb2YFc3J0YwZhcHBfaWQMMzUwNjg1NTMxNzI4AAEe6T7KyltuhxZUKGf2hFi8JWpnhnH0S2NIFUXX4PA0TJvdNKiyJ6xMB_cKg58_aem_3yQIfSJ_A-clU4K8PJSj7w
