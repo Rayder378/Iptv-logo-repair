@@ -2,11 +2,13 @@
 
 - **Entrada:** URL configurada en M3U_URL
 - **Canales analizados:** 123
-- **Logos reparados o añadidos:** 29
-- **Logos funcionales conservados:** 2
-- **Canales sin reparar:** 92
+- **Logos reparados o añadidos:** 19
+- **Logos funcionales conservados:** 5
+- **Canales sin reparar:** 99
 
 > La verificación confirma que la URL entrega un archivo con firma de imagen; no garantiza por sí sola que el logo represente visualmente el canal correcto.
+
+[Logos reparados o añadidos](#logos-reparados-o-añadidos) · [Logos funcionales conservados](#logos-funcionales-conservados) · [Canales sin reparar](#canales-sin-reparar)
 
 ## Logos reparados o añadidos
 
@@ -15,265 +17,178 @@
 ![Logo de Señal colombia](https://i.imgur.com/Y9x16vl.png)
 
 - **Estado:** logo añadido
-- **Identificación:** nombre exacto registrado: Señal colombia
+- **Identificación:** nombre/alias exacto registrado: Señal colombia
 - **Logo:** https://i.imgur.com/Y9x16vl.png
-- **Detalle:** Reemplazo verificado: válido (image/png); identificación: nombre exacto registrado: Señal colombia
+- **Detalle:** Reemplazo verificado: válido (image/png); identificación: nombre/alias exacto registrado: Señal colombia
 
 ### canal institucional
 
 ![Logo de canal institucional](https://i.imgur.com/CKnf3Ua.png)
 
 - **Estado:** logo añadido
-- **Identificación:** nombre exacto registrado: canal institucional
+- **Identificación:** nombre/alias exacto registrado: canal institucional
 - **Logo:** https://i.imgur.com/CKnf3Ua.png
-- **Detalle:** Reemplazo verificado: válido (image/png); identificación: nombre exacto registrado: canal institucional
+- **Detalle:** Reemplazo verificado: válido (image/png); identificación: nombre/alias exacto registrado: canal institucional
 
 ### canal congreso
 
 ![Logo de canal congreso](https://i.imgur.com/erJDwtY.jpeg)
 
 - **Estado:** logo añadido
-- **Identificación:** nombre exacto registrado: canal congreso
+- **Identificación:** nombre/alias exacto registrado: canal congreso
 - **Logo:** https://i.imgur.com/erJDwtY.jpeg
-- **Detalle:** Reemplazo verificado: válido (image/jpeg); identificación: nombre exacto registrado: canal congreso
-
-### teleislas
-
-![Logo de teleislas](https://i.imgur.com/aKHGRyk.png)
-
-- **Estado:** logo añadido
-- **Identificación:** nombre exacto registrado: teleislas
-- **Logo:** https://i.imgur.com/aKHGRyk.png
-- **Detalle:** Reemplazo verificado: válido (image/png); identificación: nombre exacto registrado: teleislas
-
-### citytv
-
-![Logo de citytv](https://upload.wikimedia.org/wikipedia/commons/9/9e/Citytv_logo.svg)
-
-- **Estado:** logo añadido
-- **Identificación:** nombre exacto registrado: citytv
-- **Logo:** https://upload.wikimedia.org/wikipedia/commons/9/9e/Citytv_logo.svg
-- **Detalle:** Reemplazo verificado: válido (image/svg+xml); identificación: nombre exacto registrado: citytv
+- **Detalle:** Reemplazo verificado: válido (image/jpeg); identificación: nombre/alias exacto registrado: canal congreso
 
 ### canal capital
 
 ![Logo de canal capital](https://i.imgur.com/zAYtbYi.png)
 
 - **Estado:** logo añadido
-- **Identificación:** nombre exacto registrado: canal capital
+- **Identificación:** nombre/alias exacto registrado: canal capital
 - **Logo:** https://i.imgur.com/zAYtbYi.png
-- **Detalle:** Reemplazo verificado: válido (image/png); identificación: nombre exacto registrado: canal capital
-
-### telepacifico
-
-![Logo de telepacifico](https://i.imgur.com/39hy97J.png)
-
-- **Estado:** logo añadido
-- **Identificación:** nombre exacto registrado: telepacifico
-- **Logo:** https://i.imgur.com/39hy97J.png
-- **Detalle:** Reemplazo verificado: válido (image/png); identificación: nombre exacto registrado: telepacifico
+- **Detalle:** Reemplazo verificado: válido (image/png); identificación: nombre/alias exacto registrado: canal capital
 
 ### las estrellas
 
 ![Logo de las estrellas](https://i.imgur.com/g5ShxZ7.png)
 
 - **Estado:** logo añadido
-- **Identificación:** nombre exacto registrado: las estrellas
+- **Identificación:** nombre/alias exacto registrado: las estrellas
 - **Logo:** https://i.imgur.com/g5ShxZ7.png
-- **Detalle:** Reemplazo verificado: válido (image/png); identificación: nombre exacto registrado: las estrellas
+- **Detalle:** Reemplazo verificado: válido (image/png); identificación: nombre/alias exacto registrado: las estrellas
 
 ### América paraguay
 
 ![Logo de América paraguay](https://i.imgur.com/rCEu3fM.png)
 
 - **Estado:** logo añadido
-- **Identificación:** nombre exacto registrado: América paraguay
+- **Identificación:** nombre/alias exacto registrado: América paraguay
 - **Logo:** https://i.imgur.com/rCEu3fM.png
-- **Detalle:** Reemplazo verificado: válido (image/png); identificación: nombre exacto registrado: América paraguay
+- **Detalle:** Reemplazo verificado: válido (image/png); identificación: nombre/alias exacto registrado: América paraguay
 
 ### TV zoom
 
 ![Logo de TV zoom](https://i.imgur.com/jCGrjf5.png)
 
 - **Estado:** logo añadido
-- **Identificación:** nombre exacto registrado: TV zoom
+- **Identificación:** nombre/alias exacto registrado: TV zoom
 - **Logo:** https://i.imgur.com/jCGrjf5.png
-- **Detalle:** Reemplazo verificado: válido (image/png); identificación: nombre exacto registrado: TV zoom
+- **Detalle:** Reemplazo verificado: válido (image/png); identificación: nombre/alias exacto registrado: TV zoom
 
 ### Caracol TV
 
 ![Logo de Caracol TV](https://i.imgur.com/WbfdJbk.png)
 
 - **Estado:** logo añadido
-- **Identificación:** nombre exacto registrado: Caracol TV
+- **Identificación:** nombre/alias exacto registrado: Caracol TV
 - **Logo:** https://i.imgur.com/WbfdJbk.png
-- **Detalle:** Reemplazo verificado: válido (image/png); identificación: nombre exacto registrado: Caracol TV
+- **Detalle:** Reemplazo verificado: válido (image/png); identificación: nombre/alias exacto registrado: Caracol TV
 
-### usa
+### claro musica
 
-![Logo de usa](https://i.imgur.com/5WBWruX.png)
-
-- **Estado:** logo añadido
-- **Identificación:** nombre exacto registrado: usa
-- **Logo:** https://i.imgur.com/5WBWruX.png
-- **Detalle:** Reemplazo verificado: válido (image/png); identificación: nombre exacto registrado: usa
-
-### Golden
-
-![Logo de Golden](https://i.imgur.com/NNd1lYl.png)
+![Logo de claro musica](https://i.imgur.com/vrSFUwv.png)
 
 - **Estado:** logo añadido
-- **Identificación:** nombre exacto registrado: Golden
-- **Logo:** https://i.imgur.com/NNd1lYl.png
-- **Detalle:** Reemplazo verificado: válido (image/png); identificación: nombre exacto registrado: Golden
-
-### SPACE HD
-
-![Logo de SPACE HD](https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/SpaceLogo.svg/960px-SpaceLogo.svg.png)
-
-- **Estado:** logo añadido
-- **Identificación:** nombre exacto registrado: SPACE HD
-- **Logo:** https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/SpaceLogo.svg/960px-SpaceLogo.svg.png
-- **Detalle:** Reemplazo verificado: válido (image/png); identificación: nombre exacto registrado: SPACE HD
+- **Identificación:** similitud alta (89%) con nombre registrado 'claro musica tv' a partir de 'claro musica'
+- **Logo:** https://i.imgur.com/vrSFUwv.png
+- **Detalle:** Reemplazo verificado: válido (image/png); identificación: similitud alta (89%) con nombre registrado 'claro musica tv' a partir de 'claro musica'
 
 ### RCN NOVELAs
 
 ![Logo de RCN NOVELAs](https://i.imgur.com/9wxdWNQ.png)
 
 - **Estado:** logo añadido
-- **Identificación:** nombre exacto registrado: RCN NOVELAs
+- **Identificación:** nombre/alias exacto registrado: RCN NOVELAs
 - **Logo:** https://i.imgur.com/9wxdWNQ.png
-- **Detalle:** Reemplazo verificado: válido (image/png); identificación: nombre exacto registrado: RCN NOVELAs
+- **Detalle:** Reemplazo verificado: válido (image/png); identificación: nombre/alias exacto registrado: RCN NOVELAs
 
 ### La Kalle
 
 ![Logo de La Kalle](https://www.tdtparatodos.tv/sites/default/files/la_kalle.png)
 
 - **Estado:** logo añadido
-- **Identificación:** nombre exacto registrado: La Kalle
+- **Identificación:** nombre/alias exacto registrado: La Kalle
 - **Logo:** https://www.tdtparatodos.tv/sites/default/files/la_kalle.png
-- **Detalle:** Reemplazo verificado: válido (image/png); identificación: nombre exacto registrado: La Kalle
+- **Detalle:** Reemplazo verificado: válido (image/png); identificación: nombre/alias exacto registrado: La Kalle
 
 ### Cine Hispano
 
 ![Logo de Cine Hispano](https://i.imgur.com/tfgyfrw.png)
 
 - **Estado:** logo añadido
-- **Identificación:** nombre exacto registrado: Cine Hispano
+- **Identificación:** nombre/alias exacto registrado: Cine Hispano
 - **Logo:** https://i.imgur.com/tfgyfrw.png
-- **Detalle:** Reemplazo verificado: válido (image/png); identificación: nombre exacto registrado: Cine Hispano
-
-### Teleantioquia
-
-![Logo de Teleantioquia](https://i.imgur.com/6WMV2Az.png)
-
-- **Estado:** logo añadido
-- **Identificación:** nombre exacto registrado: Teleantioquia
-- **Logo:** https://i.imgur.com/6WMV2Az.png
-- **Detalle:** Reemplazo verificado: válido (image/png); identificación: nombre exacto registrado: Teleantioquia
-
-### tooncast
-
-![Logo de tooncast](https://i.imgur.com/3yXRbQy.png)
-
-- **Estado:** logo añadido
-- **Identificación:** nombre exacto registrado: tooncast
-- **Logo:** https://i.imgur.com/3yXRbQy.png
-- **Detalle:** Reemplazo verificado: válido (image/png); identificación: nombre exacto registrado: tooncast
+- **Detalle:** Reemplazo verificado: válido (image/png); identificación: nombre/alias exacto registrado: Cine Hispano
 
 ### Telemundo internacional
 
 ![Logo de Telemundo internacional](https://i.imgur.com/j2O4ndp.png)
 
 - **Estado:** logo añadido
-- **Identificación:** nombre exacto registrado: Telemundo internacional
+- **Identificación:** nombre/alias exacto registrado: Telemundo internacional
 - **Logo:** https://i.imgur.com/j2O4ndp.png
-- **Detalle:** Reemplazo verificado: válido (image/png); identificación: nombre exacto registrado: Telemundo internacional
+- **Detalle:** Reemplazo verificado: válido (image/png); identificación: nombre/alias exacto registrado: Telemundo internacional
 
 ### vía X
 
 ![Logo de vía X](https://upload.wikimedia.org/wikipedia/commons/d/d3/VIAX-oficial.png)
 
 - **Estado:** logo añadido
-- **Identificación:** nombre exacto registrado: vía X
+- **Identificación:** nombre/alias exacto registrado: vía X
 - **Logo:** https://upload.wikimedia.org/wikipedia/commons/d/d3/VIAX-oficial.png
-- **Detalle:** Reemplazo verificado: válido (image/png); identificación: nombre exacto registrado: vía X
+- **Detalle:** Reemplazo verificado: válido (image/png); identificación: nombre/alias exacto registrado: vía X
 
 ### TNT Novelas
 
 ![Logo de TNT Novelas](https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/TNT_Novelas_2025.svg/1920px-TNT_Novelas_2025.svg.png)
 
 - **Estado:** logo añadido
-- **Identificación:** nombre exacto registrado: TNT Novelas
+- **Identificación:** nombre/alias exacto registrado: TNT Novelas
 - **Logo:** https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/TNT_Novelas_2025.svg/1920px-TNT_Novelas_2025.svg.png
-- **Detalle:** Reemplazo verificado: válido (image/png); identificación: nombre exacto registrado: TNT Novelas
-
-### bitme
-
-![Logo de bitme](https://i.imgur.com/79hrcx8.png)
-
-- **Estado:** logo añadido
-- **Identificación:** nombre exacto registrado: bitme
-- **Logo:** https://i.imgur.com/79hrcx8.png
-- **Detalle:** Reemplazo verificado: válido (image/png); identificación: nombre exacto registrado: bitme
-
-### telepacifico
-
-![Logo de telepacifico](https://i.imgur.com/39hy97J.png)
-
-- **Estado:** logo añadido
-- **Identificación:** nombre exacto registrado: telepacifico
-- **Logo:** https://i.imgur.com/39hy97J.png
-- **Detalle:** Reemplazo verificado: válido (image/png); identificación: nombre exacto registrado: telepacifico
-
-### Bitme
-
-![Logo de Bitme](https://i.imgur.com/79hrcx8.png)
-
-- **Estado:** logo añadido
-- **Identificación:** nombre exacto registrado: Bitme
-- **Logo:** https://i.imgur.com/79hrcx8.png
-- **Detalle:** Reemplazo verificado: válido (image/png); identificación: nombre exacto registrado: Bitme
-
-### BabyFirst
-
-![Logo de BabyFirst](https://i.imgur.com/WxLHBwu.png)
-
-- **Estado:** logo añadido
-- **Identificación:** nombre exacto registrado: BabyFirst
-- **Logo:** https://i.imgur.com/WxLHBwu.png
-- **Detalle:** Reemplazo verificado: válido (image/png); identificación: nombre exacto registrado: BabyFirst
+- **Detalle:** Reemplazo verificado: válido (image/png); identificación: nombre/alias exacto registrado: TNT Novelas
 
 ### Max anime
 
 ![Logo de Max anime](https://i.imgur.com/Oj3hEBh.jpg)
 
 - **Estado:** logo añadido
-- **Identificación:** nombre exacto registrado: Max anime
+- **Identificación:** nombre/alias exacto registrado: Max anime
 - **Logo:** https://i.imgur.com/Oj3hEBh.jpg
-- **Detalle:** Reemplazo verificado: válido (image/jpeg); identificación: nombre exacto registrado: Max anime
+- **Detalle:** Reemplazo verificado: válido (image/jpeg); identificación: nombre/alias exacto registrado: Max anime
+
+### tutv el salvador
+
+![Logo de tutv el salvador](https://i.imgur.com/fyCC8R6.png)
+
+- **Estado:** logo añadido
+- **Identificación:** similitud alta (90%) con nombre registrado 'tvm el salvador' a partir de 'tutv el salvador'
+- **Logo:** https://i.imgur.com/fyCC8R6.png
+- **Detalle:** Reemplazo verificado: válido (image/png); identificación: similitud alta (90%) con nombre registrado 'tvm el salvador' a partir de 'tutv el salvador'
 
 ### EnerGeek Fan:
 
 ![Logo de EnerGeek Fan:](https://cdn.energeek.cl/logos/EG-Fan-2025_pfp.png)
 
 - **Estado:** logo añadido
-- **Identificación:** nombre exacto registrado: EnerGeek Fan:
+- **Identificación:** nombre/alias exacto registrado: EnerGeek Fan:
 - **Logo:** https://cdn.energeek.cl/logos/EG-Fan-2025_pfp.png
-- **Detalle:** Reemplazo verificado: válido (image/png); identificación: nombre exacto registrado: EnerGeek Fan:
+- **Detalle:** Reemplazo verificado: válido (image/png); identificación: nombre/alias exacto registrado: EnerGeek Fan:
 
 ### Extrema Kids TV
 
 ![Logo de Extrema Kids TV](https://www.vivalivetv.com/public/files/shows/0/1/3027-294x165-FFFFFF.jpg)
 
 - **Estado:** logo añadido
-- **Identificación:** nombre exacto registrado: Extrema Kids TV
+- **Identificación:** nombre/alias exacto registrado: Extrema Kids TV
 - **Logo:** https://www.vivalivetv.com/public/files/shows/0/1/3027-294x165-FFFFFF.jpg
-- **Detalle:** Reemplazo verificado: válido (image/png); identificación: nombre exacto registrado: Extrema Kids TV
+- **Detalle:** Reemplazo verificado: válido (image/png); identificación: nombre/alias exacto registrado: Extrema Kids TV
 
 ## Logos funcionales conservados
 
 - **Estudio + TV HD** — ![Logo de Estudio + TV HD](https://carjocosa.space/studio/logo.png)
+- **Disney Jr . Latin America South [opc.2]** — ![Logo de Disney Jr . Latin America South [opc.2]](https://upload.wikimedia.org/wikipedia/commons/e/e3/2024_Disney_Jr._Logo.svg)
+- **Claro Sports 1 SD** — ![Logo de Claro Sports 1 SD](https://pbs.twimg.com/profile_images/412626363011457024/s87vGCpO_400x400.jpeg)
+- **Claro Sports 2 SD** — ![Logo de Claro Sports 2 SD](https://pbs.twimg.com/profile_images/412626363011457024/s87vGCpO_400x400.jpeg)
 - **Claro Cinema** — ![Logo de Claro Cinema](https://images.ctfassets.net/ack3kcrk3cz6/6UiRtTSHJVoMgRVFLdlND7/f043a423429dfae262daabbf115fa3be/41_ClaroCinema.png)
 
 ## Canales sin reparar
@@ -286,6 +201,16 @@
 ### RCN
 
 - **Motivo:** El nombre 'RCN' no coincide con ningún nombre único registrado; se dejó sin logo para evitar una asignación incorrecta.
+- **Logo actual:** No tenía logo
+
+### teleislas
+
+- **Motivo:** El nombre 'teleislas' no coincide con ningún nombre único registrado; se dejó sin logo para evitar una asignación incorrecta.
+- **Logo actual:** No tenía logo
+
+### citytv
+
+- **Motivo:** El nombre 'citytv' no coincide con ningún nombre único registrado; se dejó sin logo para evitar una asignación incorrecta.
 - **Logo actual:** No tenía logo
 
 ### rcnHD2
@@ -301,6 +226,11 @@
 ### Discovery turbo
 
 - **Motivo:** El nombre 'Discovery turbo' no coincide con ningún nombre único registrado; se dejó sin logo para evitar una asignación incorrecta.
+- **Logo actual:** No tenía logo
+
+### telepacifico
+
+- **Motivo:** El nombre 'telepacifico' no coincide con ningún nombre único registrado; se dejó sin logo para evitar una asignación incorrecta.
 - **Logo actual:** No tenía logo
 
 ### discovery hyh
@@ -348,11 +278,6 @@
 - **Motivo:** El nombre 'nacional geografy' no coincide con ningún nombre único registrado; se dejó sin logo para evitar una asignación incorrecta.
 - **Logo actual:** No tenía logo
 
-### claro musica
-
-- **Motivo:** El nombre 'claro musica' no coincide con ningún nombre único registrado; se dejó sin logo para evitar una asignación incorrecta.
-- **Logo actual:** No tenía logo
-
 ### RCN HD
 
 - **Motivo:** El nombre 'RCN HD' no coincide con ningún nombre único registrado; se dejó sin logo para evitar una asignación incorrecta.
@@ -361,6 +286,11 @@
 ### g
 
 - **Motivo:** Nombre 'g' demasiado corto o ambiguo; no coincide de forma segura con un canal. Se dejó sin logo.
+- **Logo actual:** No tenía logo
+
+### usa
+
+- **Motivo:** El nombre 'usa' no coincide con ningún nombre único registrado; se dejó sin logo para evitar una asignación incorrecta.
 - **Logo actual:** No tenía logo
 
 ### Cinemax
@@ -388,6 +318,11 @@
 - **Motivo:** El nombre 'wb TV' no coincide con ningún nombre único registrado; se dejó sin logo para evitar una asignación incorrecta.
 - **Logo actual:** No tenía logo
 
+### Golden
+
+- **Motivo:** El nombre 'Golden' no coincide con ningún nombre único registrado; se dejó sin logo para evitar una asignación incorrecta.
+- **Logo actual:** No tenía logo
+
 ### tlc
 
 - **Motivo:** El nombre 'tlc' no coincide con ningún nombre único registrado; se dejó sin logo para evitar una asignación incorrecta.
@@ -401,6 +336,11 @@
 ### HBO 2
 
 - **Motivo:** El nombre 'HBO 2' no coincide con ningún nombre único registrado; se dejó sin logo para evitar una asignación incorrecta.
+- **Logo actual:** No tenía logo
+
+### SPACE HD
+
+- **Motivo:** El nombre 'SPACE HD' no coincide con ningún nombre único registrado; se dejó sin logo para evitar una asignación incorrecta.
 - **Logo actual:** No tenía logo
 
 ### DISCOVERY EI
@@ -468,6 +408,11 @@
 - **Motivo:** Nombre 'g' demasiado corto o ambiguo; no coincide de forma segura con un canal. Se dejó sin logo.
 - **Logo actual:** No tenía logo
 
+### Teleantioquia
+
+- **Motivo:** El nombre 'Teleantioquia' no coincide con ningún nombre único registrado; se dejó sin logo para evitar una asignación incorrecta.
+- **Logo actual:** No tenía logo
+
 ### g
 
 - **Motivo:** Nombre 'g' demasiado corto o ambiguo; no coincide de forma segura con un canal. Se dejó sin logo.
@@ -521,6 +466,11 @@
 ### h
 
 - **Motivo:** Nombre 'h' demasiado corto o ambiguo; no coincide de forma segura con un canal. Se dejó sin logo.
+- **Logo actual:** No tenía logo
+
+### tooncast
+
+- **Motivo:** El nombre 'tooncast' no coincide con ningún nombre único registrado; se dejó sin logo para evitar una asignación incorrecta.
 - **Logo actual:** No tenía logo
 
 ### Nick jr
@@ -598,14 +548,34 @@
 - **Motivo:** Nombre 'g' demasiado corto o ambiguo; no coincide de forma segura con un canal. Se dejó sin logo.
 - **Logo actual:** No tenía logo
 
+### bitme
+
+- **Motivo:** El nombre 'bitme' no coincide con ningún nombre único registrado; se dejó sin logo para evitar una asignación incorrecta.
+- **Logo actual:** No tenía logo
+
 ### MiMusicaHits
 
 - **Motivo:** El nombre 'MiMusicaHits' no coincide con ningún nombre único registrado; se dejó sin logo para evitar una asignación incorrecta.
 - **Logo actual:** No tenía logo
 
+### telepacifico
+
+- **Motivo:** El nombre 'telepacifico' no coincide con ningún nombre único registrado; se dejó sin logo para evitar una asignación incorrecta.
+- **Logo actual:** No tenía logo
+
+### Bitme
+
+- **Motivo:** El nombre 'Bitme' no coincide con ningún nombre único registrado; se dejó sin logo para evitar una asignación incorrecta.
+- **Logo actual:** No tenía logo
+
 ### Win sport colombia
 
 - **Motivo:** El nombre 'Win sport colombia' no coincide con ningún nombre único registrado; se dejó sin logo para evitar una asignación incorrecta.
+- **Logo actual:** No tenía logo
+
+### BabyFirst
+
+- **Motivo:** El nombre 'BabyFirst' no coincide con ningún nombre único registrado; se dejó sin logo para evitar una asignación incorrecta.
 - **Logo actual:** No tenía logo
 
 ### Cartoon network
@@ -668,11 +638,6 @@
 - **Motivo:** El nombre 'Disney Channel SD (opc.7)' no coincide con ningún nombre único registrado; se dejó sin logo para evitar una asignación incorrecta.
 - **Logo actual:** https://1000logos.net/wp-content/uploads/2020/09/Disney-Channel-Logo.png
 
-### Disney Jr . Latin America South [opc.2]
-
-- **Motivo:** El nombre 'Disney Jr . Latin America South [opc.2]' no coincide con ningún nombre único registrado; se dejó sin logo para evitar una asignación incorrecta.
-- **Logo actual:** https://upload.wikimedia.org/wikipedia/commons/e/e3/2024_Disney_Jr._Logo.svg
-
 ### Disney.JR HD  problemas de buffer se queda mucho
 
 - **Motivo:** El nombre 'Disney.JR HD  problemas de buffer se queda mucho' no coincide con ningún nombre único registrado; se dejó sin logo para evitar una asignación incorrecta.
@@ -703,11 +668,6 @@
 - **Motivo:** El nombre 'adult swim HD' no coincide con ningún nombre único registrado; se dejó sin logo para evitar una asignación incorrecta.
 - **Logo actual:** https://logos-world.net/wp-content/uploads/2023/01/Adult-Swim-Logo.jpg
 
-### tutv el salvador
-
-- **Motivo:** El nombre 'tutv el salvador' no coincide con ningún nombre único registrado; se dejó sin logo para evitar una asignación incorrecta.
-- **Logo actual:** No tenía logo
-
 ### EnerGeek Retro (Chile):
 
 - **Motivo:** El nombre 'EnerGeek Retro (Chile):' no coincide con ningún nombre único registrado; se dejó sin logo para evitar una asignación incorrecta.
@@ -727,16 +687,6 @@
 
 - **Motivo:** El nombre 'MTV' no coincide con ningún nombre único registrado; se dejó sin logo para evitar una asignación incorrecta.
 - **Logo actual:** https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsi-NGZhblCE0Ll0cwiUyR6XY5SadlILuEEOtxG3EVdg&s=10
-
-### Claro Sports 1 SD
-
-- **Motivo:** El nombre 'Claro Sports 1 SD' no coincide con ningún nombre único registrado; se dejó sin logo para evitar una asignación incorrecta.
-- **Logo actual:** https://pbs.twimg.com/profile_images/412626363011457024/s87vGCpO_400x400.jpeg
-
-### Claro Sports 2 SD
-
-- **Motivo:** El nombre 'Claro Sports 2 SD' no coincide con ningún nombre único registrado; se dejó sin logo para evitar una asignación incorrecta.
-- **Logo actual:** https://pbs.twimg.com/profile_images/412626363011457024/s87vGCpO_400x400.jpeg
 
 ## Archivos generados
 

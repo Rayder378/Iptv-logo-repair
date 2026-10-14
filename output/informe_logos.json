@@ -2,9 +2,9 @@
   "archivo_entrada": "URL configurada en M3U_URL",
   "playlist_salida": "output/playlist_logos_reparados.m3u",
   "canales_analizados": 123,
-  "logos_conservados": 2,
-  "logos_reparados_o_agregados": 29,
-  "sin_reparar": 92,
+  "logos_conservados": 5,
+  "logos_reparados_o_agregados": 19,
+  "sin_reparar": 99,
   "catalogo_canales": 31570,
   "catalogo_feeds": 45168,
   "catalogo_logos": 35281
