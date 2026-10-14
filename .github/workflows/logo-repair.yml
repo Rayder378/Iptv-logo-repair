@@ -1,11 +1,11 @@
-
 name: Reparar logos IPTV
 
 on:
   workflow_dispatch:
   push:
     paths:
-      - "playlist.m3u"
+      - "*.m3u"
+      - "*.m3u8"
       - "logo_repair.py"
       - ".github/workflows/logo-repair.yml"
   schedule:
@@ -33,19 +33,19 @@ jobs:
           python-version: "3.12"
 
       - name: Ejecutar reparación de logos
+        env:
+          M3U_URL: ${{ secrets.M3U_URL }}
+          PLAYLIST_FILE: ${{ vars.PLAYLIST_FILE }}
         run: python logo_repair.py
 
       - name: Guardar playlist e informes generados
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-
-          git add output/playlist_logos_reparados.m3u output/informe_logos.csv output/informe_logos.json
-
+          git add output/playlist_logos_reparados.m3u output/informe_logos.csv output/informe_logos.json output/report.md
           if git diff --cached --quiet; then
             echo "No hay cambios nuevos para guardar."
           else
             git commit -m "Actualizar playlist e informes de logos"
             git push
           fi
-          
