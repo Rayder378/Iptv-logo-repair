@@ -3,7 +3,6 @@
 """Revisa logos de una playlist M3U y repara los que se confirman rotos."""
 
 import csv
-import difflib
 import json
 import os
 import re
@@ -50,8 +49,6 @@ def norm(value):
     value = "".join(c for c in value if not unicodedata.combining(c))
     value = value.replace("&", " and ")
     value = re.sub(r"\b(hd|uhd|fhd|4k|sd|1080p|720p)\b", " ", value)
-    # Sufijos de opciones se ignoran solo para buscar; el nombre visible no cambia.
-    value = re.sub(r"\s*[\[(]\s*(?:opc(?:ion)?|op)\.?\s*\d+\s*[\])]\s*$", " ", value)
     value = re.sub(r"[^a-z0-9]+", " ", value)
     return " ".join(value.split())
 
@@ -76,17 +73,11 @@ def attrs(header):
 
 def set_attr(header, key, value):
     value = str(value).replace('"', "&quot;")
-    pattern = re.compile(r'(?<!\S)' + re.escape(key) + r'="[^\"]*"')
+    pattern = re.compile(r'(?<!\S)' + re.escape(key) + r'="[^"]*"')
     replacement = f'{key}="{value}"'
     if pattern.search(header):
         return pattern.sub(lambda _: replacement, header, count=1)
     return header.rstrip() + " " + replacement
-
-
-def remove_attr(header, key):
-    """Elimina un atributo M3U, por ejemplo un logo no fiable."""
-    pattern = re.compile(r'(?<!\S)' + re.escape(key) + r'="[^\"]*"')
-    return re.sub(r'\s+', ' ', pattern.sub('', header)).strip()
 
 
 def image_signature(data):
@@ -164,91 +155,35 @@ def unique_channel(candidates):
 
 
 def identify_channel(display_name, attributes, channel_by_id,
-                      channel_name_index, feed_name_index):
-    """Identifica por nombre/alias exacto o por similitud conservadora.
+                     channel_name_index, feed_name_index):
+    tvg_id = (attributes.get("tvg-id") or "").strip()
+    if tvg_id in channel_by_id:
+        return channel_by_id[tvg_id], "", "tvg-id exacto"
 
-    Los sufijos de opciones y calidad se eliminan únicamente para buscar.
-    Nunca se cambia el nombre visible ni otros atributos de la playlist.
-    """
-    raw_candidates = [display_name, attributes.get("tvg-name", "")]
-    checked = set()
-    search_names = []
-    for candidate_name in raw_candidates:
-        key = norm(candidate_name)
-        if not key or key in checked:
-            continue
-        checked.add(key)
-        if len(key.replace(" ", "")) < 4 or len(key.split()) < 2:
-            continue
-        search_names.append((candidate_name.strip(), key))
+    key = norm(display_name)
+    channel = unique_channel(channel_name_index.get(key, []))
+    if channel:
+        return channel, "", "nombre exacto"
 
-    for candidate_name, key in search_names:
-        channel = unique_channel(channel_name_index.get(key, []))
-        if channel:
-            return channel, "", f"nombre/alias exacto registrado: {candidate_name}"
+    feed_candidates = feed_name_index.get(key, [])
+    feed_ids = {
+        str(feed.get("channel") or "")
+        for feed in feed_candidates
+        if str(feed.get("channel") or "") in channel_by_id
+    }
+    if len(feed_ids) == 1:
+        channel_id = next(iter(feed_ids))
+        matched_feeds = [
+            feed for feed in feed_candidates
+            if str(feed.get("channel") or "") == channel_id
+        ]
+        feed_id = (
+            str(matched_feeds[0].get("id") or "")
+            if len(matched_feeds) == 1 else ""
+        )
+        return channel_by_id[channel_id], feed_id, "nombre exacto de feed"
 
-        feed_candidates = feed_name_index.get(key, [])
-        feed_ids = {
-            str(feed.get("channel") or "")
-            for feed in feed_candidates
-            if str(feed.get("channel") or "") in channel_by_id
-        }
-        if len(feed_ids) == 1:
-            channel_id = next(iter(feed_ids))
-            matched_feeds = [
-                feed for feed in feed_candidates
-                if str(feed.get("channel") or "") == channel_id
-            ]
-            feed_id = (
-                str(matched_feeds[0].get("id") or "")
-                if len(matched_feeds) == 1 else ""
-            )
-            return channel_by_id[channel_id], feed_id, f"feed exacto registrado: {candidate_name}"
-
-    # Tolera errores de escritura menores, pero solo acepta una identidad clara.
-    catalog = []
-    for key, candidates in channel_name_index.items():
-        for channel in candidates:
-            channel_id = str(channel.get("id") or "")
-            if channel_id:
-                catalog.append((key, channel_id, channel, ""))
-    for key, feeds in feed_name_index.items():
-        for feed in feeds:
-            channel_id = str(feed.get("channel") or "")
-            if channel_id in channel_by_id:
-                catalog.append((key, channel_id, channel_by_id[channel_id],
-                                str(feed.get("id") or "")))
-
-    for candidate_name, key in search_names:
-        scored = {}
-        for catalog_key, channel_id, channel, feed_id in catalog:
-            ratio = difflib.SequenceMatcher(None, key, catalog_key).ratio()
-            words_ratio = difflib.SequenceMatcher(
-                None, " ".join(sorted(key.split())),
-                " ".join(sorted(catalog_key.split()))
-            ).ratio()
-            score = max(ratio, words_ratio)
-            if score >= 0.86:
-                previous = scored.get(channel_id)
-                if previous is None or score > previous[0]:
-                    scored[channel_id] = (score, channel, feed_id, catalog_key)
-
-        ranked = sorted(scored.items(), key=lambda pair: pair[1][0], reverse=True)
-        if ranked:
-            _, best = ranked[0]
-            second_score = ranked[1][1][0] if len(ranked) > 1 else 0
-            if best[0] >= 0.86 and (best[0] - second_score >= 0.06 or len(ranked) == 1):
-                return best[1], best[2], (
-                    f"similitud alta ({best[0]:.0%}) con nombre registrado "
-                    f"'{best[3]}' a partir de '{candidate_name}'"
-                )
-
-    if not display_name.strip():
-        return None, "", "nombre vacío"
-    normalized = norm(display_name)
-    if len(normalized.replace(" ", "")) < 4 or len(normalized.split()) < 2:
-        return None, "", "nombre demasiado corto o ambiguo"
-    return None, "", "no se encontró una coincidencia exacta ni una similitud suficientemente fiable"
+    return None, "", "sin coincidencia inequívoca"
 
 
 def candidate_logos(channel_id, feed_id, logos):
@@ -363,25 +298,8 @@ def main():
         chosen_logo = current_logo
         status = "sin cambios"
         detail = ""
-        current_ok = False
-        current_result = "No se verificó el logo actual"
 
-        # Si el nombre no identifica inequívocamente un canal, no conservar ni
-        # añadir logo: incluso una URL accesible podría ser el logo equivocado.
-        if not channel:
-            chosen_logo = ""
-            header = remove_attr(header, "tvg-logo")
-            unresolved += 1
-            status = "no reparado"
-            if not display_name.strip():
-                detail = "Canal sin nombre: no se asignó logo porque no se puede identificar."
-            elif len(norm(display_name).replace(" ", "")) < 3:
-                detail = f"Nombre '{display_name}' demasiado corto o ambiguo; no coincide de forma segura con un canal. Se dejó sin logo."
-            else:
-                tvg_name = original_attrs.get("tvg-name", "").strip()
-                extra = f" Se comprobó también tvg-name='{tvg_name}', sin coincidencia exacta registrada." if tvg_name else ""
-                detail = f"El nombre '{display_name}' no coincide con ningún nombre único registrado; se dejó sin logo para evitar una asignación incorrecta.{extra}"
-        elif current_logo:
+        if current_logo:
             current_ok, current_result = verify_logo(current_logo)
         else:
             current_ok, current_result = False, "No tiene tvg-logo"
@@ -418,6 +336,13 @@ def main():
                     "No se encontró logo API verificable. "
                     + last_candidate_result
                 )
+        else:
+            unresolved += 1
+            status = "no reparado"
+            detail = (
+                f"{current_result}; no se identificó el canal de forma "
+                "inequívoca, por seguridad no se adivinó el logo."
+            )
 
         out_lines.append("#EXTINF:" + header + "," + display_name)
         rows.append({
@@ -477,8 +402,6 @@ def main():
         "",
         "> La verificación confirma que la URL entrega un archivo con firma de imagen; no garantiza por sí sola que el logo represente visualmente el canal correcto.",
         "",
-        "[Logos reparados o añadidos](#logos-reparados-o-añadidos) · [Logos funcionales conservados](#logos-funcionales-conservados) · [Canales sin reparar](#canales-sin-reparar)",
-        "",
         "## Logos reparados o añadidos",
         "",
     ]
@@ -486,7 +409,7 @@ def main():
     if repaired_rows:
         for row in repaired_rows:
             report_lines.extend([
-                f"### {md_escape(row['canal']) if row['canal'].strip() else '(sin nombre)' }",
+                f"### {md_escape(row['canal'])}",
                 "",
                 f"![Logo de {md_escape(row['canal'])}]({row['logo_final']})" if row["logo_final"] else "_No hay URL de imagen para mostrar._",
                 "",
@@ -503,7 +426,7 @@ def main():
     if preserved_rows:
         for row in preserved_rows:
             report_lines.append(
-                f"- **{md_escape(row['canal']) if row['canal'].strip() else '(sin nombre)'}** — "
+                f"- **{md_escape(row['canal'])}** — "
                 f"![Logo de {md_escape(row['canal'])}]({row['logo_final']})"
                 if row["logo_final"] else f"- **{md_escape(row['canal'])}** — conservado"
             )
@@ -513,7 +436,7 @@ def main():
     if unresolved_rows:
         for row in unresolved_rows:
             report_lines.extend([
-                f"### {md_escape(row['canal']) if row['canal'].strip() else '(sin nombre)' }",
+                f"### {md_escape(row['canal'])}",
                 "",
                 f"- **Motivo:** {md_escape(row['detalle'])}",
                 f"- **Logo actual:** {md_escape(row['logo_original']) or 'No tenía logo'}",
