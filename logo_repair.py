@@ -3,6 +3,7 @@
 """Revisa logos de una playlist M3U y repara los que se confirman rotos."""
 
 import csv
+import difflib
 import json
 import os
 import re
@@ -49,6 +50,8 @@ def norm(value):
     value = "".join(c for c in value if not unicodedata.combining(c))
     value = value.replace("&", " and ")
     value = re.sub(r"\b(hd|uhd|fhd|4k|sd|1080p|720p)\b", " ", value)
+    # Sufijos de opciones se ignoran solo para buscar; el nombre visible no cambia.
+    value = re.sub(r"\s*[\[(]\s*(?:opc(?:ion)?|op)\.?\s*\d+\s*[\])]\s*$", " ", value)
     value = re.sub(r"[^a-z0-9]+", " ", value)
     return " ".join(value.split())
 
@@ -161,25 +164,28 @@ def unique_channel(candidates):
 
 
 def identify_channel(display_name, attributes, channel_by_id,
-                     channel_name_index, feed_name_index):
-    """Identifica por nombre exacto registrado; prueba también tvg-name.
+                      channel_name_index, feed_name_index):
+    """Identifica por nombre/alias exacto o por similitud conservadora.
 
-    No adivina coincidencias parciales. Nombres vacíos o demasiado cortos se
-    rechazan. Se permiten variantes exactas registradas en alt_names y feeds.
+    Los sufijos de opciones y calidad se eliminan únicamente para buscar.
+    Nunca se cambia el nombre visible ni otros atributos de la playlist.
     """
-    names_to_check = [display_name, attributes.get("tvg-name", "")]
+    raw_candidates = [display_name, attributes.get("tvg-name", "")]
     checked = set()
-    for candidate_name in names_to_check:
+    search_names = []
+    for candidate_name in raw_candidates:
         key = norm(candidate_name)
         if not key or key in checked:
             continue
         checked.add(key)
-        if len(key.replace(" ", "")) < 3:
+        if len(key.replace(" ", "")) < 4 or len(key.split()) < 2:
             continue
+        search_names.append((candidate_name.strip(), key))
 
+    for candidate_name, key in search_names:
         channel = unique_channel(channel_name_index.get(key, []))
         if channel:
-            return channel, "", f"nombre exacto registrado: {candidate_name.strip()}"
+            return channel, "", f"nombre/alias exacto registrado: {candidate_name}"
 
         feed_candidates = feed_name_index.get(key, [])
         feed_ids = {
@@ -197,13 +203,52 @@ def identify_channel(display_name, attributes, channel_by_id,
                 str(matched_feeds[0].get("id") or "")
                 if len(matched_feeds) == 1 else ""
             )
-            return channel_by_id[channel_id], feed_id, f"feed exacto registrado: {candidate_name.strip()}"
+            return channel_by_id[channel_id], feed_id, f"feed exacto registrado: {candidate_name}"
+
+    # Tolera errores de escritura menores, pero solo acepta una identidad clara.
+    catalog = []
+    for key, candidates in channel_name_index.items():
+        for channel in candidates:
+            channel_id = str(channel.get("id") or "")
+            if channel_id:
+                catalog.append((key, channel_id, channel, ""))
+    for key, feeds in feed_name_index.items():
+        for feed in feeds:
+            channel_id = str(feed.get("channel") or "")
+            if channel_id in channel_by_id:
+                catalog.append((key, channel_id, channel_by_id[channel_id],
+                                str(feed.get("id") or "")))
+
+    for candidate_name, key in search_names:
+        scored = {}
+        for catalog_key, channel_id, channel, feed_id in catalog:
+            ratio = difflib.SequenceMatcher(None, key, catalog_key).ratio()
+            words_ratio = difflib.SequenceMatcher(
+                None, " ".join(sorted(key.split())),
+                " ".join(sorted(catalog_key.split()))
+            ).ratio()
+            score = max(ratio, words_ratio)
+            if score >= 0.86:
+                previous = scored.get(channel_id)
+                if previous is None or score > previous[0]:
+                    scored[channel_id] = (score, channel, feed_id, catalog_key)
+
+        ranked = sorted(scored.items(), key=lambda pair: pair[1][0], reverse=True)
+        if ranked:
+            _, best = ranked[0]
+            second_score = ranked[1][1][0] if len(ranked) > 1 else 0
+            if best[0] >= 0.86 and (best[0] - second_score >= 0.06 or len(ranked) == 1):
+                return best[1], best[2], (
+                    f"similitud alta ({best[0]:.0%}) con nombre registrado "
+                    f"'{best[3]}' a partir de '{candidate_name}'"
+                )
 
     if not display_name.strip():
         return None, "", "nombre vacío"
-    if len(norm(display_name).replace(" ", "")) < 3:
+    normalized = norm(display_name)
+    if len(normalized.replace(" ", "")) < 4 or len(normalized.split()) < 2:
         return None, "", "nombre demasiado corto o ambiguo"
-    return None, "", "el nombre no está registrado de forma inequívoca en el catálogo ni en tvg-name"
+    return None, "", "no se encontró una coincidencia exacta ni una similitud suficientemente fiable"
 
 
 def candidate_logos(channel_id, feed_id, logos):
@@ -431,6 +476,8 @@ def main():
         f"- **Canales sin reparar:** {unresolved}",
         "",
         "> La verificación confirma que la URL entrega un archivo con firma de imagen; no garantiza por sí sola que el logo represente visualmente el canal correcto.",
+        "",
+        "[Logos reparados o añadidos](#logos-reparados-o-añadidos) · [Logos funcionales conservados](#logos-funcionales-conservados) · [Canales sin reparar](#canales-sin-reparar)",
         "",
         "## Logos reparados o añadidos",
         "",
