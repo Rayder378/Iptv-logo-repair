@@ -1,0 +1,92 @@
+name: Gestionar logo manualmente
+
+on:
+  workflow_dispatch:
+    inputs:
+      channel_name:
+        description: "Nombre exacto del canal tal como aparece en la playlist"
+        required: true
+        type: string
+      action:
+        description: "Quitar el logo o asignar una URL manual"
+        required: true
+        type: choice
+        options:
+          - quitar
+          - url_manual
+      logo_url:
+        description: "URL HTTP/HTTPS de imagen (solo si elegiste url_manual)"
+        required: false
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: logo-manual-${{ inputs.channel_name }}
+  cancel-in-progress: false
+
+jobs:
+  update:
+    # GitHub solo permite ejecutar workflow_dispatch a usuarios con permisos de escritura.
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descargar repositorio
+        uses: actions/checkout@v4
+
+      - name: Guardar corrección manual
+        env:
+          CHANNEL_NAME: ${{ inputs.channel_name }}
+          ACTION: ${{ inputs.action }}
+          LOGO_URL: ${{ inputs.logo_url }}
+        run: |
+          python - <<'PY'
+          import json, os, re
+          from pathlib import Path
+          name = os.environ["CHANNEL_NAME"].strip()
+          action = os.environ["ACTION"]
+          url = os.environ.get("LOGO_URL", "").strip()
+          if not name:
+              raise SystemExit("El nombre del canal no puede estar vacío.")
+          overrides_file = Path("logo_overrides.json")
+          try:
+              overrides = json.loads(overrides_file.read_text(encoding="utf-8")) if overrides_file.exists() else {}
+          except Exception:
+              raise SystemExit("logo_overrides.json no contiene JSON válido; no se modificó.")
+          if not isinstance(overrides, dict):
+              raise SystemExit("logo_overrides.json debe ser un objeto JSON.")
+          if action == "quitar":
+              overrides[name] = None
+          elif action == "url_manual":
+              if not re.match(r"^https?://", url, re.I):
+                  raise SystemExit("Para URL manual debes introducir una URL HTTP/HTTPS.")
+              overrides[name] = url
+          else:
+              raise SystemExit("Acción no reconocida.")
+          overrides_file.write_text(json.dumps(overrides, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+          print(f"Corrección guardada para: {name} ({action}).")
+          PY
+
+      - name: Confirmar corrección en Git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add logo_overrides.json
+          git commit -m "Gestionar logo manualmente"
+          git push
+
+      - name: Ejecutar reparación para aplicar el cambio
+        env:
+          M3U_URL: ${{ secrets.M3U_URL }}
+          PLAYLIST_FILE: ${{ vars.PLAYLIST_FILE }}
+        run: python logo_repair.py
+
+      - name: Guardar playlist e informes
+        run: |
+          git add output/playlist_logos_reparados.m3u output/informe_logos.csv output/informe_logos.json output/report.md
+          if git diff --cached --quiet; then
+            echo "La playlist y los informes ya estaban actualizados."
+          else
+            git commit -m "Aplicar corrección manual de logo"
+            git push
+          fi
