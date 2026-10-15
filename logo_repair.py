@@ -233,8 +233,32 @@ def context_score(channel, country, category):
     return score
 
 
+def build_fuzzy_catalog(channel_name_index, feed_name_index):
+    """Construye una vez un catálogo deduplicado para búsqueda aproximada."""
+    catalog = {}
+    for key, candidates in channel_name_index.items():
+        for channel in candidates:
+            channel_id = str(channel.get("id") or "")
+            if channel_id:
+                catalog[(key, channel_id, "")] = (key, channel_id, channel, "")
+    for key, feeds in feed_name_index.items():
+        for feed in feeds:
+            channel_id = str(feed.get("channel") or "")
+            if channel_id:
+                feed_id = str(feed.get("id") or "")
+                catalog[(key, channel_id, feed_id)] = (
+                    key, channel_id, {"id": channel_id}, feed_id
+                )
+    buckets = defaultdict(list)
+    for item in catalog.values():
+        key = item[0]
+        # Primer carácter y longitud aproximada reducen comparaciones inútiles.
+        buckets[(key[:1], len(key.split()))].append(item)
+    return buckets
+
+
 def identify_channel(display_name, attributes, channel_by_id,
-                      channel_name_index, feed_name_index):
+                      channel_name_index, feed_name_index, fuzzy_catalog=None):
     """Identifica por nombre/alias exacto o por similitud conservadora.
 
     Los sufijos de opciones y calidad se eliminan únicamente para buscar.
@@ -279,23 +303,32 @@ def identify_channel(display_name, attributes, channel_by_id,
             )
             return channel_by_id[channel_id], feed_id, f"feed exacto registrado: {candidate_name}"
 
-    # Tolera errores de escritura menores, pero solo acepta una identidad clara.
-    catalog = []
-    for key, candidates in channel_name_index.items():
-        for channel in candidates:
-            channel_id = str(channel.get("id") or "")
-            if channel_id:
-                catalog.append((key, channel_id, channel, ""))
-    for key, feeds in feed_name_index.items():
-        for feed in feeds:
-            channel_id = str(feed.get("channel") or "")
-            if channel_id in channel_by_id:
-                catalog.append((key, channel_id, channel_by_id[channel_id],
-                                str(feed.get("id") or "")))
+    # Tolera errores menores usando un índice precalculado, no reconstruye
+    # ni recorre todo el catálogo completo para cada canal de la playlist.
+    if fuzzy_catalog is None:
+        fuzzy_catalog = build_fuzzy_catalog(channel_name_index, feed_name_index)
 
     for candidate_name, key in search_names:
         scored = {}
-        for catalog_key, channel_id, channel, feed_id in catalog:
+        possible = []
+        words = len(key.split())
+        for length_bucket in (words - 1, words, words + 1):
+            if length_bucket < 1:
+                continue
+            possible.extend(fuzzy_catalog.get((key[:1], length_bucket), []))
+        # Si el primer carácter difiere por un error de escritura, ampliar solo
+        # a nombres de longitud parecida; sigue siendo mucho menor que el catálogo.
+        if not possible:
+            for (first, count), bucket in fuzzy_catalog.items():
+                if abs(count - words) <= 1:
+                    possible.extend(bucket)
+        seen_catalog = set()
+        for catalog_key, channel_id, channel_stub, feed_id in possible:
+            dedupe_key = (catalog_key, channel_id, feed_id)
+            if dedupe_key in seen_catalog:
+                continue
+            seen_catalog.add(dedupe_key)
+            channel = channel_by_id.get(channel_id, channel_stub)
             ratio = difflib.SequenceMatcher(None, key, catalog_key).ratio()
             words_ratio = difflib.SequenceMatcher(
                 None, " ".join(sorted(key.split())),
@@ -523,6 +556,8 @@ def main():
     channel_by_id, channel_name_index, feed_name_index = build_indexes(
         channels, feeds
     )
+    fuzzy_catalog = build_fuzzy_catalog(channel_name_index, feed_name_index)
+    print(f"Índice de búsqueda aproximada preparado: {sum(len(v) for v in fuzzy_catalog.values()):,} registros.")
 
     # Overrides manuales gestionados únicamente por el workflow de GitHub Actions.
     overrides_path = root / "logo_overrides.json"
@@ -559,6 +594,25 @@ def main():
             if index % 100 == 0 or index == len(unique_urls):
                 print(f"Progreso logos actuales/manuales: {index}/{len(unique_urls)} URLs")
 
+    # Reúne logos funcionales de variantes antes de procesar la lista, para que
+    # una variante que aparece más tarde también pueda ayudar al canal original.
+    reusable_logo_by_name = {}
+    for source_line in lines:
+        if not source_line.strip().startswith("#EXTINF:"):
+            continue
+        source_header, source_name = split_extinf(source_line.strip())
+        source_attrs = attrs(source_header)
+        source_logo = source_attrs.get("tvg-logo", "").strip()
+        source_override = overrides.get(source_name, "__NO_OVERRIDE__")
+        if source_override is None or source_override == "":
+            continue
+        candidate_logo = source_override if isinstance(source_override, str) and source_override.startswith(("http://", "https://")) else source_logo
+        if candidate_logo and verify_logo(candidate_logo)[0]:
+            for possible_name in (source_name, source_attrs.get("tvg-name", "")):
+                key = norm(possible_name)
+                if key:
+                    reusable_logo_by_name.setdefault(key, candidate_logo)
+
     out_lines = []
     rows = []
     total = preserved = repaired = unresolved = 0
@@ -581,6 +635,7 @@ def main():
             channel_by_id,
             channel_name_index,
             feed_name_index,
+            fuzzy_catalog,
         )
 
         chosen_logo = current_logo
@@ -600,6 +655,20 @@ def main():
             preserved += 1
             status = "conservado"
             detail = f"Logo actual funcional: {current_result}"
+        else:
+            reuse_key = norm(display_name)
+            reusable_logo = reusable_logo_by_name.get(reuse_key)
+            if not reusable_logo:
+                reusable_logo = reusable_logo_by_name.get(norm(original_attrs.get("tvg-name", "")))
+            if reusable_logo and reusable_logo != current_logo:
+                chosen_logo = reusable_logo
+                header = set_attr(header, "tvg-logo", reusable_logo)
+                repaired += 1
+                status = "logo reutilizado de variante"
+                detail = "Se reutilizó un logo previamente verificado de una entrada con el mismo nombre normalizado (misma identidad de canal)."
+                current_ok = True
+        if status == "conservado" or status == "logo reutilizado de variante":
+            pass
         elif channel:
 
             channel_id = str(channel.get("id") or "")
