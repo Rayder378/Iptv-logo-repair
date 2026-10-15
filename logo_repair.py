@@ -3,6 +3,7 @@
 """Revisa logos de una playlist M3U y repara los que se confirman rotos."""
 
 import csv
+from datetime import datetime, timezone, timedelta
 import concurrent.futures
 from functools import lru_cache
 import difflib
@@ -112,6 +113,53 @@ def image_signature(data):
         return "image/svg+xml"
     return ""
 
+
+# Cache persistente: solo se confían resultados positivos recientes. Los errores
+# se vuelven a comprobar para no confundir fallos temporales con logos rotos.
+PERSISTENT_LOGO_DIR = Path(__file__).resolve().parent / "url logos"
+PERSISTENT_CACHE_PATH = PERSISTENT_LOGO_DIR / "catalogo_urls.json"
+PERSISTENT_CHANNELS_PATH = PERSISTENT_LOGO_DIR / "canales.json"
+CACHE_MAX_AGE = timedelta(days=7)
+_persistent_cache = {}
+
+def load_persistent_cache():
+    global _persistent_cache
+    PERSISTENT_LOGO_DIR.mkdir(parents=True, exist_ok=True)
+    try:
+        data = json.loads(PERSISTENT_CACHE_PATH.read_text(encoding="utf-8"))
+        _persistent_cache = data if isinstance(data, dict) else {}
+    except (OSError, ValueError):
+        _persistent_cache = {}
+
+def persistent_verify_logo(url):
+    if not url:
+        return verify_logo(url)
+    now = datetime.now(timezone.utc)
+    item = _persistent_cache.get(url)
+    if isinstance(item, dict) and item.get("ok") is True:
+        try:
+            checked = datetime.fromisoformat(item.get("checked_at", "").replace("Z", "+00:00"))
+            if now - checked < CACHE_MAX_AGE:
+                return True, item.get("result", "válido (caché persistente)") + " [caché persistente]"
+        except (TypeError, ValueError):
+            pass
+    ok, result = verify_logo(url)
+    _persistent_cache[url] = {
+        "ok": bool(ok), "result": result, "checked_at": now.isoformat(),
+        "next_check_after_days": 7,
+    }
+    return ok, result
+
+def save_persistent_cache(channel_rows=None):
+    PERSISTENT_LOGO_DIR.mkdir(parents=True, exist_ok=True)
+    PERSISTENT_CACHE_PATH.write_text(
+        json.dumps(_persistent_cache, ensure_ascii=False, indent=2, sort_keys=True),
+        encoding="utf-8",
+    )
+    if channel_rows is not None:
+        PERSISTENT_CHANNELS_PATH.write_text(
+            json.dumps(channel_rows, ensure_ascii=False, indent=2), encoding="utf-8"
+        )
 
 @lru_cache(maxsize=50000)
 def verify_logo(url):
@@ -532,6 +580,8 @@ def choose_input(root):
 
 def main():
     root = Path(__file__).resolve().parent
+    load_persistent_cache()
+    print(f"Base persistente de logos: {PERSISTENT_LOGO_DIR} ({len(_persistent_cache):,} URLs guardadas)")
     playlist_text, input_label = choose_input(root)
 
     lines = playlist_text.splitlines()
@@ -592,7 +642,8 @@ def main():
     with concurrent.futures.ThreadPoolExecutor(max_workers=VERIFY_WORKERS) as pool:
         for index, _ in enumerate(pool.map(verify_logo, unique_urls), start=1):
             if index % 100 == 0 or index == len(unique_urls):
-                print(f"Progreso logos actuales/manuales: {index}/{len(unique_urls)} URLs")
+                save_persistent_cache()
+                print(f"Progreso logos actuales/manuales: {index}/{len(unique_urls)} URLs; caché guardada")
 
     # Reúne logos funcionales de variantes antes de procesar la lista, para que
     # una variante que aparece más tarde también pueda ayudar al canal original.
@@ -607,7 +658,7 @@ def main():
         if source_override is None or source_override == "":
             continue
         candidate_logo = source_override if isinstance(source_override, str) and source_override.startswith(("http://", "https://")) else source_logo
-        if candidate_logo and verify_logo(candidate_logo)[0]:
+        if candidate_logo and persistent_verify_logo(candidate_logo)[0]:
             for possible_name in (source_name, source_attrs.get("tvg-name", "")):
                 key = norm(possible_name)
                 if key:
@@ -647,7 +698,7 @@ def main():
         # Primero se valida el logo existente, aunque el canal no se identifique.
         # Nunca se elimina un logo funcional solo porque el catálogo no reconozca el nombre.
         if current_logo:
-            current_ok, current_result = verify_logo(current_logo)
+            current_ok, current_result = persistent_verify_logo(current_logo)
         else:
             current_ok, current_result = False, "No tiene tvg-logo"
 
@@ -677,7 +728,7 @@ def main():
 
             for candidate in candidate_logos(channel_id, feed_id, logos):
                 candidate_url = str(candidate.get("url") or "")
-                valid, result = verify_logo(candidate_url)
+                valid, result = persistent_verify_logo(candidate_url)
                 if valid:
                     replacement = candidate_url
                     last_candidate_result = f"iptv-org: reemplazo verificado: {result}"
@@ -689,7 +740,7 @@ def main():
                     display_name, original_attrs.get("tvg-name", ""),
                     jaruba_logos, yasser_logos
                 ):
-                    valid, result = verify_logo(candidate_url)
+                    valid, result = persistent_verify_logo(candidate_url)
                     if valid:
                         replacement = candidate_url
                         last_candidate_result = f"{candidate_reason}; imagen verificada: {result}"
@@ -732,7 +783,7 @@ def main():
                 status = "logo quitado manualmente"
                 detail = "Un administrador/colaborador quitó el logo mediante el workflow autorizado."
             elif isinstance(manual_value, str):
-                valid_manual, manual_result = verify_logo(manual_value)
+                valid_manual, manual_result = persistent_verify_logo(manual_value)
                 if valid_manual:
                     header = set_attr(header, "tvg-logo", manual_value)
                     chosen_logo = manual_value
@@ -765,6 +816,23 @@ def main():
             "detalle": detail,
         })
 
+    # Persistir el inventario por entrada, manteniendo cada variante independiente.
+    channel_database = []
+    for source_line in lines:
+        if not source_line.strip().startswith("#EXTINF:"):
+            continue
+        db_header, db_name = split_extinf(source_line.strip())
+        db_attrs = attrs(db_header)
+        logo_url = db_attrs.get("tvg-logo", "").strip()
+        channel_database.append({
+            "canal": db_name, "tvg_name": db_attrs.get("tvg-name", ""),
+            "grupo": db_attrs.get("group-title", ""), "tvg_id": db_attrs.get("tvg-id", ""),
+            "logo_url": logo_url, "url_status": _persistent_cache.get(logo_url, {}).get("result", "sin verificar"),
+            "checked_at": _persistent_cache.get(logo_url, {}).get("checked_at", ""),
+        })
+    save_persistent_cache(channel_database)
+    print(f"Base persistente guardada: {len(_persistent_cache):,} URLs; {len(channel_database):,} entradas de canal.")
+
     output_path.write_text(
         "\n".join(out_lines).rstrip() + "\n", encoding="utf-8"
     )
@@ -793,6 +861,10 @@ def main():
         "estado_fuentes_secundarias": extra_sources,
         "catalogo_jaruba_nombres": len(jaruba_logos),
         "catalogo_yasserstudio_nombres": len(yasser_logos),
+        "base_urls_persistente": str(PERSISTENT_CACHE_PATH.relative_to(root)),
+        "urls_en_base_persistente": len(_persistent_cache),
+        "entradas_en_base_canales": len(channel_database),
+        "verificacion_periodica_dias": 7,
     }
     summary_path.write_text(
         json.dumps(summary, ensure_ascii=False, indent=2), encoding="utf-8"
@@ -818,6 +890,8 @@ def main():
 
     report_lines = [
         "# Informe de reparación de logos IPTV",
+        "",
+        f"- **Base persistente:** `{PERSISTENT_CACHE_PATH.relative_to(root)}` ({len(_persistent_cache)} URLs; revalidación positiva cada 7 días)",
         "",
         f"- **Entrada:** {md_escape(input_label)}",
         f"- **Canales analizados:** {total}",

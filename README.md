@@ -36,6 +36,15 @@ El script consulta estas fuentes públicas:
 
 Si una fuente secundaria no responde o cambia su formato, el script registra el estado y continúa con las demás. Los candidatos secundarios se verifican descargando la imagen y comprobando su firma. Las coincidencias aproximadas son deliberadamente estrictas para reducir asignaciones equivocadas; si no hay identidad fiable, el canal queda pendiente. Una respuesta válida de imagen tampoco garantiza por sí sola que el dibujo sea el logo correcto.
 
+## Base de datos persistente de logos
+
+El script crea y mantiene la carpeta `url logos/` en el repositorio:
+
+- `catalogo_urls.json`: URL única, resultado de la comprobación y fecha. Los resultados positivos se reutilizan durante 7 días; los resultados negativos se vuelven a comprobar para evitar confundir fallos temporales con logos rotos.
+- `canales.json`: inventario de cada entrada de la M3U, con nombre, `tvg-name`, grupo, `tvg-id`, URL de logo y último estado conocido. Las variantes se conservan como entradas separadas.
+
+El workflow programado se ejecuta semanalmente (lunes). También se puede lanzar manualmente desde GitHub Actions. La base se guarda mediante commit para que sobreviva al entorno temporal de GitHub Actions. En la primera ejecución se construye desde cero; en las siguientes se reutilizan los resultados positivos recientes.
+
 ## Archivos
 
 - `logo_repair.py`: script principal.
