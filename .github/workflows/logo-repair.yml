@@ -9,7 +9,7 @@ on:
       - "logo_repair.py"
       - ".github/workflows/logo-repair.yml"
   schedule:
-    - cron: "23 8 * * *"
+    - cron: "23 8 * * 1"
 
 permissions:
   contents: write
@@ -42,10 +42,26 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add output/playlist_logos_reparados.m3u output/informe_logos.csv output/informe_logos.json output/report.md
+          git add output/playlist_logos_reparados.m3u output/informe_logos.csv output/informe_logos.json output/report.md "url logos/catalogo_urls.json" "url logos/canales.json"
           if git diff --cached --quiet; then
             echo "No hay cambios nuevos para guardar."
           else
             git commit -m "Actualizar playlist e informes de logos"
-            git push
+            # Integra cambios recientes de main sin sobrescribir el remoto.
+            git fetch origin main
+            if ! git rebase origin/main; then
+              echo "::error::No se pudo integrar main; revisa conflictos en archivos generados."
+              git rebase --abort || true
+              exit 1
+            fi
+            if ! git push origin HEAD:main; then
+              echo "El remoto avanzó durante el envío; se reintenta una vez."
+              git fetch origin main
+              if ! git rebase origin/main; then
+                echo "::error::No se pudo integrar el último cambio de main."
+                git rebase --abort || true
+                exit 1
+              fi
+              git push origin HEAD:main
+            fi
           fi

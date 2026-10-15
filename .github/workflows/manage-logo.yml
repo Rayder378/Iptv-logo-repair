@@ -73,7 +73,22 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add logo_overrides.json
           git commit -m "Gestionar logo manualmente"
-          git push
+          git fetch origin main
+          if ! git rebase origin/main; then
+            echo "::error::No se pudo integrar main al guardar la regla manual."
+            git rebase --abort || true
+            exit 1
+          fi
+          if ! git push origin HEAD:main; then
+            echo "El remoto avanzó durante el envío; se reintenta una vez."
+            git fetch origin main
+            if ! git rebase origin/main; then
+              echo "::error::No se pudo integrar el último cambio de main."
+              git rebase --abort || true
+              exit 1
+            fi
+            git push origin HEAD:main
+          fi
 
       - name: Ejecutar reparación para aplicar el cambio
         env:
@@ -88,5 +103,20 @@ jobs:
             echo "La playlist y los informes ya estaban actualizados."
           else
             git commit -m "Aplicar corrección manual de logo"
-            git push
+            git fetch origin main
+            if ! git rebase origin/main; then
+              echo "::error::No se pudo integrar main al guardar los resultados."
+              git rebase --abort || true
+              exit 1
+            fi
+            if ! git push origin HEAD:main; then
+              echo "El remoto avanzó durante el envío; se reintenta una vez."
+              git fetch origin main
+              if ! git rebase origin/main; then
+                echo "::error::No se pudo integrar el último cambio de main."
+                git rebase --abort || true
+                exit 1
+              fi
+              git push origin HEAD:main
+            fi
           fi
