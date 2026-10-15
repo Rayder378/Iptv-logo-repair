@@ -107,24 +107,49 @@ def image_signature(data):
 
 
 def verify_logo(url):
-    """Comprueba el contenido real, no solo que el servidor responda."""
+    """Devuelve 'ok', 'broken' o 'unknown' para evitar reemplazos por fallos temporales.
+
+    'broken' solo se usa cuando hay evidencia clara: HTTP 404/410 o una
+    respuesta exitosa cuyo contenido no es una imagen. Errores temporales,
+    restricciones y respuestas ambiguas se consideran 'unknown'.
+    """
     if not url or urllib.parse.urlparse(url).scheme not in ("http", "https"):
-        return False, "URL vacía o esquema no permitido"
-    try:
-        data, status, content_type = fetch(url, MAX_IMAGE_BYTES)
-        if not 200 <= status < 300:
-            return False, f"HTTP {status}"
-        signature = image_signature(data)
-        if not signature:
-            return False, (
-                "El contenido no parece una imagen "
-                f"({content_type or 'tipo desconocido'})"
-            )
-        return True, f"válido ({signature})"
-    except urllib.error.HTTPError as exc:
-        return False, f"HTTP {exc.code}"
-    except Exception as exc:
-        return False, f"{type(exc).__name__}: {str(exc)[:160]}"
+        return "broken", "URL vacía o esquema no permitido"
+
+    last_error = ""
+    for attempt in range(2):
+        try:
+            data, status, content_type = fetch(url, MAX_IMAGE_BYTES)
+            if status in (404, 410):
+                return "broken", f"HTTP {status}"
+            if status == 429 or status >= 500:
+                last_error = f"HTTP {status} (posible fallo temporal)"
+                continue
+            if status in (401, 403):
+                return "unknown", f"HTTP {status} (acceso restringido; no se reemplaza automáticamente)"
+            if not 200 <= status < 300:
+                return "unknown", f"HTTP {status} (respuesta no concluyente)"
+            signature = image_signature(data)
+            if not signature:
+                return "broken", (
+                    "El servidor respondió, pero el contenido no parece una imagen "
+                    f"({content_type or 'tipo desconocido'})"
+                )
+            return "ok", f"válido ({signature}; HTTP {status})"
+        except urllib.error.HTTPError as exc:
+            if exc.code in (404, 410):
+                return "broken", f"HTTP {exc.code}"
+            if exc.code in (401, 403):
+                return "unknown", f"HTTP {exc.code} (acceso restringido)"
+            last_error = f"HTTP {exc.code}"
+            if exc.code < 500 and exc.code != 429:
+                return "unknown", last_error
+        except Exception as exc:
+            last_error = f"{type(exc).__name__}: {str(exc)[:160]}"
+
+    return "unknown", (
+        f"No se pudo confirmar si el logo está roto tras 2 intentos: {last_error}"
+    )
 
 
 def aliases(item):
@@ -363,59 +388,87 @@ def main():
         chosen_logo = current_logo
         status = "sin cambios"
         detail = ""
-        current_ok = False
+        current_state = "unknown"
         current_result = "No se verificó el logo actual"
 
-        # Si el nombre no identifica inequívocamente un canal, no conservar ni
-        # añadir logo: incluso una URL accesible podría ser el logo equivocado.
-        if not channel:
-            chosen_logo = ""
-            header = remove_attr(header, "tvg-logo")
-            unresolved += 1
-            status = "no reparado"
-            if not display_name.strip():
-                detail = "Canal sin nombre: no se asignó logo porque no se puede identificar."
-            elif len(norm(display_name).replace(" ", "")) < 3:
-                detail = f"Nombre '{display_name}' demasiado corto o ambiguo; no coincide de forma segura con un canal. Se dejó sin logo."
-            else:
-                tvg_name = original_attrs.get("tvg-name", "").strip()
-                extra = f" Se comprobó también tvg-name='{tvg_name}', sin coincidencia exacta registrada." if tvg_name else ""
-                detail = f"El nombre '{display_name}' no coincide con ningún nombre único registrado; se dejó sin logo para evitar una asignación incorrecta.{extra}"
-        elif current_logo:
-            current_ok, current_result = verify_logo(current_logo)
+        if current_logo:
+            current_state, current_result = verify_logo(current_logo)
         else:
-            current_ok, current_result = False, "No tiene tvg-logo"
+            current_state, current_result = "broken", "No tiene tvg-logo"
 
-        if current_ok:
+        # Nunca se elimina un logo solo porque el nombre del canal sea ambiguo.
+        # Si el nombre no se identifica, se conserva intacta la URL existente.
+        if not channel:
+            unresolved += 1
+            status = "sin identificar"
+            if current_logo and current_state == "ok":
+                preserved += 1
+                status = "conservado"
+                detail = (
+                    f"Logo actual funcional y conservado aunque el canal no se "
+                    f"identificó: {current_result}"
+                )
+            elif current_logo and current_state == "unknown":
+                detail = (
+                    f"No se pudo confirmar el estado del logo; se conserva para "
+                    f"evitar cambios por un fallo temporal: {current_result}"
+                )
+            elif current_logo and current_state == "broken":
+                detail = (
+                    f"El logo parece roto ({current_result}), pero el canal no se "
+                    f"identificó con suficiente seguridad; se conserva la URL "
+                    f"original para evitar asignar un logo de otro canal."
+                )
+            else:
+                detail = (
+                    "No se identificó el canal con suficiente seguridad. "
+                    "No se añadió ningún logo."
+                )
+
+        elif current_state == "ok":
             preserved += 1
             status = "conservado"
             detail = f"Logo actual funcional: {current_result}"
 
-        elif channel:
+        elif current_state == "unknown":
+            unresolved += 1
+            status = "no verificado"
+            detail = (
+                f"No se reemplazó el logo porque el resultado no confirma que "
+                f"esté roto: {current_result}"
+            )
+
+        else:
+            # Solo buscar reemplazo si falta el logo o si se confirmó que está roto.
             channel_id = str(channel.get("id") or "")
             replacement = ""
             last_candidate_result = "La API no tiene candidatos in_use para este canal."
 
             for candidate in candidate_logos(channel_id, feed_id, logos):
                 candidate_url = str(candidate.get("url") or "")
-                valid, result = verify_logo(candidate_url)
-                if valid:
+                candidate_state, result = verify_logo(candidate_url)
+                if candidate_state == "ok":
                     replacement = candidate_url
                     last_candidate_result = f"Reemplazo verificado: {result}"
                     break
-                last_candidate_result = f"Candidato rechazado: {result}"
+                last_candidate_result = f"Candidato rechazado ({candidate_state}): {result}"
 
             if replacement:
                 chosen_logo = replacement
                 header = set_attr(header, "tvg-logo", replacement)
                 repaired += 1
                 status = "reparado" if current_logo else "logo añadido"
-                detail = f"{last_candidate_result}; identificación: {reason}"
+                detail = (
+                    f"{last_candidate_result}; estado del logo anterior: "
+                    f"{current_result}; identificación: {reason}"
+                )
             else:
                 unresolved += 1
-                status = "no reparado"
+                status = "logo roto sin reemplazo" if current_logo else "no reparado"
                 detail = (
-                    "No se encontró logo API verificable. "
+                    f"El logo actual está ausente o se confirmó roto ({current_result}), "
+                    "pero no se encontró una alternativa verificable. "
+                    "Se conservó la URL original si existía. "
                     + last_candidate_result
                 )
 
@@ -464,7 +517,7 @@ def main():
 
     repaired_rows = [row for row in rows if row["estado"] in ("reparado", "logo añadido")]
     preserved_rows = [row for row in rows if row["estado"] == "conservado"]
-    unresolved_rows = [row for row in rows if row["estado"] == "no reparado"]
+    unresolved_rows = [row for row in rows if row["estado"] not in ("reparado", "logo añadido", "conservado")]
 
     report_lines = [
         "# Informe de reparación de logos IPTV",
@@ -475,7 +528,7 @@ def main():
         f"- **Logos funcionales conservados:** {preserved}",
         f"- **Canales sin reparar:** {unresolved}",
         "",
-        "> La verificación confirma que la URL entrega un archivo con firma de imagen; no garantiza por sí sola que el logo represente visualmente el canal correcto.",
+        "> Solo se reemplaza una URL cuando se confirma que está rota (HTTP 404/410 o contenido que no es imagen). Los errores temporales, timeouts y accesos restringidos no provocan reemplazos automáticos. La verificación de imagen no garantiza por sí sola que el logo represente visualmente el canal correcto.",
         "",
         "[Logos reparados o añadidos](#logos-reparados-o-añadidos) · [Logos funcionales conservados](#logos-funcionales-conservados) · [Canales sin reparar](#canales-sin-reparar)",
         "",
