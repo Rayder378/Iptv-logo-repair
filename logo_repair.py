@@ -534,45 +534,30 @@ def main():
         print(f"AVISO: no se pudo leer logo_overrides.json: {exc}")
         overrides = {}
 
-    # Precalienta las verificaciones en paralelo antes de procesar la M3U.
-    # Esto evita esperar secuencialmente por miles de URLs y reutiliza resultados
-    # para logos repetidos. El resultado final se escribe en el orden original.
+    # Verifica en paralelo solo logos actuales y URLs manuales.
+    # No precalienta todos los candidatos de todos los catálogos: eso puede
+    # disparar decenas de miles de peticiones aunque no se necesiten y agotar
+    # el límite de GitHub Actions. Los candidatos se verifican bajo demanda y
+    # verify_logo usa caché para no repetir URLs ya comprobadas.
     urls_to_verify = set()
-    channel_plans = []
     for source_line in lines:
         if not source_line.strip().startswith("#EXTINF:"):
             continue
         source_header, source_name = split_extinf(source_line.strip())
         source_attrs = attrs(source_header)
         source_current = source_attrs.get("tvg-logo", "").strip()
-        source_channel, source_feed, _ = identify_channel(
-            source_name, source_attrs, channel_by_id, channel_name_index, feed_name_index
-        )
-        source_candidates = []
-        if source_channel:
-            source_candidates.extend(
-                str(item.get("url") or "")
-                for item in candidate_logos(str(source_channel.get("id") or ""), source_feed, logos)
-            )
-            source_candidates.extend(
-                url for url, _ in secondary_candidates(
-                    source_name, source_attrs.get("tvg-name", ""), jaruba_logos, yasser_logos
-                )
-            )
         manual = overrides.get(source_name, "__NO_OVERRIDE__")
-        if source_current:
+        if source_current.startswith(("http://", "https://")):
             urls_to_verify.add(source_current)
-        urls_to_verify.update(url for url in source_candidates if url.startswith(("http://", "https://")))
         if isinstance(manual, str) and manual.startswith(("http://", "https://")):
             urls_to_verify.add(manual)
-        channel_plans.append((source_name, source_channel, source_feed, source_candidates))
 
     unique_urls = sorted(urls_to_verify)
-    print(f"Verificando {len(unique_urls)} URLs de logos únicas con hasta {VERIFY_WORKERS} solicitudes concurrentes...")
+    print(f"Verificando {len(unique_urls)} URLs actuales/manuales únicas con hasta {VERIFY_WORKERS} solicitudes concurrentes...")
     with concurrent.futures.ThreadPoolExecutor(max_workers=VERIFY_WORKERS) as pool:
         for index, _ in enumerate(pool.map(verify_logo, unique_urls), start=1):
             if index % 100 == 0 or index == len(unique_urls):
-                print(f"Progreso de verificación: {index}/{len(unique_urls)} URLs")
+                print(f"Progreso logos actuales/manuales: {index}/{len(unique_urls)} URLs")
 
     out_lines = []
     rows = []
@@ -585,6 +570,8 @@ def main():
             continue
 
         total += 1
+        if total % 100 == 0 or total == extinf_count:
+            print(f"Progreso de canales: {total}/{extinf_count}")
         header, display_name = split_extinf(stripped)
         original_attrs = attrs(header)
         current_logo = original_attrs.get("tvg-logo", "").strip()
