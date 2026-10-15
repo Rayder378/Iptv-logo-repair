@@ -57,3 +57,17 @@ Si una fuente secundaria no responde o cambia su formato, el script registra el 
 - Algunos servidores pueden bloquear las comprobaciones desde GitHub Actions aunque el logo abra en un reproductor.
 - Los nombres de grupos pueden variar; solo se reconocen los grupos configurados en el script.
 - Si la playlist contiene enlaces privados o tokens, no la publiques en un repositorio público. Usa un repositorio privado o un secreto `M3U_URL`.
+
+## Corrección manual de logos (solo administradores y colaboradores)
+
+En `output/report.md`, cada canal incluye un enlace **Gestionar logo (solo admin/colaboradores)**. Ese enlace abre el workflow `Gestionar logo manualmente` de GitHub Actions. GitHub exige permiso de escritura para ejecutar el workflow; los visitantes sin esos permisos no pueden aplicar cambios.
+
+1. En GitHub Actions, abre `Gestionar logo manualmente` y pulsa **Run workflow**.
+2. Escribe el nombre exacto del canal como aparece en la playlist.
+3. Elige `quitar` para eliminar su atributo `tvg-logo`, o `url_manual` para asignar una URL.
+4. Si eliges `url_manual`, pega la URL HTTP/HTTPS en el campo `logo_url`. El script comprobará que entregue contenido con firma de imagen antes de aplicarla.
+5. El workflow guarda la regla en `logo_overrides.json`, vuelve a generar la playlist y actualiza los informes.
+
+Las reglas usan el nombre visible exacto como clave. No cambian el nombre del canal, el grupo ni la URL de transmisión. Una regla manual tiene prioridad sobre la búsqueda automática. Para revertir una regla, elimina la entrada correspondiente de `logo_overrides.json` y guarda el cambio.
+
+**Seguridad:** la protección depende de los permisos de escritura de GitHub y de la configuración de ramas del repositorio. Si usas reglas de protección que bloquean los pushes de Actions, tendrás que autorizar el workflow o adaptar el proceso.

@@ -518,6 +518,16 @@ def main():
         channels, feeds
     )
 
+    # Overrides manuales gestionados únicamente por el workflow de GitHub Actions.
+    overrides_path = root / "logo_overrides.json"
+    try:
+        overrides = json.loads(overrides_path.read_text(encoding="utf-8")) if overrides_path.exists() else {}
+        if not isinstance(overrides, dict):
+            overrides = {}
+    except Exception as exc:
+        print(f"AVISO: no se pudo leer logo_overrides.json: {exc}")
+        overrides = {}
+
     out_lines = []
     rows = []
     total = preserved = repaired = unresolved = 0
@@ -609,6 +619,38 @@ def main():
                 f"{extra}; no se cambió el nombre ni se inventó un logo."
             )
 
+        # Correcciones manuales autorizadas tienen prioridad sobre la detección automática.
+        # Clave exacta: el nombre visible no se normaliza ni se modifica.
+        if display_name in overrides:
+            previous_status = status
+            manual_value = overrides[display_name]
+            if manual_value is None or manual_value == "":
+                header = remove_attr(header, "tvg-logo")
+                chosen_logo = ""
+                status = "logo quitado manualmente"
+                detail = "Un administrador/colaborador quitó el logo mediante el workflow autorizado."
+            elif isinstance(manual_value, str):
+                valid_manual, manual_result = verify_logo(manual_value)
+                if valid_manual:
+                    header = set_attr(header, "tvg-logo", manual_value)
+                    chosen_logo = manual_value
+                    status = "logo manual"
+                    detail = f"URL manual aprobada por workflow autorizado; {manual_result}"
+                else:
+                    print(f"AVISO: URL manual inválida para {display_name}: {manual_result}")
+                    detail += f"; la URL manual no se aplicó: {manual_result}"
+            if status in ("logo quitado manualmente", "logo manual"):
+                if previous_status == "conservado":
+                    preserved -= 1
+                elif previous_status in ("reparado", "logo añadido"):
+                    repaired -= 1
+                elif previous_status == "no reparado":
+                    unresolved -= 1
+                if status == "logo manual":
+                    repaired += 1
+                else:
+                    unresolved += 1
+
         out_lines.append("#EXTINF:" + header + "," + display_name)
         rows.append({
             "canal": display_name,
@@ -654,22 +696,32 @@ def main():
         json.dumps(summary, ensure_ascii=False, indent=2), encoding="utf-8"
     )
 
+    # Markdown report: enlace a workflow manual. GitHub exige permiso de escritura
+    # para ejecutar workflow_dispatch; no se ofrece una acción pública anónima.
+    repository = os.environ.get("GITHUB_REPOSITORY", "").strip()
+    workflow_url = f"https://github.com/{repository}/actions/workflows/manage-logo.yml" if repository else ""
+    def management_link(channel):
+        if not workflow_url:
+            return "_Corrección manual disponible para administradores/colaboradores desde Actions → Gestionar logo manualmente._"
+        title = urllib.parse.quote(f"Gestionar logo: {channel}", safe="")
+        return f"[Gestionar logo (solo admin/colaboradores)]({workflow_url}?query={title})"
+
     # Markdown report with actual logo URLs as image previews.
     def md_escape(value):
         return str(value or "").replace("|", r"\|").replace("\r", " ").replace("\n", " ")
 
-    repaired_rows = [row for row in rows if row["estado"] in ("reparado", "logo añadido")]
+    repaired_rows = [row for row in rows if row["estado"] in ("reparado", "logo añadido", "logo manual")]
     preserved_rows = [row for row in rows if row["estado"] == "conservado"]
-    unresolved_rows = [row for row in rows if row["estado"] == "no reparado"]
+    unresolved_rows = [row for row in rows if row["estado"] in ("no reparado", "logo quitado manualmente")]
 
     report_lines = [
         "# Informe de reparación de logos IPTV",
         "",
         f"- **Entrada:** {md_escape(input_label)}",
         f"- **Canales analizados:** {total}",
-        f"- **Logos reparados o añadidos:** {repaired}",
+        f"- **Logos reparados o añadidos (incluye URL manual):** {repaired}",
         f"- **Logos funcionales conservados:** {preserved}",
-        f"- **Canales sin reparar:** {unresolved}",
+        f"- **Canales sin reparar o con logo retirado manualmente:** {unresolved}",
         "",
         "> La verificación confirma que la URL entrega un archivo con firma de imagen; no garantiza por sí sola que el logo represente visualmente el canal correcto.",
         "> Cuando existe `group-title`, se usa como contexto de país o categoría para desempatar coincidencias; nunca se usa el grupo por sí solo para inventar la identidad del canal.",
@@ -689,8 +741,10 @@ def main():
                 "",
                 f"- **Estado:** {md_escape(row['estado'])}",
                 f"- **Identificación:** {md_escape(row['identificacion'])}",
+                f"- **Fuente/resultado:** {md_escape(row['detalle'])}",
                 f"- **Logo:** {md_escape(row['logo_final'])}",
                 f"- **Detalle:** {md_escape(row['detalle'])}",
+                f"- **Corrección manual:** {management_link(row['canal'])}",
                 "",
             ])
     else:
@@ -704,6 +758,7 @@ def main():
                 f"![Logo de {md_escape(row['canal'])}]({row['logo_final']})"
                 if row["logo_final"] else f"- **{md_escape(row['canal'])}** — conservado"
             )
+            report_lines.append(f"  - **Corrección manual:** {management_link(row['canal'])}")
     else:
         report_lines.append("No se conservaron logos funcionales en esta ejecución.")
     report_lines.extend(["", "## Canales sin reparar", ""])
@@ -714,6 +769,7 @@ def main():
                 "",
                 f"- **Motivo:** {md_escape(row['detalle'])}",
                 f"- **Logo actual:** {md_escape(row['logo_original']) or 'No tenía logo'}",
+                f"- **Corrección manual:** {management_link(row['canal'])}",
                 "",
             ])
     else:
