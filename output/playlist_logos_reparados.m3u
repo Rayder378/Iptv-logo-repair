@@ -45,7 +45,7 @@ http://38.210.3.64:8090/play/a0ni/index.m3u8
 http://38.210.3.64:8090/play/a0kk/index.m3u8
 #EXTINF:-1,De PelŦcula
 http://38.210.3.64:8090/play/a0m8/index.m3u8
-#EXTINF:-1,Direc tv
+#EXTINF:-1 tvg-logo="https://i.imgur.com/zOAf02H.png",Direc tv
 http://38.210.3.64:8090/play/a0p5/index.m3u8
 #EXTINF:-1,Direc tvplus
 http://38.210.3.64:8090/play/a0p6/index.m3u8
@@ -95,7 +95,7 @@ http://38.210.3.64:8090/play/a0jw/index.m3u8
 http://38.210.3.64:8090/play/a0ks/index.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/pu0BSB7.png",Exitosa TV
 http://38.210.3.64:8090/play/a0ms/index.m3u8
-#EXTINF:-1,FMH FAMILY
+#EXTINF:-1 tvg-logo="https://i.imgur.com/IaCmCt9.png",FMH FAMILY
 http://38.210.3.64:8090/play/a0gj/index.m3u8
 #EXTINF:-1,FMH FAMILY KIDS
 http://38.210.3.64:8090/play/a0gk/index.m3u8
@@ -195,7 +195,7 @@ http://38.210.3.64:8090/play/a0oe/index.m3u8
 http://38.210.3.64:8090/play/a0d8/index.m3u8
 #EXTINF:-1,Pasiones HD
 http://38.210.3.64:8090/play/a0kb/index.m3u8
-#EXTINF:-1,Plim Plim TV
+#EXTINF:-1 tvg-logo="https://i.imgur.com/MYc8srh.png",Plim Plim TV
 http://38.210.3.64:8090/play/a0oi/index.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/1nN4rEP.png",RAI Italia
 http://38.210.3.64:8090/play/a0od/index.m3u8
@@ -227,13 +227,13 @@ http://38.210.3.64:8090/play/a0kr/index.m3u8
 http://38.210.3.64:8090/play/a0is/index.m3u8
 #EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/TNT_Novelas_2025.svg/1920px-TNT_Novelas_2025.svg.png",TNT Novelas HD
 http://38.210.3.64:8090/play/a0ir/index.m3u8
-#EXTINF:-1,TNT Series HD
+#EXTINF:-1 tvg-logo="https://i.imgur.com/QZYRu0I.png",TNT Series HD
 http://38.210.3.64:8090/play/a0ix/index.m3u8
-#EXTINF:-1,TNT Sports Premiun HD
+#EXTINF:-1 tvg-logo="https://i.imgur.com/g2RlYfI.png",TNT Sports Premiun HD
 http://38.210.3.64:8090/play/a0kl/index.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/VRl8nPZ.png",TOP LATINO
 http://38.210.3.64:8090/play/a0lm/index.m3u8
-#EXTINF:-1 tvg-logo="https://i.imgur.com/fkK7i8g.png",TV ARAGUA
+#EXTINF:-1,TV ARAGUA
 http://38.210.3.64:8090/play/a0lu/index.m3u8
 #EXTINF:-1,TV Perœ
 http://38.210.3.64:8090/play/a0ok/index.m3u8
@@ -241,7 +241,7 @@ http://38.210.3.64:8090/play/a0ok/index.m3u8
 http://38.210.3.64:8090/play/a0p1/index.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/ZiXeE6z.jpeg",TVS MACARAY
 http://38.210.3.64:8090/play/a0lr/index.m3u8
-#EXTINF:-1,Teen Nick
+#EXTINF:-1 tvg-logo="https://i.imgur.com/vEqN90z.png",Teen Nick
 http://38.210.3.64:8090/play/a0et/index.m3u8
 #EXTINF:-1,TelefØ
 http://38.210.3.64:8090/play/a0ou/index.m3u8
