@@ -18,6 +18,10 @@ from pathlib import Path
 CHANNELS_URL = "https://iptv-org.github.io/api/channels.json"
 FEEDS_URL = "https://iptv-org.github.io/api/feeds.json"
 LOGOS_URL = "https://iptv-org.github.io/api/logos.json"
+JARUBA_URL = "https://jaruba.github.io/channel-logos/logo_paths.json"
+YASSER_INDEX_URL = "https://raw.githubusercontent.com/yasserstudio/tv-logos/main/index.json"
+JARUBA_BASE = "https://jaruba.github.io/channel-logos/export/transparent-color"
+YASSER_BASE = "https://raw.githubusercontent.com/yasserstudio/tv-logos/main"
 USER_AGENT = "iptv-logo-repair/1.1 (+GitHub Actions)"
 TIMEOUT = 20
 MAX_IMAGE_BYTES = 8 * 1024 * 1024
@@ -107,49 +111,24 @@ def image_signature(data):
 
 
 def verify_logo(url):
-    """Devuelve 'ok', 'broken' o 'unknown' para evitar reemplazos por fallos temporales.
-
-    'broken' solo se usa cuando hay evidencia clara: HTTP 404/410 o una
-    respuesta exitosa cuyo contenido no es una imagen. Errores temporales,
-    restricciones y respuestas ambiguas se consideran 'unknown'.
-    """
+    """Comprueba el contenido real, no solo que el servidor responda."""
     if not url or urllib.parse.urlparse(url).scheme not in ("http", "https"):
-        return "broken", "URL vacía o esquema no permitido"
-
-    last_error = ""
-    for attempt in range(2):
-        try:
-            data, status, content_type = fetch(url, MAX_IMAGE_BYTES)
-            if status in (404, 410):
-                return "broken", f"HTTP {status}"
-            if status == 429 or status >= 500:
-                last_error = f"HTTP {status} (posible fallo temporal)"
-                continue
-            if status in (401, 403):
-                return "unknown", f"HTTP {status} (acceso restringido; no se reemplaza automáticamente)"
-            if not 200 <= status < 300:
-                return "unknown", f"HTTP {status} (respuesta no concluyente)"
-            signature = image_signature(data)
-            if not signature:
-                return "broken", (
-                    "El servidor respondió, pero el contenido no parece una imagen "
-                    f"({content_type or 'tipo desconocido'})"
-                )
-            return "ok", f"válido ({signature}; HTTP {status})"
-        except urllib.error.HTTPError as exc:
-            if exc.code in (404, 410):
-                return "broken", f"HTTP {exc.code}"
-            if exc.code in (401, 403):
-                return "unknown", f"HTTP {exc.code} (acceso restringido)"
-            last_error = f"HTTP {exc.code}"
-            if exc.code < 500 and exc.code != 429:
-                return "unknown", last_error
-        except Exception as exc:
-            last_error = f"{type(exc).__name__}: {str(exc)[:160]}"
-
-    return "unknown", (
-        f"No se pudo confirmar si el logo está roto tras 2 intentos: {last_error}"
-    )
+        return False, "URL vacía o esquema no permitido"
+    try:
+        data, status, content_type = fetch(url, MAX_IMAGE_BYTES)
+        if not 200 <= status < 300:
+            return False, f"HTTP {status}"
+        signature = image_signature(data)
+        if not signature:
+            return False, (
+                "El contenido no parece una imagen "
+                f"({content_type or 'tipo desconocido'})"
+            )
+        return True, f"válido ({signature})"
+    except urllib.error.HTTPError as exc:
+        return False, f"HTTP {exc.code}"
+    except Exception as exc:
+        return False, f"{type(exc).__name__}: {str(exc)[:160]}"
 
 
 def aliases(item):
@@ -188,6 +167,68 @@ def unique_channel(candidates):
     return next(iter(unique.values())) if len(unique) == 1 else None
 
 
+COUNTRY_GROUPS = {
+    "colombia": "CO", "colombian": "CO", "col": "CO",
+    "peru": "PE", "perú": "PE", "peruvian": "PE",
+    "mexico": "MX", "méxico": "MX", "mexican": "MX",
+    "argentina": "AR", "chile": "CL", "ecuador": "EC",
+    "venezuela": "VE", "bolivia": "BO", "uruguay": "UY",
+    "paraguay": "PY", "brasil": "BR", "brazil": "BR",
+    "usa": "US", "united states": "US", "estados unidos": "US",
+    "spain": "ES", "españa": "ES", "espana": "ES",
+    "el salvador": "SV", "guatemala": "GT", "honduras": "HN",
+    "nicaragua": "NI", "costa rica": "CR", "panama": "PA",
+    "panamá": "PA", "dominicana": "DO", "republica dominicana": "DO",
+    "puerto rico": "PR",
+}
+CATEGORY_GROUPS = {
+    "documentales": "documentary", "documental": "documentary",
+    "documentary": "documentary", "infantiles": "kids",
+    "infantil": "kids", "kids": "kids", "niños": "kids",
+    "ninos": "kids", "deportes": "sports", "deporte": "sports",
+    "sports": "sports", "noticias": "news", "noticias": "news",
+    "news": "news", "peliculas": "movies", "películas": "movies",
+    "cine": "movies", "movies": "movies", "series": "series",
+    "entretenimiento": "entertainment", "music": "music",
+    "musica": "music", "música": "music", "religion": "religious",
+    "religión": "religious", "religiosos": "religious",
+}
+
+
+def group_context(attributes):
+    raw = attributes.get("group-title", "").strip()
+    key = norm(raw)
+    country = COUNTRY_GROUPS.get(key, "")
+    category = CATEGORY_GROUPS.get(key, "")
+    # Some playlists use compound group names such as "Colombia | Deportes".
+    if not country:
+        for name, code in COUNTRY_GROUPS.items():
+            if name in key.split():
+                country = code
+                break
+    if not category:
+        for name, value in CATEGORY_GROUPS.items():
+            if name in key:
+                category = value
+                break
+    return raw, country, category
+
+
+def context_score(channel, country, category):
+    score = 0
+    channel_countries = channel.get("country") or []
+    if isinstance(channel_countries, str):
+        channel_countries = [channel_countries]
+    if country and country in channel_countries:
+        score += 0.12
+    channel_categories = channel.get("categories") or []
+    if isinstance(channel_categories, str):
+        channel_categories = [channel_categories]
+    if category and category in channel_categories:
+        score += 0.08
+    return score
+
+
 def identify_channel(display_name, attributes, channel_by_id,
                       channel_name_index, feed_name_index):
     """Identifica por nombre/alias exacto o por similitud conservadora.
@@ -198,12 +239,16 @@ def identify_channel(display_name, attributes, channel_by_id,
     raw_candidates = [display_name, attributes.get("tvg-name", "")]
     checked = set()
     search_names = []
+    group_name, group_country, group_category = group_context(attributes)
     for candidate_name in raw_candidates:
         key = norm(candidate_name)
         if not key or key in checked:
             continue
         checked.add(key)
-        if len(key.replace(" ", "")) < 4 or len(key.split()) < 2:
+        # Los nombres cortos se admiten si el grupo aporta contexto de país/categoría.
+        if len(key.replace(" ", "")) < 3:
+            continue
+        if len(key.split()) < 2 and not (group_country or group_category):
             continue
         search_names.append((candidate_name.strip(), key))
 
@@ -252,20 +297,27 @@ def identify_channel(display_name, attributes, channel_by_id,
                 None, " ".join(sorted(key.split())),
                 " ".join(sorted(catalog_key.split()))
             ).ratio()
-            score = max(ratio, words_ratio)
-            if score >= 0.86:
+            base_score = max(ratio, words_ratio)
+            # El contexto nunca identifica por sí solo: solo desempata nombres parecidos.
+            score = min(1.0, base_score + context_score(
+                channel, group_country, group_category
+            ))
+            minimum = 0.76 if (group_country or group_category) else 0.82
+            if base_score >= minimum:
                 previous = scored.get(channel_id)
                 if previous is None or score > previous[0]:
-                    scored[channel_id] = (score, channel, feed_id, catalog_key)
+                    scored[channel_id] = (score, channel, feed_id, catalog_key, base_score)
 
         ranked = sorted(scored.items(), key=lambda pair: pair[1][0], reverse=True)
         if ranked:
             _, best = ranked[0]
             second_score = ranked[1][1][0] if len(ranked) > 1 else 0
-            if best[0] >= 0.86 and (best[0] - second_score >= 0.06 or len(ranked) == 1):
+            min_score = 0.76 if (group_country or group_category) else 0.82
+            if best[4] >= min_score and (best[0] - second_score >= 0.045 or len(ranked) == 1):
+                context_note = f"; grupo='{group_name}'" if group_name else ""
                 return best[1], best[2], (
-                    f"similitud alta ({best[0]:.0%}) con nombre registrado "
-                    f"'{best[3]}' a partir de '{candidate_name}'"
+                    f"similitud {best[4]:.0%} con nombre registrado "
+                    f"'{best[3]}' a partir de '{candidate_name}'{context_note}"
                 )
 
     if not display_name.strip():
@@ -298,6 +350,107 @@ def candidate_logos(channel_id, feed_id, logos):
         if item["url"] not in seen:
             seen.add(item["url"])
             result.append(item)
+    return result
+
+
+
+def get_json_object(url):
+    """Descarga JSON de un catálogo secundario; admite objetos o listas."""
+    data, _, _ = fetch(url, MAX_JSON_BYTES)
+    return json.loads(data.decode("utf-8-sig"))
+
+
+def secondary_logo_indexes():
+    """Carga fuentes adicionales de forma tolerante: si una cae, sigue el proceso."""
+    jaruba = {}
+    yasser = []
+    source_status = {}
+
+    try:
+        data = get_json_object(JARUBA_URL)
+        if isinstance(data, dict):
+            for name, path in data.items():
+                if isinstance(name, str) and isinstance(path, str) and path.strip():
+                    path = path.strip()
+                    if path.startswith(("https://", "http://")):
+                        url = path
+                    else:
+                        url = JARUBA_BASE.rstrip("/") + "/" + path.lstrip("/")
+                    jaruba[norm(name)] = {"name": name, "url": url, "source": "jaruba"}
+        source_status["jaruba"] = f"OK ({len(jaruba)} nombres)"
+    except Exception as exc:
+        source_status["jaruba"] = f"no disponible: {type(exc).__name__}: {str(exc)[:100]}"
+
+    try:
+        data = get_json_object(YASSER_INDEX_URL)
+        # El índice puede ser una lista de canales o un objeto que contenga esa lista.
+        entries = data if isinstance(data, list) else []
+        if isinstance(data, dict):
+            for key in ("channels", "logos", "items", "data"):
+                if isinstance(data.get(key), list):
+                    entries = data[key]
+                    break
+        for item in entries:
+            if not isinstance(item, dict):
+                continue
+            name = item.get("name") or item.get("title") or item.get("channel") or item.get("id")
+            raw_url = item.get("url") or item.get("logo") or item.get("image") or item.get("src")
+            raw_path = item.get("path") or item.get("file") or item.get("filename")
+            if not raw_url and isinstance(raw_path, str) and raw_path.strip():
+                raw_url = YASSER_BASE.rstrip("/") + "/" + raw_path.lstrip("/")
+            if isinstance(name, str) and name.strip() and isinstance(raw_url, str) and raw_url.startswith(("https://", "http://")):
+                yasser.append({"name": name.strip(), "url": raw_url, "source": "yasserstudio"})
+                for alt in item.get("alt_names", []) if isinstance(item.get("alt_names"), list) else []:
+                    if isinstance(alt, str) and alt.strip():
+                        yasser.append({"name": alt.strip(), "url": raw_url, "source": "yasserstudio"})
+        source_status["yasserstudio"] = f"OK ({len(yasser)} nombres/alias indexados)"
+    except Exception as exc:
+        source_status["yasserstudio"] = f"no disponible: {type(exc).__name__}: {str(exc)[:100]}"
+
+    return jaruba, yasser, source_status
+
+
+def secondary_candidates(display_name, tvg_name, jaruba, yasser):
+    """Solo devuelve candidatos exactos o con similitud muy alta y no ambigua."""
+    names = []
+    for value in (display_name, tvg_name):
+        key = norm(value)
+        if key and key not in names:
+            names.append(key)
+    result = []
+    seen = set()
+    for key in names:
+        if key in jaruba:
+            item = jaruba[key]
+            if item["url"] not in seen:
+                result.append((item["url"], f"Jaruba: coincidencia exacta '{item['name']}'"))
+                seen.add(item["url"])
+        exact = [item for item in yasser if norm(item.get("name")) == key]
+        exact_urls = {item["url"] for item in exact}
+        if len(exact_urls) == 1:
+            item = exact[0]
+            if item["url"] not in seen:
+                result.append((item["url"], f"Yasserstudio: coincidencia exacta '{item['name']}'"))
+                seen.add(item["url"])
+
+        # Fuzzy solo con alta similitud, al menos dos palabras (o nombre largo),
+        # y margen suficiente frente al segundo resultado. Evita TV ARAGUA -> Paraguay TV.
+        pool = []
+        for item in list(jaruba.values()) + yasser:
+            candidate_key = norm(item.get("name"))
+            if not candidate_key:
+                continue
+            ratio = difflib.SequenceMatcher(None, key, candidate_key).ratio()
+            if ratio >= 0.94 and (len(key.replace(" ", "")) >= 8 or len(key.split()) >= 2):
+                pool.append((ratio, item))
+        pool.sort(key=lambda pair: pair[0], reverse=True)
+        if pool:
+            best_ratio, best_item = pool[0]
+            second = pool[1][0] if len(pool) > 1 else 0
+            best_urls = {item["url"] for ratio, item in pool if ratio == best_ratio}
+            if best_ratio - second >= 0.04 and len(best_urls) == 1 and best_item["url"] not in seen:
+                result.append((best_item["url"], f"{best_item['source']}: similitud estricta {best_ratio:.0%} con '{best_item['name']}'"))
+                seen.add(best_item["url"])
     return result
 
 
@@ -359,6 +512,8 @@ def main():
     channels = get_json(CHANNELS_URL)
     feeds = get_json(FEEDS_URL)
     logos = get_json(LOGOS_URL)
+    jaruba_logos, yasser_logos, extra_sources = secondary_logo_indexes()
+    print("Fuentes secundarias:", json.dumps(extra_sources, ensure_ascii=False))
     channel_by_id, channel_name_index, feed_name_index = build_indexes(
         channels, feeds
     )
@@ -388,93 +543,76 @@ def main():
         chosen_logo = current_logo
         status = "sin cambios"
         detail = ""
-        current_state = "unknown"
+        current_ok = False
         current_result = "No se verificó el logo actual"
 
+        # Primero se valida el logo existente, aunque el canal no se identifique.
+        # Nunca se elimina un logo funcional solo porque el catálogo no reconozca el nombre.
         if current_logo:
-            current_state, current_result = verify_logo(current_logo)
+            current_ok, current_result = verify_logo(current_logo)
         else:
-            current_state, current_result = "broken", "No tiene tvg-logo"
+            current_ok, current_result = False, "No tiene tvg-logo"
 
-        # Nunca se elimina un logo solo porque el nombre del canal sea ambiguo.
-        # Si el nombre no se identifica, se conserva intacta la URL existente.
-        if not channel:
-            unresolved += 1
-            status = "sin identificar"
-            if current_logo and current_state == "ok":
-                preserved += 1
-                status = "conservado"
-                detail = (
-                    f"Logo actual funcional y conservado aunque el canal no se "
-                    f"identificó: {current_result}"
-                )
-            elif current_logo and current_state == "unknown":
-                detail = (
-                    f"No se pudo confirmar el estado del logo; se conserva para "
-                    f"evitar cambios por un fallo temporal: {current_result}"
-                )
-            elif current_logo and current_state == "broken":
-                detail = (
-                    f"El logo parece roto ({current_result}), pero el canal no se "
-                    f"identificó con suficiente seguridad; se conserva la URL "
-                    f"original para evitar asignar un logo de otro canal."
-                )
-            else:
-                detail = (
-                    "No se identificó el canal con suficiente seguridad. "
-                    "No se añadió ningún logo."
-                )
-
-        elif current_state == "ok":
+        if current_ok:
             preserved += 1
             status = "conservado"
             detail = f"Logo actual funcional: {current_result}"
+        elif channel:
 
-        elif current_state == "unknown":
-            unresolved += 1
-            status = "no verificado"
-            detail = (
-                f"No se reemplazó el logo porque el resultado no confirma que "
-                f"esté roto: {current_result}"
-            )
-
-        else:
-            # Solo buscar reemplazo si falta el logo o si se confirmó que está roto.
             channel_id = str(channel.get("id") or "")
             replacement = ""
             last_candidate_result = "La API no tiene candidatos in_use para este canal."
 
             for candidate in candidate_logos(channel_id, feed_id, logos):
                 candidate_url = str(candidate.get("url") or "")
-                candidate_state, result = verify_logo(candidate_url)
-                if candidate_state == "ok":
+                valid, result = verify_logo(candidate_url)
+                if valid:
                     replacement = candidate_url
-                    last_candidate_result = f"Reemplazo verificado: {result}"
+                    last_candidate_result = f"iptv-org: reemplazo verificado: {result}"
                     break
-                last_candidate_result = f"Candidato rechazado ({candidate_state}): {result}"
+                last_candidate_result = f"Candidato iptv-org rechazado: {result}"
+
+            if not replacement:
+                for candidate_url, candidate_reason in secondary_candidates(
+                    display_name, original_attrs.get("tvg-name", ""),
+                    jaruba_logos, yasser_logos
+                ):
+                    valid, result = verify_logo(candidate_url)
+                    if valid:
+                        replacement = candidate_url
+                        last_candidate_result = f"{candidate_reason}; imagen verificada: {result}"
+                        break
+                    last_candidate_result = f"{candidate_reason}; candidato rechazado: {result}"
 
             if replacement:
                 chosen_logo = replacement
                 header = set_attr(header, "tvg-logo", replacement)
                 repaired += 1
                 status = "reparado" if current_logo else "logo añadido"
-                detail = (
-                    f"{last_candidate_result}; estado del logo anterior: "
-                    f"{current_result}; identificación: {reason}"
-                )
+                detail = f"{last_candidate_result}; identificación: {reason}"
             else:
                 unresolved += 1
-                status = "logo roto sin reemplazo" if current_logo else "no reparado"
+                status = "no reparado"
                 detail = (
-                    f"El logo actual está ausente o se confirmó roto ({current_result}), "
-                    "pero no se encontró una alternativa verificable. "
-                    "Se conservó la URL original si existía. "
+                    "No se encontró logo API verificable. "
                     + last_candidate_result
                 )
+        else:
+            unresolved += 1
+            status = "no reparado"
+            # Si la URL actual está rota, la conservamos como atributo hasta encontrar
+            # una identidad fiable; no se inventa ni se borra información del usuario.
+            tvg_name = original_attrs.get("tvg-name", "").strip()
+            extra = f"; tvg-name='{tvg_name}' tampoco permitió identificarlo" if tvg_name else ""
+            detail = (
+                f"No se pudo identificar de forma fiable '{display_name}'"
+                f"{extra}; no se cambió el nombre ni se inventó un logo."
+            )
 
         out_lines.append("#EXTINF:" + header + "," + display_name)
         rows.append({
             "canal": display_name,
+            "grupo": original_attrs.get("group-title", ""),
             "tvg_id_original": original_attrs.get("tvg-id", ""),
             "logo_original": current_logo,
             "logo_final": chosen_logo,
@@ -488,7 +626,7 @@ def main():
     )
 
     fields = [
-        "canal", "tvg_id_original", "logo_original", "logo_final",
+        "canal", "grupo", "tvg_id_original", "logo_original", "logo_final",
         "estado", "identificacion", "detalle",
     ]
     with report_path.open("w", encoding="utf-8-sig", newline="") as file:
@@ -506,6 +644,11 @@ def main():
         "catalogo_canales": len(channels),
         "catalogo_feeds": len(feeds),
         "catalogo_logos": len(logos),
+        "contexto_grupo_habilitado": True,
+        "fuentes_logo": ["iptv-org logos.json", "Jaruba Channel Logos", "Yasserstudio TV Logos (si el índice permite extraer URLs)"],
+        "estado_fuentes_secundarias": extra_sources,
+        "catalogo_jaruba_nombres": len(jaruba_logos),
+        "catalogo_yasserstudio_nombres": len(yasser_logos),
     }
     summary_path.write_text(
         json.dumps(summary, ensure_ascii=False, indent=2), encoding="utf-8"
@@ -517,7 +660,7 @@ def main():
 
     repaired_rows = [row for row in rows if row["estado"] in ("reparado", "logo añadido")]
     preserved_rows = [row for row in rows if row["estado"] == "conservado"]
-    unresolved_rows = [row for row in rows if row["estado"] not in ("reparado", "logo añadido", "conservado")]
+    unresolved_rows = [row for row in rows if row["estado"] == "no reparado"]
 
     report_lines = [
         "# Informe de reparación de logos IPTV",
@@ -528,7 +671,8 @@ def main():
         f"- **Logos funcionales conservados:** {preserved}",
         f"- **Canales sin reparar:** {unresolved}",
         "",
-        "> Solo se reemplaza una URL cuando se confirma que está rota (HTTP 404/410 o contenido que no es imagen). Los errores temporales, timeouts y accesos restringidos no provocan reemplazos automáticos. La verificación de imagen no garantiza por sí sola que el logo represente visualmente el canal correcto.",
+        "> La verificación confirma que la URL entrega un archivo con firma de imagen; no garantiza por sí sola que el logo represente visualmente el canal correcto.",
+        "> Cuando existe `group-title`, se usa como contexto de país o categoría para desempatar coincidencias; nunca se usa el grupo por sí solo para inventar la identidad del canal.",
         "",
         "[Logos reparados o añadidos](#logos-reparados-o-añadidos) · [Logos funcionales conservados](#logos-funcionales-conservados) · [Canales sin reparar](#canales-sin-reparar)",
         "",
