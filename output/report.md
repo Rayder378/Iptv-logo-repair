@@ -1,10 +1,12 @@
 # Informe de reparación de logos IPTV
 
+- **Base persistente:** `url logos/catalogo_urls.json` (1263 URLs; revalidación positiva cada 7 días)
+
 - **Entrada:** URL configurada en M3U_URL
 - **Canales analizados:** 1868
 - **Logos reparados o añadidos (incluye URL manual):** 79
-- **Logos funcionales conservados:** 1546
-- **Canales sin reparar o con logo retirado manualmente:** 243
+- **Logos funcionales conservados:** 1548
+- **Canales sin reparar o con logo retirado manualmente:** 241
 
 > La verificación confirma que la URL entrega un archivo con firma de imagen; no garantiza por sí sola que el logo represente visualmente el canal correcto.
 > Cuando existe `group-title`, se usa como contexto de país o categoría para desempatar coincidencias; nunca se usa el grupo por sí solo para inventar la identidad del canal.
@@ -74,9 +76,9 @@
 
 - **Estado:** reparado
 - **Identificación:** nombre/alias exacto registrado: Telefe SD
-- **Fuente/resultado:** Jaruba: coincidencia exacta 'telefe'; imagen verificada: válido (image/png); identificación: nombre/alias exacto registrado: Telefe SD
+- **Fuente/resultado:** Jaruba: coincidencia exacta 'telefe'; imagen verificada: válido (image/png) [caché persistente]; identificación: nombre/alias exacto registrado: Telefe SD
 - **Logo:** https://jaruba.github.io/channel-logos/export/transparent-color/bBAkTXfNkyjsRVv5ASCgX1WCu0w.png
-- **Detalle:** Jaruba: coincidencia exacta 'telefe'; imagen verificada: válido (image/png); identificación: nombre/alias exacto registrado: Telefe SD
+- **Detalle:** Jaruba: coincidencia exacta 'telefe'; imagen verificada: válido (image/png) [caché persistente]; identificación: nombre/alias exacto registrado: Telefe SD
 - **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20Telefe%20SD)
 
 ### Telefe SD [Opc.2]
@@ -85,9 +87,9 @@
 
 - **Estado:** reparado
 - **Identificación:** nombre/alias exacto registrado: Telefe SD [Opc.2]
-- **Fuente/resultado:** Jaruba: coincidencia exacta 'telefe'; imagen verificada: válido (image/png); identificación: nombre/alias exacto registrado: Telefe SD [Opc.2]
+- **Fuente/resultado:** Jaruba: coincidencia exacta 'telefe'; imagen verificada: válido (image/png) [caché persistente]; identificación: nombre/alias exacto registrado: Telefe SD [Opc.2]
 - **Logo:** https://jaruba.github.io/channel-logos/export/transparent-color/bBAkTXfNkyjsRVv5ASCgX1WCu0w.png
-- **Detalle:** Jaruba: coincidencia exacta 'telefe'; imagen verificada: válido (image/png); identificación: nombre/alias exacto registrado: Telefe SD [Opc.2]
+- **Detalle:** Jaruba: coincidencia exacta 'telefe'; imagen verificada: válido (image/png) [caché persistente]; identificación: nombre/alias exacto registrado: Telefe SD [Opc.2]
 - **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20Telefe%20SD%20%5BOpc.2%5D)
 
 ### Red Informativa
@@ -107,9 +109,9 @@
 
 - **Estado:** logo añadido
 - **Identificación:** similitud 90% con nombre registrado 'telemicro' a partir de 'Telemicro 5 SD'; grupo='República Dominicana'
-- **Fuente/resultado:** iptv-org: reemplazo verificado: válido (image/png); identificación: similitud 90% con nombre registrado 'telemicro' a partir de 'Telemicro 5 SD'; grupo='República Dominicana'
+- **Fuente/resultado:** iptv-org: reemplazo verificado: válido (image/png) [caché persistente]; identificación: similitud 90% con nombre registrado 'telemicro' a partir de 'Telemicro 5 SD'; grupo='República Dominicana'
 - **Logo:** https://i.imgur.com/WhgySAk.png
-- **Detalle:** iptv-org: reemplazo verificado: válido (image/png); identificación: similitud 90% con nombre registrado 'telemicro' a partir de 'Telemicro 5 SD'; grupo='República Dominicana'
+- **Detalle:** iptv-org: reemplazo verificado: válido (image/png) [caché persistente]; identificación: similitud 90% con nombre registrado 'telemicro' a partir de 'Telemicro 5 SD'; grupo='República Dominicana'
 - **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20Telemicro%205%20SD)
 
 ### Anzoategui TV
@@ -250,9 +252,9 @@
 
 - **Estado:** reparado
 - **Identificación:** feed exacto registrado: TNT HD (Opc.2)
-- **Fuente/resultado:** iptv-org: reemplazo verificado: válido (image/png); identificación: feed exacto registrado: TNT HD (Opc.2)
+- **Fuente/resultado:** iptv-org: reemplazo verificado: válido (image/png) [caché persistente]; identificación: feed exacto registrado: TNT HD (Opc.2)
 - **Logo:** https://i.imgur.com/XjzK3gZ.png
-- **Detalle:** iptv-org: reemplazo verificado: válido (image/png); identificación: feed exacto registrado: TNT HD (Opc.2)
+- **Detalle:** iptv-org: reemplazo verificado: válido (image/png) [caché persistente]; identificación: feed exacto registrado: TNT HD (Opc.2)
 - **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20TNT%20HD%20%28Opc.2%29)
 
 ### TNT HD (Opc.3)
@@ -261,9 +263,9 @@
 
 - **Estado:** reparado
 - **Identificación:** feed exacto registrado: TNT HD (Opc.3)
-- **Fuente/resultado:** iptv-org: reemplazo verificado: válido (image/png); identificación: feed exacto registrado: TNT HD (Opc.3)
+- **Fuente/resultado:** iptv-org: reemplazo verificado: válido (image/png) [caché persistente]; identificación: feed exacto registrado: TNT HD (Opc.3)
 - **Logo:** https://i.imgur.com/XjzK3gZ.png
-- **Detalle:** iptv-org: reemplazo verificado: válido (image/png); identificación: feed exacto registrado: TNT HD (Opc.3)
+- **Detalle:** iptv-org: reemplazo verificado: válido (image/png) [caché persistente]; identificación: feed exacto registrado: TNT HD (Opc.3)
 - **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20TNT%20HD%20%28Opc.3%29)
 
 ### HBO2 HD [Opc.1]
@@ -283,9 +285,9 @@
 
 - **Estado:** reparado
 - **Identificación:** nombre/alias exacto registrado: HBO2 HD [Opc.2]
-- **Fuente/resultado:** iptv-org: reemplazo verificado: válido (image/svg+xml); identificación: nombre/alias exacto registrado: HBO2 HD [Opc.2]
+- **Fuente/resultado:** iptv-org: reemplazo verificado: válido (image/svg+xml) [caché persistente]; identificación: nombre/alias exacto registrado: HBO2 HD [Opc.2]
 - **Logo:** https://static.hbo.com/2025-09/HBO_Hits_Plex_Logo_bw.svg
-- **Detalle:** iptv-org: reemplazo verificado: válido (image/svg+xml); identificación: nombre/alias exacto registrado: HBO2 HD [Opc.2]
+- **Detalle:** iptv-org: reemplazo verificado: válido (image/svg+xml) [caché persistente]; identificación: nombre/alias exacto registrado: HBO2 HD [Opc.2]
 - **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20HBO2%20HD%20%5BOpc.2%5D)
 
 ### HBO2 HD [Opc.3]
@@ -294,9 +296,9 @@
 
 - **Estado:** reparado
 - **Identificación:** nombre/alias exacto registrado: HBO2 HD [Opc.3]
-- **Fuente/resultado:** iptv-org: reemplazo verificado: válido (image/svg+xml); identificación: nombre/alias exacto registrado: HBO2 HD [Opc.3]
+- **Fuente/resultado:** iptv-org: reemplazo verificado: válido (image/svg+xml) [caché persistente]; identificación: nombre/alias exacto registrado: HBO2 HD [Opc.3]
 - **Logo:** https://static.hbo.com/2025-09/HBO_Hits_Plex_Logo_bw.svg
-- **Detalle:** iptv-org: reemplazo verificado: válido (image/svg+xml); identificación: nombre/alias exacto registrado: HBO2 HD [Opc.3]
+- **Detalle:** iptv-org: reemplazo verificado: válido (image/svg+xml) [caché persistente]; identificación: nombre/alias exacto registrado: HBO2 HD [Opc.3]
 - **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20HBO2%20HD%20%5BOpc.3%5D)
 
 ### HBO Xtreme HD
@@ -316,9 +318,9 @@
 
 - **Estado:** reparado
 - **Identificación:** nombre/alias exacto registrado: HBO Xtreme HD (Opc.2)
-- **Fuente/resultado:** iptv-org: reemplazo verificado: válido (image/jpeg); identificación: nombre/alias exacto registrado: HBO Xtreme HD (Opc.2)
+- **Fuente/resultado:** iptv-org: reemplazo verificado: válido (image/jpeg) [caché persistente]; identificación: nombre/alias exacto registrado: HBO Xtreme HD (Opc.2)
 - **Logo:** https://www.vertvcable.com/wp-content/uploads/2022/02/hboextreme.jpg
-- **Detalle:** iptv-org: reemplazo verificado: válido (image/jpeg); identificación: nombre/alias exacto registrado: HBO Xtreme HD (Opc.2)
+- **Detalle:** iptv-org: reemplazo verificado: válido (image/jpeg) [caché persistente]; identificación: nombre/alias exacto registrado: HBO Xtreme HD (Opc.2)
 - **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20HBO%20Xtreme%20HD%20%28Opc.2%29)
 
 ### HBO XTREME HD (Opc.3)
@@ -327,9 +329,9 @@
 
 - **Estado:** reparado
 - **Identificación:** nombre/alias exacto registrado: HBO XTREME HD (Opc.3)
-- **Fuente/resultado:** iptv-org: reemplazo verificado: válido (image/jpeg); identificación: nombre/alias exacto registrado: HBO XTREME HD (Opc.3)
+- **Fuente/resultado:** iptv-org: reemplazo verificado: válido (image/jpeg) [caché persistente]; identificación: nombre/alias exacto registrado: HBO XTREME HD (Opc.3)
 - **Logo:** https://www.vertvcable.com/wp-content/uploads/2022/02/hboextreme.jpg
-- **Detalle:** iptv-org: reemplazo verificado: válido (image/jpeg); identificación: nombre/alias exacto registrado: HBO XTREME HD (Opc.3)
+- **Detalle:** iptv-org: reemplazo verificado: válido (image/jpeg) [caché persistente]; identificación: nombre/alias exacto registrado: HBO XTREME HD (Opc.3)
 - **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20HBO%20XTREME%20HD%20%28Opc.3%29)
 
 ### HBO MUNDI SD (Opc.1)
@@ -349,9 +351,9 @@
 
 - **Estado:** reparado
 - **Identificación:** nombre/alias exacto registrado: HBO MUNDI SD (Opc.2)
-- **Fuente/resultado:** Jaruba: coincidencia exacta 'hbo mundi'; imagen verificada: válido (image/png); identificación: nombre/alias exacto registrado: HBO MUNDI SD (Opc.2)
+- **Fuente/resultado:** Jaruba: coincidencia exacta 'hbo mundi'; imagen verificada: válido (image/png) [caché persistente]; identificación: nombre/alias exacto registrado: HBO MUNDI SD (Opc.2)
 - **Logo:** https://jaruba.github.io/channel-logos/export/transparent-color/pSxGvTt7LVcjx0ST1bbThigqMOY.png
-- **Detalle:** Jaruba: coincidencia exacta 'hbo mundi'; imagen verificada: válido (image/png); identificación: nombre/alias exacto registrado: HBO MUNDI SD (Opc.2)
+- **Detalle:** Jaruba: coincidencia exacta 'hbo mundi'; imagen verificada: válido (image/png) [caché persistente]; identificación: nombre/alias exacto registrado: HBO MUNDI SD (Opc.2)
 - **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20HBO%20MUNDI%20SD%20%28Opc.2%29)
 
 ### HBO MUNDI SD (Opc.3)
@@ -360,9 +362,9 @@
 
 - **Estado:** reparado
 - **Identificación:** nombre/alias exacto registrado: HBO MUNDI SD (Opc.3)
-- **Fuente/resultado:** Jaruba: coincidencia exacta 'hbo mundi'; imagen verificada: válido (image/png); identificación: nombre/alias exacto registrado: HBO MUNDI SD (Opc.3)
+- **Fuente/resultado:** Jaruba: coincidencia exacta 'hbo mundi'; imagen verificada: válido (image/png) [caché persistente]; identificación: nombre/alias exacto registrado: HBO MUNDI SD (Opc.3)
 - **Logo:** https://jaruba.github.io/channel-logos/export/transparent-color/pSxGvTt7LVcjx0ST1bbThigqMOY.png
-- **Detalle:** Jaruba: coincidencia exacta 'hbo mundi'; imagen verificada: válido (image/png); identificación: nombre/alias exacto registrado: HBO MUNDI SD (Opc.3)
+- **Detalle:** Jaruba: coincidencia exacta 'hbo mundi'; imagen verificada: válido (image/png) [caché persistente]; identificación: nombre/alias exacto registrado: HBO MUNDI SD (Opc.3)
 - **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20HBO%20MUNDI%20SD%20%28Opc.3%29)
 
 ### Warner Channel HD (Opc.1)
@@ -382,9 +384,9 @@
 
 - **Estado:** reparado
 - **Identificación:** nombre/alias exacto registrado: Warner Channel HD (Opc.2)
-- **Fuente/resultado:** iptv-org: reemplazo verificado: válido (image/png); identificación: nombre/alias exacto registrado: Warner Channel HD (Opc.2)
+- **Fuente/resultado:** iptv-org: reemplazo verificado: válido (image/png) [caché persistente]; identificación: nombre/alias exacto registrado: Warner Channel HD (Opc.2)
 - **Logo:** https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Warner_Channel_2026.svg/960px-Warner_Channel_2026.svg.png
-- **Detalle:** iptv-org: reemplazo verificado: válido (image/png); identificación: nombre/alias exacto registrado: Warner Channel HD (Opc.2)
+- **Detalle:** iptv-org: reemplazo verificado: válido (image/png) [caché persistente]; identificación: nombre/alias exacto registrado: Warner Channel HD (Opc.2)
 - **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20Warner%20Channel%20HD%20%28Opc.2%29)
 
 ### Warner Channel SD (Opc.3)
@@ -393,9 +395,9 @@
 
 - **Estado:** reparado
 - **Identificación:** nombre/alias exacto registrado: Warner Channel SD (Opc.3)
-- **Fuente/resultado:** iptv-org: reemplazo verificado: válido (image/png); identificación: nombre/alias exacto registrado: Warner Channel SD (Opc.3)
+- **Fuente/resultado:** iptv-org: reemplazo verificado: válido (image/png) [caché persistente]; identificación: nombre/alias exacto registrado: Warner Channel SD (Opc.3)
 - **Logo:** https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Warner_Channel_2026.svg/960px-Warner_Channel_2026.svg.png
-- **Detalle:** iptv-org: reemplazo verificado: válido (image/png); identificación: nombre/alias exacto registrado: Warner Channel SD (Opc.3)
+- **Detalle:** iptv-org: reemplazo verificado: válido (image/png) [caché persistente]; identificación: nombre/alias exacto registrado: Warner Channel SD (Opc.3)
 - **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20Warner%20Channel%20SD%20%28Opc.3%29)
 
 ### Space HD (Opc.1)
@@ -415,9 +417,9 @@
 
 - **Estado:** reparado
 - **Identificación:** nombre/alias exacto registrado: Space HD (Opc.2)
-- **Fuente/resultado:** Jaruba: coincidencia exacta 'space'; imagen verificada: válido (image/png); identificación: nombre/alias exacto registrado: Space HD (Opc.2)
+- **Fuente/resultado:** Jaruba: coincidencia exacta 'space'; imagen verificada: válido (image/png) [caché persistente]; identificación: nombre/alias exacto registrado: Space HD (Opc.2)
 - **Logo:** https://jaruba.github.io/channel-logos/export/transparent-color/5zfwLyBQnPuBsYeo08qf7pR8ooJ.png
-- **Detalle:** Jaruba: coincidencia exacta 'space'; imagen verificada: válido (image/png); identificación: nombre/alias exacto registrado: Space HD (Opc.2)
+- **Detalle:** Jaruba: coincidencia exacta 'space'; imagen verificada: válido (image/png) [caché persistente]; identificación: nombre/alias exacto registrado: Space HD (Opc.2)
 - **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20Space%20HD%20%28Opc.2%29)
 
 ### Space HD (Opc.3)
@@ -426,9 +428,9 @@
 
 - **Estado:** reparado
 - **Identificación:** nombre/alias exacto registrado: Space HD (Opc.3)
-- **Fuente/resultado:** Jaruba: coincidencia exacta 'space'; imagen verificada: válido (image/png); identificación: nombre/alias exacto registrado: Space HD (Opc.3)
+- **Fuente/resultado:** Jaruba: coincidencia exacta 'space'; imagen verificada: válido (image/png) [caché persistente]; identificación: nombre/alias exacto registrado: Space HD (Opc.3)
 - **Logo:** https://jaruba.github.io/channel-logos/export/transparent-color/5zfwLyBQnPuBsYeo08qf7pR8ooJ.png
-- **Detalle:** Jaruba: coincidencia exacta 'space'; imagen verificada: válido (image/png); identificación: nombre/alias exacto registrado: Space HD (Opc.3)
+- **Detalle:** Jaruba: coincidencia exacta 'space'; imagen verificada: válido (image/png) [caché persistente]; identificación: nombre/alias exacto registrado: Space HD (Opc.3)
 - **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20Space%20HD%20%28Opc.3%29)
 
 ### Bolliwood TV
@@ -459,9 +461,9 @@
 
 - **Estado:** reparado
 - **Identificación:** nombre/alias exacto registrado: Univision HD [Opc.2]
-- **Fuente/resultado:** Jaruba: coincidencia exacta 'univision'; imagen verificada: válido (image/png); identificación: nombre/alias exacto registrado: Univision HD [Opc.2]
+- **Fuente/resultado:** Jaruba: coincidencia exacta 'univision'; imagen verificada: válido (image/png) [caché persistente]; identificación: nombre/alias exacto registrado: Univision HD [Opc.2]
 - **Logo:** https://jaruba.github.io/channel-logos/export/transparent-color/72FxNFjskNZMIKXoYrqkmmBROzM.png
-- **Detalle:** Jaruba: coincidencia exacta 'univision'; imagen verificada: válido (image/png); identificación: nombre/alias exacto registrado: Univision HD [Opc.2]
+- **Detalle:** Jaruba: coincidencia exacta 'univision'; imagen verificada: válido (image/png) [caché persistente]; identificación: nombre/alias exacto registrado: Univision HD [Opc.2]
 - **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20Univision%20HD%20%5BOpc.2%5D)
 
 ### Univision HD [Opc.3]
@@ -470,9 +472,9 @@
 
 - **Estado:** reparado
 - **Identificación:** nombre/alias exacto registrado: Univision HD [Opc.3]
-- **Fuente/resultado:** Jaruba: coincidencia exacta 'univision'; imagen verificada: válido (image/png); identificación: nombre/alias exacto registrado: Univision HD [Opc.3]
+- **Fuente/resultado:** Jaruba: coincidencia exacta 'univision'; imagen verificada: válido (image/png) [caché persistente]; identificación: nombre/alias exacto registrado: Univision HD [Opc.3]
 - **Logo:** https://jaruba.github.io/channel-logos/export/transparent-color/72FxNFjskNZMIKXoYrqkmmBROzM.png
-- **Detalle:** Jaruba: coincidencia exacta 'univision'; imagen verificada: válido (image/png); identificación: nombre/alias exacto registrado: Univision HD [Opc.3]
+- **Detalle:** Jaruba: coincidencia exacta 'univision'; imagen verificada: válido (image/png) [caché persistente]; identificación: nombre/alias exacto registrado: Univision HD [Opc.3]
 - **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20Univision%20HD%20%5BOpc.3%5D)
 
 ### Distrito Comedia SD (Opc.1)
@@ -492,9 +494,9 @@
 
 - **Estado:** reparado
 - **Identificación:** nombre/alias exacto registrado: Distrito Comedia HD (Opc.2)
-- **Fuente/resultado:** Jaruba: coincidencia exacta 'distrito comedia'; imagen verificada: válido (image/png); identificación: nombre/alias exacto registrado: Distrito Comedia HD (Opc.2)
+- **Fuente/resultado:** Jaruba: coincidencia exacta 'distrito comedia'; imagen verificada: válido (image/png) [caché persistente]; identificación: nombre/alias exacto registrado: Distrito Comedia HD (Opc.2)
 - **Logo:** https://jaruba.github.io/channel-logos/export/transparent-color/9qOOQy1cVCs84SE18ivIWpL8Mqc.png
-- **Detalle:** Jaruba: coincidencia exacta 'distrito comedia'; imagen verificada: válido (image/png); identificación: nombre/alias exacto registrado: Distrito Comedia HD (Opc.2)
+- **Detalle:** Jaruba: coincidencia exacta 'distrito comedia'; imagen verificada: válido (image/png) [caché persistente]; identificación: nombre/alias exacto registrado: Distrito Comedia HD (Opc.2)
 - **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20Distrito%20Comedia%20HD%20%28Opc.2%29)
 
 ### Distrito Comedia HD (Opc.3)
@@ -503,9 +505,9 @@
 
 - **Estado:** reparado
 - **Identificación:** nombre/alias exacto registrado: Distrito Comedia HD (Opc.3)
-- **Fuente/resultado:** Jaruba: coincidencia exacta 'distrito comedia'; imagen verificada: válido (image/png); identificación: nombre/alias exacto registrado: Distrito Comedia HD (Opc.3)
+- **Fuente/resultado:** Jaruba: coincidencia exacta 'distrito comedia'; imagen verificada: válido (image/png) [caché persistente]; identificación: nombre/alias exacto registrado: Distrito Comedia HD (Opc.3)
 - **Logo:** https://jaruba.github.io/channel-logos/export/transparent-color/9qOOQy1cVCs84SE18ivIWpL8Mqc.png
-- **Detalle:** Jaruba: coincidencia exacta 'distrito comedia'; imagen verificada: válido (image/png); identificación: nombre/alias exacto registrado: Distrito Comedia HD (Opc.3)
+- **Detalle:** Jaruba: coincidencia exacta 'distrito comedia'; imagen verificada: válido (image/png) [caché persistente]; identificación: nombre/alias exacto registrado: Distrito Comedia HD (Opc.3)
 - **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20Distrito%20Comedia%20HD%20%28Opc.3%29)
 
 ### TNT Novelas HD [Opc.1]
@@ -525,9 +527,9 @@
 
 - **Estado:** reparado
 - **Identificación:** nombre/alias exacto registrado: TNT Novelas HD [Opc.2]
-- **Fuente/resultado:** iptv-org: reemplazo verificado: válido (image/png); identificación: nombre/alias exacto registrado: TNT Novelas HD [Opc.2]
+- **Fuente/resultado:** iptv-org: reemplazo verificado: válido (image/png) [caché persistente]; identificación: nombre/alias exacto registrado: TNT Novelas HD [Opc.2]
 - **Logo:** https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/TNT_Novelas_2025.svg/1920px-TNT_Novelas_2025.svg.png
-- **Detalle:** iptv-org: reemplazo verificado: válido (image/png); identificación: nombre/alias exacto registrado: TNT Novelas HD [Opc.2]
+- **Detalle:** iptv-org: reemplazo verificado: válido (image/png) [caché persistente]; identificación: nombre/alias exacto registrado: TNT Novelas HD [Opc.2]
 - **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20TNT%20Novelas%20HD%20%5BOpc.2%5D)
 
 ### TNT Novelas SD [Opc.3]
@@ -536,9 +538,9 @@
 
 - **Estado:** reparado
 - **Identificación:** nombre/alias exacto registrado: TNT Novelas SD [Opc.3]
-- **Fuente/resultado:** iptv-org: reemplazo verificado: válido (image/png); identificación: nombre/alias exacto registrado: TNT Novelas SD [Opc.3]
+- **Fuente/resultado:** iptv-org: reemplazo verificado: válido (image/png) [caché persistente]; identificación: nombre/alias exacto registrado: TNT Novelas SD [Opc.3]
 - **Logo:** https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/TNT_Novelas_2025.svg/1920px-TNT_Novelas_2025.svg.png
-- **Detalle:** iptv-org: reemplazo verificado: válido (image/png); identificación: nombre/alias exacto registrado: TNT Novelas SD [Opc.3]
+- **Detalle:** iptv-org: reemplazo verificado: válido (image/png) [caché persistente]; identificación: nombre/alias exacto registrado: TNT Novelas SD [Opc.3]
 - **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20TNT%20Novelas%20SD%20%5BOpc.3%5D)
 
 ### TNT Novelas SD [Opc.4]
@@ -547,9 +549,9 @@
 
 - **Estado:** reparado
 - **Identificación:** nombre/alias exacto registrado: TNT Novelas SD [Opc.4]
-- **Fuente/resultado:** iptv-org: reemplazo verificado: válido (image/png); identificación: nombre/alias exacto registrado: TNT Novelas SD [Opc.4]
+- **Fuente/resultado:** iptv-org: reemplazo verificado: válido (image/png) [caché persistente]; identificación: nombre/alias exacto registrado: TNT Novelas SD [Opc.4]
 - **Logo:** https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/TNT_Novelas_2025.svg/1920px-TNT_Novelas_2025.svg.png
-- **Detalle:** iptv-org: reemplazo verificado: válido (image/png); identificación: nombre/alias exacto registrado: TNT Novelas SD [Opc.4]
+- **Detalle:** iptv-org: reemplazo verificado: válido (image/png) [caché persistente]; identificación: nombre/alias exacto registrado: TNT Novelas SD [Opc.4]
 - **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20TNT%20Novelas%20SD%20%5BOpc.4%5D)
 
 ### Retro TV
@@ -591,9 +593,9 @@
 
 - **Estado:** reparado
 - **Identificación:** nombre/alias exacto registrado: E! Entertainment SD [Opc.2]
-- **Fuente/resultado:** iptv-org: reemplazo verificado: válido (image/png); identificación: nombre/alias exacto registrado: E! Entertainment SD [Opc.2]
+- **Fuente/resultado:** iptv-org: reemplazo verificado: válido (image/png) [caché persistente]; identificación: nombre/alias exacto registrado: E! Entertainment SD [Opc.2]
 - **Logo:** https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/512/512/skychb1360.png
-- **Detalle:** iptv-org: reemplazo verificado: válido (image/png); identificación: nombre/alias exacto registrado: E! Entertainment SD [Opc.2]
+- **Detalle:** iptv-org: reemplazo verificado: válido (image/png) [caché persistente]; identificación: nombre/alias exacto registrado: E! Entertainment SD [Opc.2]
 - **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20E%21%20Entertainment%20SD%20%5BOpc.2%5D)
 
 ### E! Entertainment HD [Opc.3]
@@ -602,9 +604,9 @@
 
 - **Estado:** reparado
 - **Identificación:** nombre/alias exacto registrado: E! Entertainment HD [Opc.3]
-- **Fuente/resultado:** iptv-org: reemplazo verificado: válido (image/png); identificación: nombre/alias exacto registrado: E! Entertainment HD [Opc.3]
+- **Fuente/resultado:** iptv-org: reemplazo verificado: válido (image/png) [caché persistente]; identificación: nombre/alias exacto registrado: E! Entertainment HD [Opc.3]
 - **Logo:** https://d2n0069hmnqmmx.cloudfront.net/epgdata/1.0/newchanlogos/512/512/skychb1360.png
-- **Detalle:** iptv-org: reemplazo verificado: válido (image/png); identificación: nombre/alias exacto registrado: E! Entertainment HD [Opc.3]
+- **Detalle:** iptv-org: reemplazo verificado: válido (image/png) [caché persistente]; identificación: nombre/alias exacto registrado: E! Entertainment HD [Opc.3]
 - **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20E%21%20Entertainment%20HD%20%5BOpc.3%5D)
 
 ### Canal 26 (Nacional)
@@ -646,9 +648,9 @@
 
 - **Estado:** reparado
 - **Identificación:** similitud 82% con nombre registrado 'fact international' a partir de 'FIFA+ (IT) (Internacional)'; grupo='FIFA+'
-- **Fuente/resultado:** iptv-org: reemplazo verificado: válido (image/png); identificación: similitud 82% con nombre registrado 'fact international' a partir de 'FIFA+ (IT) (Internacional)'; grupo='FIFA+'
+- **Fuente/resultado:** iptv-org: reemplazo verificado: válido (image/png) [caché persistente]; identificación: similitud 82% con nombre registrado 'fact international' a partir de 'FIFA+ (IT) (Internacional)'; grupo='FIFA+'
 - **Logo:** https://i.imgur.com/i5Kr4n2.png
-- **Detalle:** iptv-org: reemplazo verificado: válido (image/png); identificación: similitud 82% con nombre registrado 'fact international' a partir de 'FIFA+ (IT) (Internacional)'; grupo='FIFA+'
+- **Detalle:** iptv-org: reemplazo verificado: válido (image/png) [caché persistente]; identificación: similitud 82% con nombre registrado 'fact international' a partir de 'FIFA+ (IT) (Internacional)'; grupo='FIFA+'
 - **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20FIFA%2B%20%28IT%29%20%28Internacional%29)
 
 ### Fox (TUBI Internacional)
@@ -679,9 +681,9 @@
 
 - **Estado:** reparado
 - **Identificación:** similitud 83% con nombre registrado 'tv 2 sport premium' a partir de 'TNT Sports Premium[Opc.2]'; grupo='Deportes'
-- **Fuente/resultado:** iptv-org: reemplazo verificado: válido (image/png); identificación: similitud 83% con nombre registrado 'tv 2 sport premium' a partir de 'TNT Sports Premium[Opc.2]'; grupo='Deportes'
+- **Fuente/resultado:** iptv-org: reemplazo verificado: válido (image/png) [caché persistente]; identificación: similitud 83% con nombre registrado 'tv 2 sport premium' a partir de 'TNT Sports Premium[Opc.2]'; grupo='Deportes'
 - **Logo:** https://i.imgur.com/KpfFOH2.png
-- **Detalle:** iptv-org: reemplazo verificado: válido (image/png); identificación: similitud 83% con nombre registrado 'tv 2 sport premium' a partir de 'TNT Sports Premium[Opc.2]'; grupo='Deportes'
+- **Detalle:** iptv-org: reemplazo verificado: válido (image/png) [caché persistente]; identificación: similitud 83% con nombre registrado 'tv 2 sport premium' a partir de 'TNT Sports Premium[Opc.2]'; grupo='Deportes'
 - **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20TNT%20Sports%20Premium%5BOpc.2%5D)
 
 ### TNT Sports Premium[Opc.3]
@@ -690,9 +692,9 @@
 
 - **Estado:** reparado
 - **Identificación:** similitud 83% con nombre registrado 'tv 2 sport premium' a partir de 'TNT Sports Premium[Opc.3]'; grupo='Deportes'
-- **Fuente/resultado:** iptv-org: reemplazo verificado: válido (image/png); identificación: similitud 83% con nombre registrado 'tv 2 sport premium' a partir de 'TNT Sports Premium[Opc.3]'; grupo='Deportes'
+- **Fuente/resultado:** iptv-org: reemplazo verificado: válido (image/png) [caché persistente]; identificación: similitud 83% con nombre registrado 'tv 2 sport premium' a partir de 'TNT Sports Premium[Opc.3]'; grupo='Deportes'
 - **Logo:** https://i.imgur.com/KpfFOH2.png
-- **Detalle:** iptv-org: reemplazo verificado: válido (image/png); identificación: similitud 83% con nombre registrado 'tv 2 sport premium' a partir de 'TNT Sports Premium[Opc.3]'; grupo='Deportes'
+- **Detalle:** iptv-org: reemplazo verificado: válido (image/png) [caché persistente]; identificación: similitud 83% con nombre registrado 'tv 2 sport premium' a partir de 'TNT Sports Premium[Opc.3]'; grupo='Deportes'
 - **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20TNT%20Sports%20Premium%5BOpc.3%5D)
 
 ### DSports 2
@@ -712,9 +714,9 @@
 
 - **Estado:** reparado
 - **Identificación:** nombre/alias exacto registrado: DSports 2  [Opc.2]
-- **Fuente/resultado:** iptv-org: reemplazo verificado: válido (image/png); identificación: nombre/alias exacto registrado: DSports 2  [Opc.2]
+- **Fuente/resultado:** iptv-org: reemplazo verificado: válido (image/png) [caché persistente]; identificación: nombre/alias exacto registrado: DSports 2  [Opc.2]
 - **Logo:** https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/DIRECTV_Sports_2_Latin_America_%282018%29.svg/960px-DIRECTV_Sports_2_Latin_America_%282018%29.svg.png
-- **Detalle:** iptv-org: reemplazo verificado: válido (image/png); identificación: nombre/alias exacto registrado: DSports 2  [Opc.2]
+- **Detalle:** iptv-org: reemplazo verificado: válido (image/png) [caché persistente]; identificación: nombre/alias exacto registrado: DSports 2  [Opc.2]
 - **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20DSports%202%20%20%5BOpc.2%5D)
 
 ### DSports 2  [Opc.3]
@@ -723,9 +725,9 @@
 
 - **Estado:** reparado
 - **Identificación:** nombre/alias exacto registrado: DSports 2  [Opc.3]
-- **Fuente/resultado:** iptv-org: reemplazo verificado: válido (image/png); identificación: nombre/alias exacto registrado: DSports 2  [Opc.3]
+- **Fuente/resultado:** iptv-org: reemplazo verificado: válido (image/png) [caché persistente]; identificación: nombre/alias exacto registrado: DSports 2  [Opc.3]
 - **Logo:** https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/DIRECTV_Sports_2_Latin_America_%282018%29.svg/960px-DIRECTV_Sports_2_Latin_America_%282018%29.svg.png
-- **Detalle:** iptv-org: reemplazo verificado: válido (image/png); identificación: nombre/alias exacto registrado: DSports 2  [Opc.3]
+- **Detalle:** iptv-org: reemplazo verificado: válido (image/png) [caché persistente]; identificación: nombre/alias exacto registrado: DSports 2  [Opc.3]
 - **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20DSports%202%20%20%5BOpc.3%5D)
 
 ### FOX Sport Premiumm
@@ -1890,8 +1892,6 @@
   - **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20La%202%20%28Nacional%29)
 - **La 2 (Nacional)[Opc.2]** — ![Logo de La 2 (Nacional)[Opc.2]](https://i.ibb.co/rfsr9PSh/La-2.png)
   - **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20La%202%20%28Nacional%29%5BOpc.2%5D)
-- **La 2 Catalunya (Cataluña)** — ![Logo de La 2 Catalunya (Cataluña)](https://upload.wikimedia.org/wikipedia/commons/8/8d/La_2_Catalunya_2026.svg)
-  - **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20La%202%20Catalunya%20%28Catalu%C3%B1a%29)
 - **Antena 3** — ![Logo de Antena 3](https://upload.wikimedia.org/wikipedia/commons/8/89/Logo_Antena_3_2025_%28Naranja%29.svg)
   - **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20Antena%203)
 - **Antena 3[Opc.2]** — ![Logo de Antena 3[Opc.2]](https://upload.wikimedia.org/wikipedia/commons/8/89/Logo_Antena_3_2025_%28Naranja%29.svg)
@@ -2800,10 +2800,6 @@
   - **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20Todo%20Drama)
 - **Canela Secretos** — ![Logo de Canela Secretos](https://i.ibb.co/SwL4NQvW/0-16x9-5.png)
   - **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20Canela%20Secretos)
-- **Cheaters en Español** — ![Logo de Cheaters en Español](https://canvas-lb.tubitv.com/opts/K_mJ4FVyjBezRg==/a903ad40-5f60-4adc-828f-54c0b403481c/CHgQeDoFMS4xLjlAAQ==)
-  - **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20Cheaters%20en%20Espa%C3%B1ol)
-- **FilmRise Crímenes Verdaderos** — ![Logo de FilmRise Crímenes Verdaderos](https://canvas-lb.tubitv.com/opts/RpUdI1HHOi0oMA==/8605b3b6-3605-44ef-b0d0-89a85b409bf6/CHgQeDoFMS4xLjlAAQ==)
-  - **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20FilmRise%20Cr%C3%ADmenes%20Verdaderos)
 - **FilmRise Series Gratis** — ![Logo de FilmRise Series Gratis](https://canvas-lb.tubitv.com/opts/y4kaoqWciYmkng==/2d21c4c1-c88d-4869-b75a-712da0dfad67/CHgQeDoFMS4xLjlAAQ==)
   - **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20FilmRise%20Series%20Gratis)
 - **TV Lobo Durango (Durango / México)** — ![Logo de TV Lobo Durango (Durango / México)](https://i.imgur.com/q9p1Spj.png)
@@ -2966,6 +2962,12 @@
   - **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20Discovery%20Theater%20HD%20%5BOpc.2%5D)
 - **Discovery Theater HD [Opc.3]** — ![Logo de Discovery Theater HD [Opc.3]](https://i.imgur.com/AqR0Jkn.png)
   - **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20Discovery%20Theater%20HD%20%5BOpc.3%5D)
+- **Discovery Home & Health HD** — ![Logo de Discovery Home & Health HD](https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Discovery_H%26H_Logo_2022.webp/960px-Discovery_H%26H_Logo_2022.webp.png)
+  - **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20Discovery%20Home%20%26%20Health%20HD)
+- **Discovery Home & Health SD [Opc.2]** — ![Logo de Discovery Home & Health SD [Opc.2]](https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Discovery_H%26H_Logo_2022.webp/960px-Discovery_H%26H_Logo_2022.webp.png)
+  - **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20Discovery%20Home%20%26%20Health%20SD%20%5BOpc.2%5D)
+- **Discovery Home & Health SD [Opc.3]** — ![Logo de Discovery Home & Health SD [Opc.3]](https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Discovery_H%26H_Logo_2022.webp/960px-Discovery_H%26H_Logo_2022.webp.png)
+  - **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20Discovery%20Home%20%26%20Health%20SD%20%5BOpc.3%5D)
 - **Film & Arts HD** — ![Logo de Film & Arts HD](https://i.imgur.com/ukdmEKD.png)
   - **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20Film%20%26%20Arts%20HD)
 - **Film & Arts SD [Opc.2]** — ![Logo de Film & Arts SD [Opc.2]](https://i.imgur.com/ukdmEKD.png)
@@ -3092,10 +3094,14 @@
   - **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20DW%20Espa%C3%B1ol%20%28Alemania%20%2F%20Internacional%29)
 - **Canal Parlamento (España / Nacional)** — ![Logo de Canal Parlamento (España / Nacional)](https://i.imgur.com/BUO0wH6.png)
   - **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20Canal%20Parlamento%20%28Espa%C3%B1a%20%2F%20Nacional%29)
+- **El Toro TV (España / Nacional)** — ![Logo de El Toro TV (España / Nacional)](https://upload.wikimedia.org/wikipedia/commons/9/93/Eltorotv.png)
+  - **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20El%20Toro%20TV%20%28Espa%C3%B1a%20%2F%20Nacional%29)
 - **Distrito TV (España / Nacional)** — ![Logo de Distrito TV (España / Nacional)](https://i.imgur.com/AqGIoIt.png)
   - **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20Distrito%20TV%20%28Espa%C3%B1a%20%2F%20Nacional%29)
 - **Canal Sur Más Noticias (Andalucía)** — ![Logo de Canal Sur Más Noticias (Andalucía)](https://i.imgur.com/lznnA4v.png)
   - **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20Canal%20Sur%20M%C3%A1s%20Noticias%20%28Andaluc%C3%ADa%29)
+- **FTV Fuengirola (Málaga - Andalucía)** — ![Logo de FTV Fuengirola (Málaga - Andalucía)](https://fuengirolatv.com/newftv/wp-content/uploads/2024/10/logos-ftv.png)
+  - **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20FTV%20Fuengirola%20%28M%C3%A1laga%20-%20Andaluc%C3%ADa%29)
 - **Canal 2000 La Solana HD (Ciudad Real - Castilla-La Mancha)** — ![Logo de Canal 2000 La Solana HD (Ciudad Real - Castilla-La Mancha)](https://i.imgur.com/9RoBASf.png)
   - **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20Canal%202000%20La%20Solana%20HD%20%28Ciudad%20Real%20-%20Castilla-La%20Mancha%29)
 - **TV BRICS (Rusia / Internacional)** — ![Logo de TV BRICS (Rusia / Internacional)](https://i.imgur.com/vLpm8tN.png)
@@ -4015,6 +4021,12 @@
 - **Logo actual:** https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Logo_La_2_Canarias.png/960px-Logo_La_2_Canarias.png
 - **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20La%202%20Canarias%20%28Canarias%29)
 
+### La 2 Catalunya (Cataluña)
+
+- **Motivo:** No se pudo identificar de forma fiable 'La 2 Catalunya (Cataluña)'; no se cambió el nombre ni se inventó un logo.
+- **Logo actual:** https://upload.wikimedia.org/wikipedia/commons/8/8d/La_2_Catalunya_2026.svg
+- **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20La%202%20Catalunya%20%28Catalu%C3%B1a%29)
+
 ### Tenerife Plus TV
 
 - **Motivo:** No se encontró logo API verificable. Candidato iptv-org rechazado: HTTP 404
@@ -4351,6 +4363,18 @@
 - **Logo actual:** No tenía logo
 - **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20LA%20TELE%20HD%20%5BOpc.2%5D)
 
+### Cheaters en Español
+
+- **Motivo:** No se pudo identificar de forma fiable 'Cheaters en Español'; no se cambió el nombre ni se inventó un logo.
+- **Logo actual:** https://canvas-lb.tubitv.com/opts/K_mJ4FVyjBezRg==/a903ad40-5f60-4adc-828f-54c0b403481c/CHgQeDoFMS4xLjlAAQ==
+- **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20Cheaters%20en%20Espa%C3%B1ol)
+
+### FilmRise Crímenes Verdaderos
+
+- **Motivo:** No se pudo identificar de forma fiable 'FilmRise Crímenes Verdaderos'; no se cambió el nombre ni se inventó un logo.
+- **Logo actual:** https://canvas-lb.tubitv.com/opts/RpUdI1HHOi0oMA==/8605b3b6-3605-44ef-b0d0-89a85b409bf6/CHgQeDoFMS4xLjlAAQ==
+- **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20FilmRise%20Cr%C3%ADmenes%20Verdaderos)
+
 ### Canal 9 Litoral (Entre Ríos / Argentina)
 
 - **Motivo:** No se pudo identificar de forma fiable 'Canal 9 Litoral (Entre Ríos / Argentina)'; no se cambió el nombre ni se inventó un logo.
@@ -4452,24 +4476,6 @@
 - **Motivo:** No se pudo identificar de forma fiable 'Discovery ID HD [Opc.3]'; no se cambió el nombre ni se inventó un logo.
 - **Logo actual:** https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/InvestigationDiscoveryLogo2020.svg/960px-InvestigationDiscoveryLogo2020.svg.png
 - **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20Discovery%20ID%20HD%20%5BOpc.3%5D)
-
-### Discovery Home & Health HD
-
-- **Motivo:** No se pudo identificar de forma fiable 'Discovery Home & Health HD'; no se cambió el nombre ni se inventó un logo.
-- **Logo actual:** https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Discovery_H%26H_Logo_2022.webp/960px-Discovery_H%26H_Logo_2022.webp.png
-- **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20Discovery%20Home%20%26%20Health%20HD)
-
-### Discovery Home & Health SD [Opc.2]
-
-- **Motivo:** No se pudo identificar de forma fiable 'Discovery Home & Health SD [Opc.2]'; no se cambió el nombre ni se inventó un logo.
-- **Logo actual:** https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Discovery_H%26H_Logo_2022.webp/960px-Discovery_H%26H_Logo_2022.webp.png
-- **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20Discovery%20Home%20%26%20Health%20SD%20%5BOpc.2%5D)
-
-### Discovery Home & Health SD [Opc.3]
-
-- **Motivo:** No se pudo identificar de forma fiable 'Discovery Home & Health SD [Opc.3]'; no se cambió el nombre ni se inventó un logo.
-- **Logo actual:** https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Discovery_H%26H_Logo_2022.webp/960px-Discovery_H%26H_Logo_2022.webp.png
-- **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20Discovery%20Home%20%26%20Health%20SD%20%5BOpc.3%5D)
 
 ### Discovery Science SD
 
@@ -4578,18 +4584,6 @@
 - **Motivo:** No se pudo identificar de forma fiable 'TLC HD [Opc.3]'; no se cambió el nombre ni se inventó un logo.
 - **Logo actual:** https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/TLC_Logo.svg/960px-TLC_Logo.svg.png
 - **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20TLC%20HD%20%5BOpc.3%5D)
-
-### El Toro TV (España / Nacional)
-
-- **Motivo:** No se pudo identificar de forma fiable 'El Toro TV (España / Nacional)'; no se cambió el nombre ni se inventó un logo.
-- **Logo actual:** https://upload.wikimedia.org/wikipedia/commons/9/93/Eltorotv.png
-- **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20El%20Toro%20TV%20%28Espa%C3%B1a%20%2F%20Nacional%29)
-
-### FTV Fuengirola (Málaga - Andalucía)
-
-- **Motivo:** No se pudo identificar de forma fiable 'FTV Fuengirola (Málaga - Andalucía)'; no se cambió el nombre ni se inventó un logo.
-- **Logo actual:** https://fuengirolatv.com/newftv/wp-content/uploads/2024/10/logos-ftv.png
-- **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20FTV%20Fuengirola%20%28M%C3%A1laga%20-%20Andaluc%C3%ADa%29)
 
 ### Cartoonito SD (Opc.1)
 
