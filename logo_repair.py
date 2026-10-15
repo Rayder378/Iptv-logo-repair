@@ -891,6 +891,10 @@ def main():
     report_lines = [
         "# Informe de reparación de logos IPTV",
         "",
+        "[🔎 Abrir buscador y corrector de logos IPTV](https://rayder378.github.io/Iptv-logo-repair/logo-search.html)",
+        "",
+        "> Usa el buscador para elegir una miniatura y guardar/reemplazar el logo desde la página. Requiere autorización de GitHub.",
+        "",
         f"- **Base persistente:** `{PERSISTENT_CACHE_PATH.relative_to(root)}` ({len(_persistent_cache)} URLs; revalidación positiva cada 7 días)",
         "",
         f"- **Entrada:** {md_escape(input_label)}",
