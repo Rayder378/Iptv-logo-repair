@@ -67,6 +67,23 @@ El workflow programado se ejecuta semanalmente (lunes). También se puede lanzar
 - Los nombres de grupos pueden variar; solo se reconocen los grupos configurados en el script.
 - Si la playlist contiene enlaces privados o tokens, no la publiques en un repositorio público. Usa un repositorio privado o un secreto `M3U_URL`.
 
+## Buscador visual de logos (catálogos gratuitos)
+
+Se incluye `logo-search.html`, una página estática que permite buscar y previsualizar candidatos de los catálogos públicos de iptv-org, Jaruba y Yasserstudio, elegir una miniatura y copiar su URL. No requiere clave de SerpApi ni otro servicio de pago. El botón «Buscar en Google Imágenes» abre una pestaña externa con una consulta como «TNT logo canal png»; no importa automáticamente miniaturas de Google dentro de esta página.
+
+### Activarlo desde GitHub
+
+1. Sube `logo-search.html` a la raíz de la rama `main`.
+2. En el repositorio abre **Settings → Pages**.
+3. En **Build and deployment**, elige **Deploy from a branch**, rama `main` y carpeta `/(root)`, y guarda.
+4. Cuando GitHub Pages publique el sitio, abre la URL que indique en Settings → Pages y busca, por ejemplo, `TNT`.
+5. Revisa la miniatura, el nombre y la fuente. Selecciona el logo correcto y copia su URL.
+6. Abre **Actions → Gestionar logo manualmente → Run workflow**. Introduce el nombre exacto de la playlist, elige `url_manual` y pega la URL en `logo_url`.
+
+El buscador no cambia directamente la playlist ni almacena tokens de GitHub en el navegador. La selección se aplica mediante el workflow existente, que guarda la corrección en `logo_overrides.json` y vuelve a generar los resultados. Esto requiere permiso de escritura en el repositorio.
+
+**Limitaciones:** los catálogos gratuitos pueden no tener todas las variantes regionales; algunos sitios pueden bloquear las miniaturas por CORS o disponibilidad. Si una miniatura no carga, comprueba el enlace de origen antes de usarlo. La vista previa y una respuesta HTTP correcta no prueban por sí solas que el logo sea oficial. No se modifica ningún canal hasta ejecutar la corrección manual.
+
 ## Corrección manual de logos (solo administradores y colaboradores)
 
 En `output/report.md`, cada canal incluye un enlace **Gestionar logo (solo admin/colaboradores)**. Ese enlace abre el workflow `Gestionar logo manualmente` de GitHub Actions. GitHub exige permiso de escritura para ejecutar el workflow; los visitantes sin esos permisos no pueden aplicar cambios.
