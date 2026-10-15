@@ -3,6 +3,8 @@
 """Revisa logos de una playlist M3U y repara los que se confirman rotos."""
 
 import csv
+import concurrent.futures
+from functools import lru_cache
 import difflib
 import json
 import os
@@ -23,7 +25,8 @@ YASSER_INDEX_URL = "https://raw.githubusercontent.com/yasserstudio/tv-logos/main
 JARUBA_BASE = "https://jaruba.github.io/channel-logos/export/transparent-color"
 YASSER_BASE = "https://raw.githubusercontent.com/yasserstudio/tv-logos/main"
 USER_AGENT = "iptv-logo-repair/1.1 (+GitHub Actions)"
-TIMEOUT = 20
+TIMEOUT = 10
+VERIFY_WORKERS = max(4, min(16, int(os.environ.get("LOGO_VERIFY_WORKERS", "12"))))
 MAX_IMAGE_BYTES = 8 * 1024 * 1024
 MAX_PLAYLIST_BYTES = 100 * 1024 * 1024
 MAX_JSON_BYTES = 35 * 1024 * 1024
@@ -110,6 +113,7 @@ def image_signature(data):
     return ""
 
 
+@lru_cache(maxsize=50000)
 def verify_logo(url):
     """Comprueba el contenido real, no solo que el servidor responda."""
     if not url or urllib.parse.urlparse(url).scheme not in ("http", "https"):
@@ -498,6 +502,8 @@ def main():
     playlist_text, input_label = choose_input(root)
 
     lines = playlist_text.splitlines()
+    extinf_count = sum(1 for line in lines if line.strip().startswith("#EXTINF:"))
+    print(f"Playlist descargada: {len(playlist_text):,} caracteres; {extinf_count:,} entradas EXTINF.")
     if not any(line.strip().startswith("#EXTM3U") for line in lines):
         raise ValueError("La entrada no parece una playlist M3U válida.")
 
@@ -527,6 +533,46 @@ def main():
     except Exception as exc:
         print(f"AVISO: no se pudo leer logo_overrides.json: {exc}")
         overrides = {}
+
+    # Precalienta las verificaciones en paralelo antes de procesar la M3U.
+    # Esto evita esperar secuencialmente por miles de URLs y reutiliza resultados
+    # para logos repetidos. El resultado final se escribe en el orden original.
+    urls_to_verify = set()
+    channel_plans = []
+    for source_line in lines:
+        if not source_line.strip().startswith("#EXTINF:"):
+            continue
+        source_header, source_name = split_extinf(source_line.strip())
+        source_attrs = attrs(source_header)
+        source_current = source_attrs.get("tvg-logo", "").strip()
+        source_channel, source_feed, _ = identify_channel(
+            source_name, source_attrs, channel_by_id, channel_name_index, feed_name_index
+        )
+        source_candidates = []
+        if source_channel:
+            source_candidates.extend(
+                str(item.get("url") or "")
+                for item in candidate_logos(str(source_channel.get("id") or ""), source_feed, logos)
+            )
+            source_candidates.extend(
+                url for url, _ in secondary_candidates(
+                    source_name, source_attrs.get("tvg-name", ""), jaruba_logos, yasser_logos
+                )
+            )
+        manual = overrides.get(source_name, "__NO_OVERRIDE__")
+        if source_current:
+            urls_to_verify.add(source_current)
+        urls_to_verify.update(url for url in source_candidates if url.startswith(("http://", "https://")))
+        if isinstance(manual, str) and manual.startswith(("http://", "https://")):
+            urls_to_verify.add(manual)
+        channel_plans.append((source_name, source_channel, source_feed, source_candidates))
+
+    unique_urls = sorted(urls_to_verify)
+    print(f"Verificando {len(unique_urls)} URLs de logos únicas con hasta {VERIFY_WORKERS} solicitudes concurrentes...")
+    with concurrent.futures.ThreadPoolExecutor(max_workers=VERIFY_WORKERS) as pool:
+        for index, _ in enumerate(pool.map(verify_logo, unique_urls), start=1):
+            if index % 100 == 0 or index == len(unique_urls):
+                print(f"Progreso de verificación: {index}/{len(unique_urls)} URLs")
 
     out_lines = []
     rows = []
