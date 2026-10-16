@@ -97,3 +97,12 @@ En `output/report.md`, cada canal incluye un enlace **Gestionar logo (solo admin
 Las reglas usan el nombre visible exacto como clave. No cambian el nombre del canal, el grupo ni la URL de transmisión. Una regla manual tiene prioridad sobre la búsqueda automática. Para revertir una regla, elimina la entrada correspondiente de `logo_overrides.json` y guarda el cambio.
 
 **Seguridad:** la protección depende de los permisos de escritura de GitHub y de la configuración de ramas del repositorio. Si usas reglas de protección que bloquean los pushes de Actions, tendrás que autorizar el workflow o adaptar el proceso.
+
+## Actualización: selección inteligente y verificación en Google
+
+- `logo-search.html` intenta cargar `output/playlist_logos_reparados.m3u` desde la rama `main`. Al escribir un nombre parcial (por ejemplo, `TNT`), filtra los nombres reales y permite seleccionar la variante exacta, como `TNT HD` o `TNT Opc1`. La selección no se aplica por sí sola: copia el nombre y la URL, y confirma la corrección en el workflow.
+- El informe `output/report.md` añade un enlace a Google Imágenes solo cuando la identificación del canal proviene de una coincidencia exacta, feed registrado o similitud aceptada. Los canales sin coincidencia no reciben una búsqueda de Google.
+- Google Imágenes es una revisión manual: ayuda a comparar resultados, pero no confirma automáticamente que un logo sea el correcto.
+- Los workflows descargan el historial completo de Git para hacer `rebase` con más fiabilidad; el workflow manual también evita fallar si la regla ya estaba guardada.
+
+**Para actualizar:** conserva tus secretos y variables de GitHub. Reemplaza los archivos del paquete en el repositorio respetando sus rutas (`logo_repair.py`, `logo-search.html`, `.github/workflows/logo-repair.yml`, `.github/workflows/manage-logo.yml` y `README.md`). No subas carpetas `__pycache__`. Después ejecuta **Actions → Reparar logos IPTV → Run workflow** para regenerar el informe. El buscador puede leer la playlist publicada solo si el repositorio es público y la ruta `output/playlist_logos_reparados.m3u` existe.

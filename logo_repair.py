@@ -880,6 +880,23 @@ def main():
         title = urllib.parse.quote(f"Gestionar logo: {channel}", safe="")
         return f"[Gestionar logo (solo admin/colaboradores)]({workflow_url}?query={title})"
 
+    # Solo se ofrece verificación externa en Google para filas que el sistema
+    # identificó por una coincidencia de catálogo (exacta, feed o similitud).
+    # Google abre resultados para revisión humana; no confirma automáticamente
+    # que la imagen sea oficial o visualmente correcta.
+    def google_verification_link(row):
+        identification = str(row.get("identificacion", "")).casefold()
+        matched = any(marker in identification for marker in (
+            "coincidencia", "exacto registrado", "feed exacto registrado", "similitud"
+        ))
+        if not matched:
+            return ""
+        channel = str(row.get("canal", "")).strip()
+        if not channel:
+            return ""
+        query = urllib.parse.quote(f"{channel} logo canal png", safe="")
+        return f"- **Verificar coincidencia en Google Imágenes:** [Buscar logo y comparar](https://www.google.com/search?tbm=isch&q={query})"
+
     # Markdown report with actual logo URLs as image previews.
     def md_escape(value):
         return str(value or "").replace("|", r"\|").replace("\r", " ").replace("\n", " ")
@@ -890,10 +907,6 @@ def main():
 
     report_lines = [
         "# Informe de reparación de logos IPTV",
-        "",
-        "[🔎 Abrir buscador y corrector de logos IPTV](https://rayder378.github.io/Iptv-logo-repair/logo-search.html)",
-        "",
-        "> Usa el buscador para elegir una miniatura y guardar/reemplazar el logo desde la página. Requiere autorización de GitHub.",
         "",
         f"- **Base persistente:** `{PERSISTENT_CACHE_PATH.relative_to(root)}` ({len(_persistent_cache)} URLs; revalidación positiva cada 7 días)",
         "",
@@ -921,6 +934,7 @@ def main():
                 "",
                 f"- **Estado:** {md_escape(row['estado'])}",
                 f"- **Identificación:** {md_escape(row['identificacion'])}",
+                google_verification_link(row),
                 f"- **Fuente/resultado:** {md_escape(row['detalle'])}",
                 f"- **Logo:** {md_escape(row['logo_final'])}",
                 f"- **Detalle:** {md_escape(row['detalle'])}",
@@ -939,6 +953,9 @@ def main():
                 if row["logo_final"] else f"- **{md_escape(row['canal'])}** — conservado"
             )
             report_lines.append(f"  - **Corrección manual:** {management_link(row['canal'])}")
+            google_link = google_verification_link(row)
+            if google_link:
+                report_lines.append("  - " + google_link.removeprefix("- "))
     else:
         report_lines.append("No se conservaron logos funcionales en esta ejecución.")
     report_lines.extend(["", "## Canales sin reparar", ""])
@@ -948,6 +965,7 @@ def main():
                 f"### {md_escape(row['canal']) if row['canal'].strip() else '(sin nombre)' }",
                 "",
                 f"- **Motivo:** {md_escape(row['detalle'])}",
+                google_verification_link(row),
                 f"- **Logo actual:** {md_escape(row['logo_original']) or 'No tenía logo'}",
                 f"- **Corrección manual:** {management_link(row['canal'])}",
                 "",
