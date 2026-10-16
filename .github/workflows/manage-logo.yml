@@ -33,6 +33,8 @@ jobs:
     steps:
       - name: Descargar repositorio
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Guardar corrección manual
         env:
@@ -72,22 +74,26 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add logo_overrides.json
-          git commit -m "Gestionar logo manualmente"
-          git fetch origin main
-          if ! git rebase origin/main; then
-            echo "::error::No se pudo integrar main al guardar la regla manual."
-            git rebase --abort || true
-            exit 1
-          fi
-          if ! git push origin HEAD:main; then
-            echo "El remoto avanzó durante el envío; se reintenta una vez."
+          if git diff --cached --quiet; then
+            echo "La regla manual ya estaba guardada; se continúa para regenerar la playlist."
+          else
+            git commit -m "Gestionar logo manualmente"
             git fetch origin main
             if ! git rebase origin/main; then
-              echo "::error::No se pudo integrar el último cambio de main."
+              echo "::error::No se pudo integrar main al guardar la regla manual."
               git rebase --abort || true
               exit 1
             fi
-            git push origin HEAD:main
+            if ! git push origin HEAD:main; then
+              echo "El remoto avanzó durante el envío; se reintenta una vez."
+              git fetch origin main
+              if ! git rebase origin/main; then
+                echo "::error::No se pudo integrar el último cambio de main."
+                git rebase --abort || true
+                exit 1
+              fi
+              git push origin HEAD:main
+            fi
           fi
 
       - name: Ejecutar reparación para aplicar el cambio
