@@ -30,13 +30,13 @@
     "result": "válido (image/png)"
   },
   "https://a.jsrdn.com/hls/22882/chicas-guapas-tv/logo_20250513_211005_70.png": {
-    "checked_at": "2026-10-16T00:47:54.404228+00:00",
+    "checked_at": "2026-10-16T00:50:17.216117+00:00",
     "next_check_after_days": 7,
     "ok": false,
     "result": "HTTP 403"
   },
   "https://a.jsrdn.com/hls/23195/box-cinema/logo_20250102_225527_70.png": {
-    "checked_at": "2026-10-16T00:47:56.200266+00:00",
+    "checked_at": "2026-10-16T00:50:18.984262+00:00",
     "next_check_after_days": 7,
     "ok": false,
     "result": "HTTP 403"
@@ -48,7 +48,7 @@
     "result": "válido (image/png)"
   },
   "https://arc.cms.elektamedia.com/media/uploads/channel/96f47b4f-6559-4b01-b3cb-4e5ea5d3ae36/channel-icon/2026/03/23/1774305986670-qtfeqq-primired.png": {
-    "checked_at": "2026-10-16T00:47:50.867639+00:00",
+    "checked_at": "2026-10-16T00:50:13.721466+00:00",
     "next_check_after_days": 7,
     "ok": false,
     "result": "URLError: <urlopen error [Errno -2] Name or service not known>"
@@ -204,7 +204,7 @@
     "result": "válido (image/png)"
   },
   "https://cdn.m3u.cl/logo/518_TVS_Maracay.png": {
-    "checked_at": "2026-10-16T00:47:40.884334+00:00",
+    "checked_at": "2026-10-16T00:50:03.716394+00:00",
     "next_check_after_days": 7,
     "ok": false,
     "result": "HTTP 416"
@@ -324,7 +324,7 @@
     "result": "válido (image/png)"
   },
   "https://ejtv.wpenginepowered.com/wp-content/uploads/2014/07/ejtvlogo3.png": {
-    "checked_at": "2026-10-16T00:48:49.972719+00:00",
+    "checked_at": "2026-10-16T00:51:11.974626+00:00",
     "next_check_after_days": 7,
     "ok": false,
     "result": "HTTP 404"
@@ -822,7 +822,7 @@
     "result": "válido (image/jpeg)"
   },
   "https://graph.facebook.com/tenerifeplustv/picture?width=200&height=200": {
-    "checked_at": "2026-10-16T00:47:46.801783+00:00",
+    "checked_at": "2026-10-16T00:50:09.557948+00:00",
     "next_check_after_days": 7,
     "ok": false,
     "result": "HTTP 400"
@@ -5664,7 +5664,7 @@
     "result": "válido (image/png)"
   },
   "https://i.postimg.cc/yx0fLNBc/mytime-movie-network-México-mx.png": {
-    "checked_at": "2026-10-16T00:47:57.122873+00:00",
+    "checked_at": "2026-10-16T00:50:19.893815+00:00",
     "next_check_after_days": 7,
     "ok": false,
     "result": "UnicodeEncodeError: 'ascii' codec can't encode character '\\xe9' in position 36: ordinal not in range(128)"
@@ -6048,7 +6048,7 @@
     "result": "válido (image/png)"
   },
   "https://jaruba.github.io/channel-logos/export/transparent-color/ulzkSZHZCttGVEuESQBmhqO4XaA.png": {
-    "checked_at": "2026-10-16T00:47:28.126846+00:00",
+    "checked_at": "2026-10-16T00:49:51.161249+00:00",
     "next_check_after_days": 7,
     "ok": false,
     "result": "HTTP 404"
@@ -6108,7 +6108,7 @@
     "result": "válido (image/jpeg)"
   },
   "https://meganetfun.com/storage/channel-logos/OX5yIxwlS0G571zxAPU4IAv3R53fAlSTAQU14awu.png": {
-    "checked_at": "2026-10-16T00:47:17.063485+00:00",
+    "checked_at": "2026-10-16T00:49:40.323367+00:00",
     "next_check_after_days": 7,
     "ok": false,
     "result": "HTTP 404"
@@ -6120,13 +6120,13 @@
     "result": "válido (image/png)"
   },
   "https://mejoresradioytv.com/wp-content/uploads/2025/01/Canal-69.jpg": {
-    "checked_at": "2026-10-16T00:47:57.853889+00:00",
+    "checked_at": "2026-10-16T00:50:20.613150+00:00",
     "next_check_after_days": 7,
     "ok": false,
     "result": "HTTP 525"
   },
   "https://mitvpy.com/wp-content/uploads/2025/07/cropped-C015-LOGO-02.png": {
-    "checked_at": "2026-10-16T00:48:08.887892+00:00",
+    "checked_at": "2026-10-16T00:50:31.415469+00:00",
     "next_check_after_days": 7,
     "ok": false,
     "result": "HTTP 404"
@@ -6204,7 +6204,7 @@
     "result": "válido (image/png)"
   },
   "https://onzatv.com/wp-content/uploads/2025/02/cropped-fav.Onza-tv-2.png": {
-    "checked_at": "2026-10-16T00:47:57.715705+00:00",
+    "checked_at": "2026-10-16T00:50:20.477067+00:00",
     "next_check_after_days": 7,
     "ok": false,
     "result": "HTTP 404"
@@ -6852,43 +6852,43 @@
     "result": "válido (image/png)"
   },
   "https://upload.wikimedia.org/wikipedia/commons/a/af/SNT_LOGO.jpg": {
-    "checked_at": "2026-10-16T00:47:36.370207+00:00",
+    "checked_at": "2026-10-16T00:49:59.269667+00:00",
     "next_check_after_days": 7,
     "ok": false,
     "result": "HTTP 429"
   },
   "https://upload.wikimedia.org/wikipedia/commons/e/e3/2024_Disney_Jr._Logo.svg": {
-    "checked_at": "2026-10-16T00:48:26.554932+00:00",
+    "checked_at": "2026-10-16T00:50:48.847445+00:00",
     "next_check_after_days": 7,
     "ok": false,
     "result": "HTTP 429"
   },
   "https://upload.wikimedia.org/wikipedia/commons/e/e6/Logoteleamazonas.png": {
-    "checked_at": "2026-10-16T00:47:25.066022+00:00",
+    "checked_at": "2026-10-16T00:49:48.230413+00:00",
     "next_check_after_days": 7,
     "ok": false,
     "result": "HTTP 429"
   },
   "https://upload.wikimedia.org/wikipedia/commons/e/e7/TVE.svg": {
-    "checked_at": "2026-10-16T00:48:04.984724+00:00",
+    "checked_at": "2026-10-16T00:50:27.576319+00:00",
     "next_check_after_days": 7,
     "ok": false,
     "result": "HTTP 429"
   },
   "https://upload.wikimedia.org/wikipedia/commons/f/f6/RetroTV_logo.png": {
-    "checked_at": "2026-10-16T00:48:08.671314+00:00",
+    "checked_at": "2026-10-16T00:50:31.205060+00:00",
     "next_check_after_days": 7,
     "ok": false,
     "result": "HTTP 429"
   },
   "https://upload.wikimedia.org/wikipedia/commons/f/ff/2024_Disney_Channel_text_logo.svg": {
-    "checked_at": "2026-10-16T00:48:28.187138+00:00",
+    "checked_at": "2026-10-16T00:50:50.438518+00:00",
     "next_check_after_days": 7,
     "ok": false,
     "result": "HTTP 429"
   },
   "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/History_%282021%29.svg/500px-History_%282021%29.svg.png": {
-    "checked_at": "2026-10-16T00:48:19.267583+00:00",
+    "checked_at": "2026-10-16T00:50:41.670424+00:00",
     "next_check_after_days": 7,
     "ok": false,
     "result": "HTTP 429"
@@ -6906,7 +6906,7 @@
     "result": "válido (image/png)"
   },
   "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/FOX_Sports_logo.svg/960px-FOX_Sports_logo.svg.png": {
-    "checked_at": "2026-10-16T00:48:47.122163+00:00",
+    "checked_at": "2026-10-16T00:51:09.122974+00:00",
     "next_check_after_days": 7,
     "ok": false,
     "result": "HTTP 429"
@@ -6918,121 +6918,121 @@
     "result": "válido (image/png)"
   },
   "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Telemax_Argentina_%282018%29.png/960px-Telemax_Argentina_%282018%29.png": {
-    "checked_at": "2026-10-16T00:48:13.165482+00:00",
+    "checked_at": "2026-10-16T00:50:35.629931+00:00",
     "next_check_after_days": 7,
     "ok": false,
     "result": "HTTP 429"
   },
   "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Atreseries_2020_logo.svg/960px-Atreseries_2020_logo.svg.png": {
-    "checked_at": "2026-10-16T00:48:04.870452+00:00",
+    "checked_at": "2026-10-16T00:50:27.465378+00:00",
     "next_check_after_days": 7,
     "ok": false,
     "result": "HTTP 429"
   },
   "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/SpaceLogo.svg/960px-SpaceLogo.svg.png": {
-    "checked_at": "2026-10-16T00:48:00.413582+00:00",
+    "checked_at": "2026-10-16T00:50:23.124679+00:00",
     "next_check_after_days": 7,
     "ok": false,
     "result": "HTTP 429"
   },
   "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/HBO_Pop.svg/960px-HBO_Pop.svg.png": {
-    "checked_at": "2026-10-16T00:47:59.174058+00:00",
+    "checked_at": "2026-10-16T00:50:21.911325+00:00",
     "next_check_after_days": 7,
     "ok": false,
     "result": "HTTP 429"
   },
   "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/2018_Animal_Planet_logo.svg/960px-2018_Animal_Planet_logo.svg.png": {
-    "checked_at": "2026-10-16T00:48:19.113608+00:00",
+    "checked_at": "2026-10-16T00:50:41.519541+00:00",
     "next_check_after_days": 7,
     "ok": false,
     "result": "HTTP 429"
   },
   "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/HBO_Family.svg/960px-HBO_Family.svg.png": {
-    "checked_at": "2026-10-16T00:47:59.339913+00:00",
+    "checked_at": "2026-10-16T00:50:22.073189+00:00",
     "next_check_after_days": 7,
     "ok": false,
     "result": "HTTP 429"
   },
   "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/TNT_Logo_2016.svg/960px-TNT_Logo_2016.svg.png": {
-    "checked_at": "2026-10-16T00:48:06.397510+00:00",
+    "checked_at": "2026-10-16T00:50:28.966511+00:00",
     "next_check_after_days": 7,
     "ok": false,
     "result": "HTTP 429"
   },
   "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Sky_Sport_1_DE_Logo_2020.svg/960px-Sky_Sport_1_DE_Logo_2020.svg.png": {
-    "checked_at": "2026-10-16T00:48:39.679059+00:00",
+    "checked_at": "2026-10-16T00:51:01.807228+00:00",
     "next_check_after_days": 7,
     "ok": false,
     "result": "HTTP 429"
   },
   "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/ESPN_wordmark.svg/960px-ESPN_wordmark.svg.png": {
-    "checked_at": "2026-10-16T00:48:49.158454+00:00",
+    "checked_at": "2026-10-16T00:51:11.154970+00:00",
     "next_check_after_days": 7,
     "ok": false,
     "result": "HTTP 429"
   },
   "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/AMC_logo_2019.svg/960px-AMC_logo_2019.svg.png": {
-    "checked_at": "2026-10-16T00:48:04.642244+00:00",
+    "checked_at": "2026-10-16T00:50:27.244846+00:00",
     "next_check_after_days": 7,
     "ok": false,
     "result": "HTTP 429"
   },
   "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/InvestigationDiscoveryLogo2020.svg/960px-InvestigationDiscoveryLogo2020.svg.png": {
-    "checked_at": "2026-10-16T00:48:18.224951+00:00",
+    "checked_at": "2026-10-16T00:50:40.644534+00:00",
     "next_check_after_days": 7,
     "ok": false,
     "result": "HTTP 429"
   },
   "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/FOX_Deportes_logo.png/960px-FOX_Deportes_logo.png": {
-    "checked_at": "2026-10-16T00:48:39.776619+00:00",
+    "checked_at": "2026-10-16T00:51:01.904420+00:00",
     "next_check_after_days": 7,
     "ok": false,
     "result": "HTTP 429"
   },
   "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Tigo_Sports_2025.png/960px-Tigo_Sports_2025.png": {
-    "checked_at": "2026-10-16T00:48:40.000128+00:00",
+    "checked_at": "2026-10-16T00:51:02.128172+00:00",
     "next_check_after_days": 7,
     "ok": false,
     "result": "HTTP 429"
   },
   "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Logo_La_2_Canarias.png/960px-Logo_La_2_Canarias.png": {
-    "checked_at": "2026-10-16T00:47:41.803537+00:00",
+    "checked_at": "2026-10-16T00:50:04.642179+00:00",
     "next_check_after_days": 7,
     "ok": false,
     "result": "HTTP 429"
   },
   "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Am%C3%A9rica_Televisi%C3%B3n.svg/500px-Am%C3%A9rica_Televisi%C3%B3n.svg.png": {
-    "checked_at": "2026-10-16T00:47:28.073697+00:00",
+    "checked_at": "2026-10-16T00:49:51.109102+00:00",
     "next_check_after_days": 7,
     "ok": false,
     "result": "HTTP 429"
   },
   "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/FX_International_logo.svg/960px-FX_International_logo.svg.png": {
-    "checked_at": "2026-10-16T00:48:00.910351+00:00",
+    "checked_at": "2026-10-16T00:50:23.609310+00:00",
     "next_check_after_days": 7,
     "ok": false,
     "result": "HTTP 429"
   },
   "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/ESPN3_Logo.png/960px-ESPN3_Logo.png": {
-    "checked_at": "2026-10-16T00:48:48.887337+00:00",
+    "checked_at": "2026-10-16T00:51:10.883374+00:00",
     "next_check_after_days": 7,
     "ok": false,
     "result": "HTTP 429"
   },
   "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/AXN_logo_%282015%29.svg/960px-AXN_logo_%282015%29.svg.png": {
-    "checked_at": "2026-10-16T00:48:04.758230+00:00",
+    "checked_at": "2026-10-16T00:50:27.355654+00:00",
     "next_check_after_days": 7,
     "ok": false,
     "result": "HTTP 429"
   },
   "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/TyC_Sports_logo.svg/960px-TyC_Sports_logo.svg.png": {
-    "checked_at": "2026-10-16T00:48:44.024628+00:00",
+    "checked_at": "2026-10-16T00:51:06.049901+00:00",
     "next_check_after_days": 7,
     "ok": false,
     "result": "HTTP 429"
   },
   "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Warner2018LA.png/960px-Warner2018LA.png": {
-    "checked_at": "2026-10-16T00:47:59.642556+00:00",
+    "checked_at": "2026-10-16T00:50:22.368089+00:00",
     "next_check_after_days": 7,
     "ok": false,
     "result": "HTTP 429"
@@ -7050,55 +7050,55 @@
     "result": "válido (image/png)"
   },
   "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/DistritoComediaLOGO2018.png/960px-DistritoComediaLOGO2018.png": {
-    "checked_at": "2026-10-16T00:48:05.093500+00:00",
+    "checked_at": "2026-10-16T00:50:27.683243+00:00",
     "next_check_after_days": 7,
     "ok": false,
     "result": "HTTP 429"
   },
   "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/HBO2_logo.svg/960px-HBO2_logo.svg.png": {
-    "checked_at": "2026-10-16T00:47:58.977603+00:00",
+    "checked_at": "2026-10-16T00:50:21.718858+00:00",
     "next_check_after_days": 7,
     "ok": false,
     "result": "HTTP 429"
   },
   "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/StudioUniversal2016.png/960px-StudioUniversal2016.png": {
-    "checked_at": "2026-10-16T00:47:58.833782+00:00",
+    "checked_at": "2026-10-16T00:50:21.576830+00:00",
     "next_check_after_days": 7,
     "ok": false,
     "result": "HTTP 429"
   },
   "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/TLC_Logo.svg/960px-TLC_Logo.svg.png": {
-    "checked_at": "2026-10-16T00:48:19.606410+00:00",
+    "checked_at": "2026-10-16T00:50:42.001370+00:00",
     "next_check_after_days": 7,
     "ok": false,
     "result": "HTTP 429"
   },
   "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/ESPN_4_logo.svg/960px-ESPN_4_logo.svg.png": {
-    "checked_at": "2026-10-16T00:48:49.158294+00:00",
+    "checked_at": "2026-10-16T00:51:11.154791+00:00",
     "next_check_after_days": 7,
     "ok": false,
     "result": "HTTP 429"
   },
   "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Cartoon_Network_2010_logo.svg/960px-Cartoon_Network_2010_logo.svg.png": {
-    "checked_at": "2026-10-16T00:48:27.533662+00:00",
+    "checked_at": "2026-10-16T00:50:49.806096+00:00",
     "next_check_after_days": 7,
     "ok": false,
     "result": "HTTP 429"
   },
   "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Nitro_Logo.svg/960px-Nitro_Logo.svg.png": {
-    "checked_at": "2026-10-16T00:48:40.768555+00:00",
+    "checked_at": "2026-10-16T00:51:02.886115+00:00",
     "next_check_after_days": 7,
     "ok": false,
     "result": "HTTP 429"
   },
   "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Star_Channel_2020.svg/960px-Star_Channel_2020.svg.png": {
-    "checked_at": "2026-10-16T00:48:00.910081+00:00",
+    "checked_at": "2026-10-16T00:50:23.609081+00:00",
     "next_check_after_days": 7,
     "ok": false,
     "result": "HTTP 429"
   },
   "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Discovery_science_new_logo_2017.png/960px-Discovery_science_new_logo_2017.png": {
-    "checked_at": "2026-10-16T00:48:18.753219+00:00",
+    "checked_at": "2026-10-16T00:50:41.166978+00:00",
     "next_check_after_days": 7,
     "ok": false,
     "result": "HTTP 429"
@@ -7110,61 +7110,61 @@
     "result": "válido (image/png)"
   },
   "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/E%21_Logo_2012.svg/500px-E%21_Logo_2012.svg.png": {
-    "checked_at": "2026-10-16T00:48:18.758948+00:00",
+    "checked_at": "2026-10-16T00:50:41.172924+00:00",
     "next_check_after_days": 7,
     "ok": false,
     "result": "HTTP 429"
   },
   "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Sony_Movies_Logo.svg/500px-Sony_Movies_Logo.svg.png": {
-    "checked_at": "2026-10-16T00:49:02.382676+00:00",
+    "checked_at": "2026-10-16T00:51:24.308828+00:00",
     "next_check_after_days": 7,
     "ok": false,
     "result": "HTTP 429"
   },
   "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/FIFA%2B_%282025%29.svg/960px-FIFA%2B_%282025%29.svg.png": {
-    "checked_at": "2026-10-16T00:48:38.328266+00:00",
+    "checked_at": "2026-10-16T00:51:00.471006+00:00",
     "next_check_after_days": 7,
     "ok": false,
     "result": "HTTP 429"
   },
   "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Logo_Lifetime_2020.svg/960px-Logo_Lifetime_2020.svg.png": {
-    "checked_at": "2026-10-16T00:48:07.256193+00:00",
+    "checked_at": "2026-10-16T00:50:29.815064+00:00",
     "next_check_after_days": 7,
     "ok": false,
     "result": "HTTP 429"
   },
   "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/HBO_Signature.svg/960px-HBO_Signature.svg.png": {
-    "checked_at": "2026-10-16T00:47:59.636739+00:00",
+    "checked_at": "2026-10-16T00:50:22.362931+00:00",
     "next_check_after_days": 7,
     "ok": false,
     "result": "HTTP 429"
   },
   "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/ESPN_Premium_logo.svg/960px-ESPN_Premium_logo.svg.png": {
-    "checked_at": "2026-10-16T00:48:49.158081+00:00",
+    "checked_at": "2026-10-16T00:51:11.154600+00:00",
     "next_check_after_days": 7,
     "ok": false,
     "result": "HTTP 429"
   },
   "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Cartoonito_-_Logo_2021.svg/960px-Cartoonito_-_Logo_2021.svg.png": {
-    "checked_at": "2026-10-16T00:48:26.391497+00:00",
+    "checked_at": "2026-10-16T00:50:48.688701+00:00",
     "next_check_after_days": 7,
     "ok": false,
     "result": "HTTP 429"
   },
   "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Fox_sports_3_logo.svg/960px-Fox_sports_3_logo.svg.png": {
-    "checked_at": "2026-10-16T00:48:47.216353+00:00",
+    "checked_at": "2026-10-16T00:51:09.215979+00:00",
     "next_check_after_days": 7,
     "ok": false,
     "result": "HTTP 429"
   },
   "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Comedy_Central_2018.svg/960px-Comedy_Central_2018.svg.png": {
-    "checked_at": "2026-10-16T00:48:05.862623+00:00",
+    "checked_at": "2026-10-16T00:50:28.436161+00:00",
     "next_check_after_days": 7,
     "ok": false,
     "result": "HTTP 429"
   },
   "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Logo_Univision_2019.svg/960px-Logo_Univision_2019.svg.png": {
-    "checked_at": "2026-10-16T00:48:02.627732+00:00",
+    "checked_at": "2026-10-16T00:50:25.281136+00:00",
     "next_check_after_days": 7,
     "ok": false,
     "result": "HTTP 429"
@@ -7176,19 +7176,19 @@
     "result": "válido (image/png)"
   },
   "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Logo_de_CNN_en_Espa%C3%B1ol_%282010-2015%29.svg/960px-Logo_de_CNN_en_Espa%C3%B1ol_%282010-2015%29.svg.png": {
-    "checked_at": "2026-10-16T00:48:19.670145+00:00",
+    "checked_at": "2026-10-16T00:50:42.064128+00:00",
     "next_check_after_days": 7,
     "ok": false,
     "result": "HTTP 429"
   },
   "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Sony_Channel_Logo.png/960px-Sony_Channel_Logo.png": {
-    "checked_at": "2026-10-16T00:49:01.934271+00:00",
+    "checked_at": "2026-10-16T00:51:23.866608+00:00",
     "next_check_after_days": 7,
     "ok": false,
     "result": "HTTP 429"
   },
   "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/ESPN2_logo.svg/960px-ESPN2_logo.svg.png": {
-    "checked_at": "2026-10-16T00:48:49.158239+00:00",
+    "checked_at": "2026-10-16T00:51:11.154736+00:00",
     "next_check_after_days": 7,
     "ok": false,
     "result": "HTTP 429"
@@ -7200,109 +7200,109 @@
     "result": "válido (image/png)"
   },
   "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Canal_26_logo_%282022%29.svg/500px-Canal_26_logo_%282022%29.svg.png": {
-    "checked_at": "2026-10-16T00:48:24.260444+00:00",
+    "checked_at": "2026-10-16T00:50:46.599420+00:00",
     "next_check_after_days": 7,
     "ok": false,
     "result": "HTTP 429"
   },
   "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Nick_Jr._logo_2023_(outline).svg/960px-Nick_Jr._logo_2023_(outline).svg.png": {
-    "checked_at": "2026-10-16T00:48:27.936181+00:00",
+    "checked_at": "2026-10-16T00:50:50.195137+00:00",
     "next_check_after_days": 7,
     "ok": false,
     "result": "HTTP 429"
   },
   "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/History2_logo_%282022%29.svg/500px-History2_logo_%282022%29.svg.png": {
-    "checked_at": "2026-10-16T00:48:19.267784+00:00",
+    "checked_at": "2026-10-16T00:50:41.670619+00:00",
     "next_check_after_days": 7,
     "ok": false,
     "result": "HTTP 429"
   },
   "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/DirecTV_Sports_Latin_America_%282018%29.png/960px-DirecTV_Sports_Latin_America_%282018%29.png": {
-    "checked_at": "2026-10-16T00:48:46.929830+00:00",
+    "checked_at": "2026-10-16T00:51:08.930045+00:00",
     "next_check_after_days": 7,
     "ok": false,
     "result": "HTTP 429"
   },
   "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Telefe_%28nuevo_logo%29.png/960px-Telefe_%28nuevo_logo%29.png": {
-    "checked_at": "2026-10-16T00:47:34.104576+00:00",
+    "checked_at": "2026-10-16T00:49:57.044174+00:00",
     "next_check_after_days": 7,
     "ok": false,
     "result": "HTTP 429"
   },
   "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/TNT_Sports_2021_logo.svg/960px-TNT_Sports_2021_logo.svg.png": {
-    "checked_at": "2026-10-16T00:48:45.326171+00:00",
+    "checked_at": "2026-10-16T00:51:07.337197+00:00",
     "next_check_after_days": 7,
     "ok": false,
     "result": "HTTP 429"
   },
   "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/HBO_logo.svg/960px-HBO_logo.svg.png": {
-    "checked_at": "2026-10-16T00:47:58.972166+00:00",
+    "checked_at": "2026-10-16T00:50:21.713419+00:00",
     "next_check_after_days": 7,
     "ok": false,
     "result": "HTTP 429"
   },
   "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/A%26E_Network_logo.svg/960px-A%26E_Network_logo.svg.png": {
-    "checked_at": "2026-10-16T00:48:17.829397+00:00",
+    "checked_at": "2026-10-16T00:50:40.253152+00:00",
     "next_check_after_days": 7,
     "ok": false,
     "result": "HTTP 429"
   },
   "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/HBO_Mundi.svg/960px-HBO_Mundi.svg.png": {
-    "checked_at": "2026-10-16T00:47:59.433341+00:00",
+    "checked_at": "2026-10-16T00:50:22.165102+00:00",
     "next_check_after_days": 7,
     "ok": false,
     "result": "HTTP 429"
   },
   "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Adult_Swim_2003_logo.svg/960px-Adult_Swim_2003_logo.svg.png": {
-    "checked_at": "2026-10-16T00:47:52.028092+00:00",
+    "checked_at": "2026-10-16T00:50:14.873530+00:00",
     "next_check_after_days": 7,
     "ok": false,
     "result": "HTTP 429"
   },
   "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/CinecanalLA.png/960px-CinecanalLA.png": {
-    "checked_at": "2026-10-16T00:47:59.767932+00:00",
+    "checked_at": "2026-10-16T00:50:22.489682+00:00",
     "next_check_after_days": 7,
     "ok": false,
     "result": "HTTP 429"
   },
   "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/2019_Discovery_logo.svg/960px-2019_Discovery_logo.svg.png": {
-    "checked_at": "2026-10-16T00:48:18.038002+00:00",
+    "checked_at": "2026-10-16T00:50:40.459116+00:00",
     "next_check_after_days": 7,
     "ok": false,
     "result": "HTTP 429"
   },
   "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Logohboplus2019.svg/960px-Logohboplus2019.svg.png": {
-    "checked_at": "2026-10-16T00:47:59.098137+00:00",
+    "checked_at": "2026-10-16T00:50:21.837156+00:00",
     "next_check_after_days": 7,
     "ok": false,
     "result": "HTTP 429"
   },
   "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/HBO_Xtreme.svg/960px-HBO_Xtreme.svg.png": {
-    "checked_at": "2026-10-16T00:47:59.345711+00:00",
+    "checked_at": "2026-10-16T00:50:22.078421+00:00",
     "next_check_after_days": 7,
     "ok": false,
     "result": "HTTP 429"
   },
   "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Natgeologo.svg/960px-Natgeologo.svg.png": {
-    "checked_at": "2026-10-16T00:48:19.350891+00:00",
+    "checked_at": "2026-10-16T00:50:41.753345+00:00",
     "next_check_after_days": 7,
     "ok": false,
     "result": "HTTP 429"
   },
   "https://upload.wikimedia.org/wikipedia/en/thumb/f/ff/DreamWorks_Animation_SKG_logo_with_fishing_boy.svg/960px-DreamWorks_Animation_SKG_logo_with_fishing_boy.svg.png": {
-    "checked_at": "2026-10-16T00:48:28.552357+00:00",
+    "checked_at": "2026-10-16T00:50:50.781380+00:00",
     "next_check_after_days": 7,
     "ok": false,
     "result": "HTTP 429"
   },
   "https://upload.wikimedia.org/wikipedia/fr/thumb/5/55/960px-DreamWorks_Animation_SKG_logo_with_fishing_boy.png/330px-1024px-DreamWorks_Animation_SKG_logo_with_fishing_boy.png": {
-    "checked_at": "2026-10-16T00:48:28.555202+00:00",
+    "checked_at": "2026-10-16T00:50:50.784245+00:00",
     "next_check_after_days": 7,
     "ok": false,
     "result": "HTTP 404"
   },
   "https://urbanotvcr.com/new/wp-content/uploads/2025/07/Urbano-TV-calca-negro.png": {
-    "checked_at": "2026-10-16T00:48:34.033303+00:00",
+    "checked_at": "2026-10-16T00:50:56.204223+00:00",
     "next_check_after_days": 7,
     "ok": false,
     "result": "HTTP 404"
@@ -7482,7 +7482,7 @@
     "result": "válido (image/png)"
   },
   "https://www.sportstribal.tv/home/wp-content/uploads/2023/08/mtrspt1.png": {
-    "checked_at": "2026-10-16T00:48:46.578681+00:00",
+    "checked_at": "2026-10-16T00:51:08.580427+00:00",
     "next_check_after_days": 7,
     "ok": false,
     "result": "HTTP 525"
@@ -7500,7 +7500,7 @@
     "result": "válido (image/png)"
   },
   "https://www.tenerifeplus.tv/assets/logo/tfplus.svg": {
-    "checked_at": "2026-10-16T00:47:46.804651+00:00",
+    "checked_at": "2026-10-16T00:50:09.560779+00:00",
     "next_check_after_days": 7,
     "ok": false,
     "result": "HTTP 404"
@@ -7566,13 +7566,13 @@
     "result": "válido (image/jpeg)"
   },
   "telecolor.com/wp-content/uploads/2023/10/LOGO-TELECOLOR_Mesa-de-trabajo-1-copia-909x1024.png": {
-    "checked_at": "2026-10-16T00:47:40.062949+00:00",
+    "checked_at": "2026-10-16T00:50:02.904050+00:00",
     "next_check_after_days": 7,
     "ok": false,
     "result": "URL vacía o esquema no permitido"
   },
   "tvg-logo=": {
-    "checked_at": "2026-10-16T00:47:37.362924+00:00",
+    "checked_at": "2026-10-16T00:50:00.247688+00:00",
     "next_check_after_days": 7,
     "ok": false,
     "result": "URL vacía o esquema no permitido"
