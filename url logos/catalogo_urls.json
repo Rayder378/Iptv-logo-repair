@@ -1667,6 +1667,12 @@
     "ok": true,
     "result": "válido (image/png)"
   },
+  "https://i.imgur.com/1nN4rEP.png": {
+    "checked_at": "2026-10-18T01:08:37.513541+00:00",
+    "next_check_after_days": 7,
+    "ok": true,
+    "result": "válido (image/png)"
+  },
   "https://i.imgur.com/1nNnYQO.png": {
     "checked_at": "2026-10-15T13:40:31.028153+00:00",
     "next_check_after_days": 7,
@@ -1897,6 +1903,12 @@
   },
   "https://i.imgur.com/5Rc8mA5.png": {
     "checked_at": "2026-10-15T13:40:31.008956+00:00",
+    "next_check_after_days": 7,
+    "ok": true,
+    "result": "válido (image/png)"
+  },
+  "https://i.imgur.com/5WBWruX.png": {
+    "checked_at": "2026-10-18T01:08:37.513690+00:00",
     "next_check_after_days": 7,
     "ok": true,
     "result": "válido (image/png)"
@@ -2549,6 +2561,12 @@
     "ok": true,
     "result": "válido (image/png)"
   },
+  "https://i.imgur.com/GKc7RFz.png": {
+    "checked_at": "2026-10-18T01:08:42.050516+00:00",
+    "next_check_after_days": 7,
+    "ok": true,
+    "result": "válido (image/png)"
+  },
   "https://i.imgur.com/GRpxoPf.png": {
     "checked_at": "2026-10-15T13:40:31.030148+00:00",
     "next_check_after_days": 7,
@@ -2747,6 +2765,12 @@
     "ok": true,
     "result": "válido (image/png)"
   },
+  "https://i.imgur.com/JoGQqmP.png": {
+    "checked_at": "2026-10-18T01:08:37.513509+00:00",
+    "next_check_after_days": 7,
+    "ok": true,
+    "result": "válido (image/png)"
+  },
   "https://i.imgur.com/JqaW7Ei.png": {
     "checked_at": "2026-10-15T13:40:31.028757+00:00",
     "next_check_after_days": 7,
@@ -2917,6 +2941,12 @@
   },
   "https://i.imgur.com/MQOwCdZ.png": {
     "checked_at": "2026-10-15T13:40:31.016870+00:00",
+    "next_check_after_days": 7,
+    "ok": true,
+    "result": "válido (image/png)"
+  },
+  "https://i.imgur.com/MYc8srh.png": {
+    "checked_at": "2026-10-18T01:08:41.168514+00:00",
     "next_check_after_days": 7,
     "ok": true,
     "result": "válido (image/png)"
@@ -3167,6 +3197,12 @@
     "ok": true,
     "result": "válido (image/png)"
   },
+  "https://i.imgur.com/QZYRu0I.png": {
+    "checked_at": "2026-10-18T01:08:42.506033+00:00",
+    "next_check_after_days": 7,
+    "ok": true,
+    "result": "válido (image/png)"
+  },
   "https://i.imgur.com/QaocW5x.png": {
     "checked_at": "2026-10-15T13:40:31.008253+00:00",
     "next_check_after_days": 7,
@@ -3305,6 +3341,12 @@
     "ok": true,
     "result": "válido (image/png)"
   },
+  "https://i.imgur.com/SiU6l20.jpg": {
+    "checked_at": "2026-10-18T01:08:37.513767+00:00",
+    "next_check_after_days": 7,
+    "ok": true,
+    "result": "válido (image/jpeg)"
+  },
   "https://i.imgur.com/SlSbcp3.png": {
     "checked_at": "2026-10-15T13:40:31.020765+00:00",
     "next_check_after_days": 7,
@@ -3331,6 +3373,12 @@
   },
   "https://i.imgur.com/SuVO9T7.png": {
     "checked_at": "2026-10-15T13:40:31.030188+00:00",
+    "next_check_after_days": 7,
+    "ok": true,
+    "result": "válido (image/png)"
+  },
+  "https://i.imgur.com/T07gvEb.png": {
+    "checked_at": "2026-10-18T01:08:38.922648+00:00",
     "next_check_after_days": 7,
     "ok": true,
     "result": "válido (image/png)"
@@ -3511,6 +3559,12 @@
   },
   "https://i.imgur.com/VKYzFpZ.png": {
     "checked_at": "2026-10-15T13:40:31.031749+00:00",
+    "next_check_after_days": 7,
+    "ok": true,
+    "result": "válido (image/png)"
+  },
+  "https://i.imgur.com/VRl8nPZ.png": {
+    "checked_at": "2026-10-18T01:08:42.920686+00:00",
     "next_check_after_days": 7,
     "ok": true,
     "result": "válido (image/png)"
@@ -3701,6 +3755,12 @@
     "ok": true,
     "result": "válido (image/png)"
   },
+  "https://i.imgur.com/Xytvw3J.png": {
+    "checked_at": "2026-10-18T01:08:37.512920+00:00",
+    "next_check_after_days": 7,
+    "ok": true,
+    "result": "válido (image/png)"
+  },
   "https://i.imgur.com/Y1t8xkL.png": {
     "checked_at": "2026-10-15T13:40:31.007923+00:00",
     "next_check_after_days": 7,
@@ -3769,6 +3829,12 @@
   },
   "https://i.imgur.com/YqTNXDf.png": {
     "checked_at": "2026-10-15T13:40:31.013401+00:00",
+    "next_check_after_days": 7,
+    "ok": true,
+    "result": "válido (image/png)"
+  },
+  "https://i.imgur.com/YwUVTmS.png": {
+    "checked_at": "2026-10-18T01:08:37.513044+00:00",
     "next_check_after_days": 7,
     "ok": true,
     "result": "válido (image/png)"
@@ -4007,6 +4073,12 @@
     "ok": true,
     "result": "válido (image/png)"
   },
+  "https://i.imgur.com/cgHjg1e.png": {
+    "checked_at": "2026-10-18T01:08:37.513295+00:00",
+    "next_check_after_days": 7,
+    "ok": true,
+    "result": "válido (image/png)"
+  },
   "https://i.imgur.com/chPfoOs.png": {
     "checked_at": "2026-10-15T13:40:31.008419+00:00",
     "next_check_after_days": 7,
@@ -4211,6 +4283,12 @@
     "ok": true,
     "result": "válido (image/png)"
   },
+  "https://i.imgur.com/g5ShxZ7.png": {
+    "checked_at": "2026-10-18T01:08:40.282654+00:00",
+    "next_check_after_days": 7,
+    "ok": true,
+    "result": "válido (image/png)"
+  },
   "https://i.imgur.com/g9j0ze8.png": {
     "checked_at": "2026-10-15T13:40:31.009625+00:00",
     "next_check_after_days": 7,
@@ -4339,6 +4417,12 @@
   },
   "https://i.imgur.com/jLQsU1u.png": {
     "checked_at": "2026-10-15T13:40:31.008344+00:00",
+    "next_check_after_days": 7,
+    "ok": true,
+    "result": "válido (image/png)"
+  },
+  "https://i.imgur.com/jWsW2Rd.png": {
+    "checked_at": "2026-10-18T01:08:37.513590+00:00",
     "next_check_after_days": 7,
     "ok": true,
     "result": "válido (image/png)"
@@ -4645,6 +4729,12 @@
   },
   "https://i.imgur.com/o9Ro8TR.png": {
     "checked_at": "2026-10-15T13:40:31.016531+00:00",
+    "next_check_after_days": 7,
+    "ok": true,
+    "result": "válido (image/png)"
+  },
+  "https://i.imgur.com/o9SpbMI.png": {
+    "checked_at": "2026-10-18T01:08:37.513275+00:00",
     "next_check_after_days": 7,
     "ok": true,
     "result": "válido (image/png)"
@@ -5195,6 +5285,12 @@
     "ok": true,
     "result": "válido (image/jpeg)"
   },
+  "https://i.imgur.com/wak2YOo.png": {
+    "checked_at": "2026-10-18T01:08:37.513405+00:00",
+    "next_check_after_days": 7,
+    "ok": true,
+    "result": "válido (image/png)"
+  },
   "https://i.imgur.com/whIRrjo.png": {
     "checked_at": "2026-10-15T13:40:31.010880+00:00",
     "next_check_after_days": 7,
@@ -5303,6 +5399,12 @@
     "ok": true,
     "result": "válido (image/png)"
   },
+  "https://i.imgur.com/z9MlLFL.png": {
+    "checked_at": "2026-10-18T01:08:37.513377+00:00",
+    "next_check_after_days": 7,
+    "ok": true,
+    "result": "válido (image/png)"
+  },
   "https://i.imgur.com/z9iVlMn.png": {
     "checked_at": "2026-10-15T13:40:31.009577+00:00",
     "next_check_after_days": 7,
@@ -5323,6 +5425,12 @@
   },
   "https://i.imgur.com/zKWFgeQ.png": {
     "checked_at": "2026-10-15T13:40:31.014383+00:00",
+    "next_check_after_days": 7,
+    "ok": true,
+    "result": "válido (image/png)"
+  },
+  "https://i.imgur.com/zOAf02H.png": {
+    "checked_at": "2026-10-18T01:08:38.708214+00:00",
     "next_check_after_days": 7,
     "ok": true,
     "result": "válido (image/png)"
@@ -6083,6 +6191,18 @@
     "ok": true,
     "result": "válido (image/png)"
   },
+  "https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/BBC-logo_2000_X_1125_Transparent.png": {
+    "checked_at": "2026-10-18T01:08:37.512810+00:00",
+    "next_check_after_days": 7,
+    "ok": true,
+    "result": "válido (image/png)"
+  },
+  "https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/France%2024.png": {
+    "checked_at": "2026-10-18T01:08:37.513174+00:00",
+    "next_check_after_days": 7,
+    "ok": true,
+    "result": "válido (image/png)"
+  },
   "https://m.media-amazon.com/images/I/21HEgSJn2gL.png": {
     "checked_at": "2026-10-15T13:40:31.015948+00:00",
     "next_check_after_days": 7,
@@ -6527,6 +6647,18 @@
     "ok": true,
     "result": "válido (image/png)"
   },
+  "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/NickMusic_Logo_%282023%29.png/960px-NickMusic_Logo_%282023%29.png": {
+    "checked_at": "2026-10-18T01:08:40.888064+00:00",
+    "next_check_after_days": 7,
+    "ok": true,
+    "result": "válido (image/png)"
+  },
+  "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/CNN-International-Logo.svg/960px-CNN-International-Logo.svg.png": {
+    "checked_at": "2026-10-18T01:08:37.512889+00:00",
+    "next_check_after_days": 7,
+    "ok": true,
+    "result": "válido (image/png)"
+  },
   "https://tse1.mm.bing.net/th/id/OIP.mHBTOx8YSGwDYUNAbTBKUAHaCv?r=0&pid=Api": {
     "checked_at": "2026-10-15T13:40:31.007780+00:00",
     "next_check_after_days": 7,
@@ -6550,6 +6682,12 @@
     "next_check_after_days": 7,
     "ok": true,
     "result": "válido (image/jpeg)"
+  },
+  "https://tv.lovenature.com/wp-content/uploads/2024/10/LoveNature2024_Logo_full_colour-copy.png": {
+    "checked_at": "2026-10-18T01:08:37.513353+00:00",
+    "next_check_after_days": 7,
+    "ok": true,
+    "result": "válido (image/png)"
   },
   "https://tvabierta.net/014.png": {
     "checked_at": "2026-10-15T13:40:31.014523+00:00",
@@ -6809,6 +6947,12 @@
     "ok": true,
     "result": "válido (image/png)"
   },
+  "https://upload.wikimedia.org/wikipedia/commons/3/36/RPP_logo.png": {
+    "checked_at": "2026-10-18T01:08:37.513564+00:00",
+    "next_check_after_days": 7,
+    "ok": true,
+    "result": "válido (image/png)"
+  },
   "https://upload.wikimedia.org/wikipedia/commons/7/75/TNT_Series_Logo_2016.png": {
     "checked_at": "2026-10-15T13:40:31.022161+00:00",
     "next_check_after_days": 7,
@@ -6823,6 +6967,12 @@
   },
   "https://upload.wikimedia.org/wikipedia/commons/8/8a/BTV_logo_2026.png": {
     "checked_at": "2026-10-15T13:40:58.830394+00:00",
+    "next_check_after_days": 7,
+    "ok": true,
+    "result": "válido (image/png)"
+  },
+  "https://upload.wikimedia.org/wikipedia/commons/8/8c/Nickelodeon_HD%2B_Logo_2024.png": {
+    "checked_at": "2026-10-18T01:08:37.513480+00:00",
     "next_check_after_days": 7,
     "ok": true,
     "result": "válido (image/png)"
@@ -6857,6 +7007,12 @@
     "ok": false,
     "result": "HTTP 429"
   },
+  "https://upload.wikimedia.org/wikipedia/commons/b/b2/El_Gourmet_logo.png": {
+    "checked_at": "2026-10-18T01:08:39.498091+00:00",
+    "next_check_after_days": 7,
+    "ok": true,
+    "result": "válido (image/png)"
+  },
   "https://upload.wikimedia.org/wikipedia/commons/e/e3/2024_Disney_Jr._Logo.svg": {
     "checked_at": "2026-10-16T00:50:48.847445+00:00",
     "next_check_after_days": 7,
@@ -6888,7 +7044,7 @@
     "result": "HTTP 429"
   },
   "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/History_%282021%29.svg/500px-History_%282021%29.svg.png": {
-    "checked_at": "2026-10-16T00:50:41.670424+00:00",
+    "checked_at": "2026-10-18T01:08:40.029027+00:00",
     "next_check_after_days": 7,
     "ok": false,
     "result": "HTTP 429"
@@ -7049,8 +7205,14 @@
     "ok": true,
     "result": "válido (image/png)"
   },
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Telemundo_logo_2018.svg/960px-Telemundo_logo_2018.svg.png": {
+    "checked_at": "2026-10-18T01:08:37.513645+00:00",
+    "next_check_after_days": 7,
+    "ok": true,
+    "result": "válido (image/png)"
+  },
   "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/DistritoComediaLOGO2018.png/960px-DistritoComediaLOGO2018.png": {
-    "checked_at": "2026-10-16T00:50:27.683243+00:00",
+    "checked_at": "2026-10-18T01:08:39.019081+00:00",
     "next_check_after_days": 7,
     "ok": false,
     "result": "HTTP 429"
@@ -7062,10 +7224,10 @@
     "result": "HTTP 429"
   },
   "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/StudioUniversal2016.png/960px-StudioUniversal2016.png": {
-    "checked_at": "2026-10-16T00:50:21.576830+00:00",
+    "checked_at": "2026-10-18T01:08:42.249284+00:00",
     "next_check_after_days": 7,
-    "ok": false,
-    "result": "HTTP 429"
+    "ok": true,
+    "result": "válido (image/png)"
   },
   "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/TLC_Logo.svg/960px-TLC_Logo.svg.png": {
     "checked_at": "2026-10-16T00:50:42.001370+00:00",
@@ -7248,10 +7410,10 @@
     "result": "HTTP 429"
   },
   "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/HBO_Mundi.svg/960px-HBO_Mundi.svg.png": {
-    "checked_at": "2026-10-16T00:50:22.165102+00:00",
+    "checked_at": "2026-10-18T01:08:37.513225+00:00",
     "next_check_after_days": 7,
-    "ok": false,
-    "result": "HTTP 429"
+    "ok": true,
+    "result": "válido (image/png)"
   },
   "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Adult_Swim_2003_logo.svg/960px-Adult_Swim_2003_logo.svg.png": {
     "checked_at": "2026-10-16T00:50:14.873530+00:00",
@@ -7284,7 +7446,7 @@
     "result": "HTTP 429"
   },
   "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Natgeologo.svg/960px-Natgeologo.svg.png": {
-    "checked_at": "2026-10-16T00:50:41.753345+00:00",
+    "checked_at": "2026-10-18T01:08:40.665974+00:00",
     "next_check_after_days": 7,
     "ok": false,
     "result": "HTTP 429"
@@ -7529,6 +7691,12 @@
     "ok": true,
     "result": "válido (image/jpeg)"
   },
+  "https://www.viaxesports.com/wp-content/themes/ViaxExports2/img/viaxesports.png": {
+    "checked_at": "2026-10-18T01:08:37.513713+00:00",
+    "next_check_after_days": 7,
+    "ok": true,
+    "result": "válido (image/png)"
+  },
   "https://www.vivalivetv.com/public/files/shows/0/1/2893-294x165-FFFFFF.jpg": {
     "checked_at": "2026-10-15T13:40:31.019616+00:00",
     "next_check_after_days": 7,
@@ -7537,6 +7705,12 @@
   },
   "https://www.zappit.gr/wp-content/uploads/2024/07/cool98.png": {
     "checked_at": "2026-10-15T13:40:31.028606+00:00",
+    "next_check_after_days": 7,
+    "ok": true,
+    "result": "válido (image/png)"
+  },
+  "https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_CARTOON_NETWORK_HDSYMPLUS/images/LOGO_HD/image.png": {
+    "checked_at": "2026-10-18T01:08:37.512949+00:00",
     "next_check_after_days": 7,
     "ok": true,
     "result": "válido (image/png)"
