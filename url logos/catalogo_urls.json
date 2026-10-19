@@ -7044,10 +7044,10 @@
     "result": "HTTP 429"
   },
   "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/History_%282021%29.svg/500px-History_%282021%29.svg.png": {
-    "checked_at": "2026-10-18T01:08:40.029027+00:00",
+    "checked_at": "2026-10-19T15:43:59.529374+00:00",
     "next_check_after_days": 7,
-    "ok": false,
-    "result": "HTTP 429"
+    "ok": true,
+    "result": "válido (image/png)"
   },
   "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/13i_2018.png/500px-13i_2018.png": {
     "checked_at": "2026-10-15T13:40:31.012574+00:00",
@@ -7212,10 +7212,10 @@
     "result": "válido (image/png)"
   },
   "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/DistritoComediaLOGO2018.png/960px-DistritoComediaLOGO2018.png": {
-    "checked_at": "2026-10-18T01:08:39.019081+00:00",
+    "checked_at": "2026-10-19T15:43:59.529171+00:00",
     "next_check_after_days": 7,
-    "ok": false,
-    "result": "HTTP 429"
+    "ok": true,
+    "result": "válido (image/png)"
   },
   "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/HBO2_logo.svg/960px-HBO2_logo.svg.png": {
     "checked_at": "2026-10-16T00:50:21.718858+00:00",
@@ -7446,10 +7446,10 @@
     "result": "HTTP 429"
   },
   "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Natgeologo.svg/960px-Natgeologo.svg.png": {
-    "checked_at": "2026-10-18T01:08:40.665974+00:00",
+    "checked_at": "2026-10-19T15:44:01.755247+00:00",
     "next_check_after_days": 7,
-    "ok": false,
-    "result": "HTTP 429"
+    "ok": true,
+    "result": "válido (image/png)"
   },
   "https://upload.wikimedia.org/wikipedia/en/thumb/f/ff/DreamWorks_Animation_SKG_logo_with_fishing_boy.svg/960px-DreamWorks_Animation_SKG_logo_with_fishing_boy.svg.png": {
     "checked_at": "2026-10-16T00:50:50.781380+00:00",
