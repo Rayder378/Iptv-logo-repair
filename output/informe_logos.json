@@ -2,12 +2,12 @@
   "archivo_entrada": "URL configurada en M3U_URL",
   "playlist_salida": "output/playlist_logos_reparados.m3u",
   "canales_analizados": 138,
-  "logos_conservados": 31,
-  "logos_reparados_o_agregados": 15,
+  "logos_conservados": 29,
+  "logos_reparados_o_agregados": 17,
   "sin_reparar": 92,
-  "catalogo_canales": 31680,
-  "catalogo_feeds": 45309,
-  "catalogo_logos": 35455,
+  "catalogo_canales": 31674,
+  "catalogo_feeds": 45295,
+  "catalogo_logos": 35456,
   "contexto_grupo_habilitado": true,
   "fuentes_logo": [
     "iptv-org logos.json",
@@ -21,7 +21,7 @@
   "catalogo_jaruba_nombres": 1844,
   "catalogo_yasserstudio_nombres": 0,
   "base_urls_persistente": "url logos/catalogo_urls.json",
-  "urls_en_base_persistente": 1292,
+  "urls_en_base_persistente": 1293,
   "entradas_en_base_canales": 138,
   "verificacion_periodica_dias": 7
 }

@@ -123,7 +123,7 @@ http://38.210.3.64:8090/play/a0kp/index.m3u8
 http://38.210.3.64:8090/play/a0h5/index.m3u8
 #EXTINF:-1,HBO HD
 http://38.210.3.64:8090/play/a0h9/index.m3u8
-#EXTINF:-1 tvg-id="HBOMundi.br" tvg-name="HBO Mundi" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/HBO_Mundi.svg/960px-HBO_Mundi.svg.png",HBO Mundi
+#EXTINF:-1 tvg-id="HBOMundi.br" tvg-name="HBO Mundi" tvg-logo="https://jaruba.github.io/channel-logos/export/transparent-color/pSxGvTt7LVcjx0ST1bbThigqMOY.png",HBO Mundi
 http://38.210.3.64:8090/play/a0p0/index.m3u8
 #EXTINF:-1,HBO Plus
 http://38.210.3.64:8090/play/a0cs/index.m3u8
@@ -229,7 +229,7 @@ http://38.210.3.64:8090/play/a0is/index.m3u8
 http://38.210.3.64:8090/play/a0ir/index.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/QZYRu0I.png",TNT Series HD
 http://38.210.3.64:8090/play/a0ix/index.m3u8
-#EXTINF:-1,TNT Sports Premiun HD
+#EXTINF:-1 tvg-logo="https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/TNT_Sports_Premium_%28Argentina%29.png/960px-TNT_Sports_Premium_%28Argentina%29.png?utm_source=es.wikipedia.org&utm_campaign=index&utm_content=thumbnail",TNT Sports Premiun HD
 http://38.210.3.64:8090/play/a0kl/index.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/VRl8nPZ.png",TOP LATINO
 http://38.210.3.64:8090/play/a0lm/index.m3u8
