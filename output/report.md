@@ -4,9 +4,9 @@
 
 - **Entrada:** URL configurada en M3U_URL
 - **Canales analizados:** 138
-- **Logos reparados o añadidos (incluye URL manual):** 17
+- **Logos reparados o añadidos (incluye URL manual):** 14
 - **Logos funcionales conservados:** 29
-- **Canales sin reparar o con logo retirado manualmente:** 92
+- **Canales sin reparar o con logo retirado manualmente:** 95
 
 > La verificación confirma que la URL entrega un archivo con firma de imagen; no garantiza por sí sola que el logo represente visualmente el canal correcto.
 > Cuando existe `group-title`, se usa como contexto de país o categoría para desempatar coincidencias; nunca se usa el grupo por sí solo para inventar la identidad del canal.
@@ -38,18 +38,6 @@
 - **Logo:** https://i.imgur.com/T07gvEb.png
 - **Detalle:** iptv-org: reemplazo verificado: válido (image/png); identificación: nombre/alias exacto registrado: Discovery Theater HD
 - **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20Discovery%20Theater%20HD)
-
-### El Gourmet HD
-
-![Logo de El Gourmet HD](https://upload.wikimedia.org/wikipedia/commons/b/b2/El_Gourmet_logo.png)
-
-- **Estado:** logo añadido
-- **Identificación:** nombre/alias exacto registrado: El Gourmet HD
-- **Verificar coincidencia en Google Imágenes:** [Buscar logo y comparar](https://www.google.com/search?tbm=isch&q=El%20Gourmet%20HD%20logo%20canal%20png)
-- **Fuente/resultado:** iptv-org: reemplazo verificado: válido (image/png); identificación: nombre/alias exacto registrado: El Gourmet HD
-- **Logo:** https://upload.wikimedia.org/wikipedia/commons/b/b2/El_Gourmet_logo.png
-- **Detalle:** iptv-org: reemplazo verificado: válido (image/png); identificación: nombre/alias exacto registrado: El Gourmet HD
-- **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20El%20Gourmet%20HD)
 
 ### FOX SPORT PREMIUM
 
@@ -106,9 +94,9 @@
 - **Estado:** logo añadido
 - **Identificación:** nombre/alias exacto registrado: Nat Geo HD
 - **Verificar coincidencia en Google Imágenes:** [Buscar logo y comparar](https://www.google.com/search?tbm=isch&q=Nat%20Geo%20HD%20logo%20canal%20png)
-- **Fuente/resultado:** iptv-org: reemplazo verificado: válido (image/png) [caché persistente]; identificación: nombre/alias exacto registrado: Nat Geo HD
+- **Fuente/resultado:** iptv-org: reemplazo verificado: válido (image/png); identificación: nombre/alias exacto registrado: Nat Geo HD
 - **Logo:** https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Natgeologo.svg/960px-Natgeologo.svg.png
-- **Detalle:** iptv-org: reemplazo verificado: válido (image/png) [caché persistente]; identificación: nombre/alias exacto registrado: Nat Geo HD
+- **Detalle:** iptv-org: reemplazo verificado: válido (image/png); identificación: nombre/alias exacto registrado: Nat Geo HD
 - **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20Nat%20Geo%20HD)
 
 ### Nick Music
@@ -146,30 +134,6 @@
 - **Logo:** https://i.imgur.com/GKc7RFz.png
 - **Detalle:** iptv-org: reemplazo verificado: válido (image/png); identificación: similitud 97% con nombre registrado 'stingray iconcerts' a partir de 'Stingray Concerts HD'
 - **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20Stingray%20Concerts%20HD)
-
-### Studio Universal HD
-
-![Logo de Studio Universal HD](https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/StudioUniversal2016.png/960px-StudioUniversal2016.png)
-
-- **Estado:** logo añadido
-- **Identificación:** similitud 82% con nombre registrado 'studio universal africa' a partir de 'Studio Universal HD'
-- **Verificar coincidencia en Google Imágenes:** [Buscar logo y comparar](https://www.google.com/search?tbm=isch&q=Studio%20Universal%20HD%20logo%20canal%20png)
-- **Fuente/resultado:** iptv-org: reemplazo verificado: válido (image/png); identificación: similitud 82% con nombre registrado 'studio universal africa' a partir de 'Studio Universal HD'
-- **Logo:** https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/StudioUniversal2016.png/960px-StudioUniversal2016.png
-- **Detalle:** iptv-org: reemplazo verificado: válido (image/png); identificación: similitud 82% con nombre registrado 'studio universal africa' a partir de 'Studio Universal HD'
-- **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20Studio%20Universal%20HD)
-
-### TNT Novelas HD
-
-![Logo de TNT Novelas HD](https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/TNT_Novelas_2025.svg/1920px-TNT_Novelas_2025.svg.png)
-
-- **Estado:** logo añadido
-- **Identificación:** nombre/alias exacto registrado: TNT Novelas HD
-- **Verificar coincidencia en Google Imágenes:** [Buscar logo y comparar](https://www.google.com/search?tbm=isch&q=TNT%20Novelas%20HD%20logo%20canal%20png)
-- **Fuente/resultado:** iptv-org: reemplazo verificado: válido (image/png); identificación: nombre/alias exacto registrado: TNT Novelas HD
-- **Logo:** https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/TNT_Novelas_2025.svg/1920px-TNT_Novelas_2025.svg.png
-- **Detalle:** iptv-org: reemplazo verificado: válido (image/png); identificación: nombre/alias exacto registrado: TNT Novelas HD
-- **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20TNT%20Novelas%20HD)
 
 ### TNT Series HD
 
@@ -271,11 +235,10 @@
 - **RAI Italia** — ![Logo de RAI Italia](https://i.imgur.com/1nN4rEP.png)
   - **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20RAI%20Italia)
   - **Verificar coincidencia en Google Imágenes:** [Buscar logo y comparar](https://www.google.com/search?tbm=isch&q=RAI%20Italia%20logo%20canal%20png)
-- **RPP** — ![Logo de RPP](https://upload.wikimedia.org/wikipedia/commons/3/36/RPP_logo.png)
-  - **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20RPP)
-  - **Verificar coincidencia en Google Imágenes:** [Buscar logo y comparar](https://www.google.com/search?tbm=isch&q=RPP%20logo%20canal%20png)
 - **Sextreme** — ![Logo de Sextreme](https://i.imgur.com/jWsW2Rd.png)
   - **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20Sextreme)
+- **Telemundo** — ![Logo de Telemundo](https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Telemundo_logo_2018.svg/960px-Telemundo_logo_2018.svg.png)
+  - **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20Telemundo)
 - **Tooncast** — ![Logo de Tooncast](https://i.imgur.com/3yXRbQy.png)
   - **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20Tooncast)
 - **USA** — ![Logo de USA](https://i.imgur.com/5WBWruX.png)
@@ -552,6 +515,13 @@
 - **Logo actual:** No tenía logo
 - **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20EWTN)
 
+### El Gourmet HD
+
+- **Motivo:** No se encontró logo API verificable. Candidato iptv-org rechazado: HTTP 429
+- **Verificar coincidencia en Google Imágenes:** [Buscar logo y comparar](https://www.google.com/search?tbm=isch&q=El%20Gourmet%20HD%20logo%20canal%20png)
+- **Logo actual:** No tenía logo
+- **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20El%20Gourmet%20HD)
+
 ### FMH FAMILY
 
 - **Motivo:** No se pudo identificar de forma fiable 'FMH FAMILY'; no se cambió el nombre ni se inventó un logo.
@@ -776,6 +746,13 @@
 - **Logo actual:** No tenía logo
 - **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20REC%20TV)
 
+### RPP
+
+- **Motivo:** No se encontró logo API verificable. Candidato iptv-org rechazado: HTTP 429
+- **Verificar coincidencia en Google Imágenes:** [Buscar logo y comparar](https://www.google.com/search?tbm=isch&q=RPP%20logo%20canal%20png)
+- **Logo actual:** https://upload.wikimedia.org/wikipedia/commons/3/36/RPP_logo.png
+- **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20RPP)
+
 ### SOMOS TV VENEZUELA
 
 - **Motivo:** No se pudo identificar de forma fiable 'SOMOS TV VENEZUELA'; no se cambió el nombre ni se inventó un logo.
@@ -818,6 +795,13 @@
 - **Logo actual:** No tenía logo
 - **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20Space%20HD)
 
+### Studio Universal HD
+
+- **Motivo:** No se encontró logo API verificable. Candidato iptv-org rechazado: HTTP 429
+- **Verificar coincidencia en Google Imágenes:** [Buscar logo y comparar](https://www.google.com/search?tbm=isch&q=Studio%20Universal%20HD%20logo%20canal%20png)
+- **Logo actual:** No tenía logo
+- **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20Studio%20Universal%20HD)
+
 ### TCM
 
 - **Motivo:** No se pudo identificar de forma fiable 'TCM'; no se cambió el nombre ni se inventó un logo.
@@ -831,6 +815,13 @@
 
 - **Logo actual:** No tenía logo
 - **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20TNT%20HD)
+
+### TNT Novelas HD
+
+- **Motivo:** No se encontró logo API verificable. Candidato iptv-org rechazado: HTTP 429
+- **Verificar coincidencia en Google Imágenes:** [Buscar logo y comparar](https://www.google.com/search?tbm=isch&q=TNT%20Novelas%20HD%20logo%20canal%20png)
+- **Logo actual:** No tenía logo
+- **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20TNT%20Novelas%20HD)
 
 ### TV ARAGUA
 
@@ -873,13 +864,6 @@
 
 - **Logo actual:** No tenía logo
 - **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20Telef%C3%98)
-
-### Telemundo
-
-- **Motivo:** No se pudo identificar de forma fiable 'Telemundo'; tvg-name='Telemundo' tampoco permitió identificarlo; no se cambió el nombre ni se inventó un logo.
-
-- **Logo actual:** https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Telemundo_logo_2018.svg/960px-Telemundo_logo_2018.svg.png
-- **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20Telemundo)
 
 ### Tlnovelas
 

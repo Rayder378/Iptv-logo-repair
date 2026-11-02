@@ -87,7 +87,7 @@ http://38.210.3.64:8090/play/a0bu/index.m3u8
 http://38.210.3.64:8090/play/a0ke/index.m3u8
 #EXTINF:-1,EWTN
 http://38.210.3.64:8090/play/a0l5/index.m3u8
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/b/b2/El_Gourmet_logo.png",El Gourmet HD
+#EXTINF:-1,El Gourmet HD
 http://38.210.3.64:8090/play/a0ob/index.m3u8
 #EXTINF:-1 tvg-id="Enlace.cr" tvg-name="Enlace" tvg-logo="https://i.imgur.com/YwUVTmS.png",Enlace
 http://38.210.3.64:8090/play/a0jw/index.m3u8
@@ -219,13 +219,13 @@ http://38.210.3.64:8090/play/a0o3/index.m3u8
 http://38.210.3.64:8090/play/a0iu/index.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/GKc7RFz.png",Stingray Concerts HD
 http://38.210.3.64:8090/play/a0m5/index.m3u8
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/StudioUniversal2016.png/960px-StudioUniversal2016.png",Studio Universal HD
+#EXTINF:-1,Studio Universal HD
 http://38.210.3.64:8090/play/a0bt/index.m3u8
 #EXTINF:-1,TCM
 http://38.210.3.64:8090/play/a0kr/index.m3u8
 #EXTINF:-1,TNT HD
 http://38.210.3.64:8090/play/a0is/index.m3u8
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/TNT_Novelas_2025.svg/1920px-TNT_Novelas_2025.svg.png",TNT Novelas HD
+#EXTINF:-1,TNT Novelas HD
 http://38.210.3.64:8090/play/a0ir/index.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/QZYRu0I.png",TNT Series HD
 http://38.210.3.64:8090/play/a0ix/index.m3u8
