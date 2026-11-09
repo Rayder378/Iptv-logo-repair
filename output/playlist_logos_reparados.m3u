@@ -263,7 +263,7 @@ http://38.210.3.64:8090/play/a0ln/index.m3u8
 http://38.210.3.64:8090/play/a0i3/index.m3u8
 #EXTINF:-1 tvg-id="WarnerChannel.us" tvg-name="Warner Channel" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Warner_Channel_2026.svg/960px-Warner_Channel_2026.svg.png",Warner Channel
 http://38.210.3.64:8090/play/a0os/index.m3u8
-#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Warner_Channel_2026.svg/960px-Warner_Channel_2026.svg.png",Warner Channel HD
+#EXTINF:-1,Warner Channel HD
 http://38.210.3.64:8090/play/a0j1/index.m3u8
 #EXTINF:-1,Willax
 http://38.210.3.64:8090/play/a0on/index.m3u8

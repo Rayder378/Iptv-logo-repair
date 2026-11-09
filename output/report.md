@@ -4,9 +4,9 @@
 
 - **Entrada:** URL configurada en M3U_URL
 - **Canales analizados:** 138
-- **Logos reparados o añadidos (incluye URL manual):** 14
+- **Logos reparados o añadidos (incluye URL manual):** 13
 - **Logos funcionales conservados:** 29
-- **Canales sin reparar o con logo retirado manualmente:** 95
+- **Canales sin reparar o con logo retirado manualmente:** 96
 
 > La verificación confirma que la URL entrega un archivo con firma de imagen; no garantiza por sí sola que el logo represente visualmente el canal correcto.
 > Cuando existe `group-title`, se usa como contexto de país o categoría para desempatar coincidencias; nunca se usa el grupo por sí solo para inventar la identidad del canal.
@@ -235,6 +235,9 @@
 - **RAI Italia** — ![Logo de RAI Italia](https://i.imgur.com/1nN4rEP.png)
   - **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20RAI%20Italia)
   - **Verificar coincidencia en Google Imágenes:** [Buscar logo y comparar](https://www.google.com/search?tbm=isch&q=RAI%20Italia%20logo%20canal%20png)
+- **RPP** — ![Logo de RPP](https://upload.wikimedia.org/wikipedia/commons/3/36/RPP_logo.png)
+  - **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20RPP)
+  - **Verificar coincidencia en Google Imágenes:** [Buscar logo y comparar](https://www.google.com/search?tbm=isch&q=RPP%20logo%20canal%20png)
 - **Sextreme** — ![Logo de Sextreme](https://i.imgur.com/jWsW2Rd.png)
   - **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20Sextreme)
 - **Telemundo** — ![Logo de Telemundo](https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Telemundo_logo_2018.svg/960px-Telemundo_logo_2018.svg.png)
@@ -247,9 +250,6 @@
 - **Via X Esports** — ![Logo de Via X Esports](https://www.viaxesports.com/wp-content/themes/ViaxExports2/img/viaxesports.png)
   - **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20Via%20X%20Esports)
   - **Verificar coincidencia en Google Imágenes:** [Buscar logo y comparar](https://www.google.com/search?tbm=isch&q=Via%20X%20Esports%20logo%20canal%20png)
-- **Warner Channel** — ![Logo de Warner Channel](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Warner_Channel_2026.svg/960px-Warner_Channel_2026.svg.png)
-  - **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20Warner%20Channel)
-  - **Verificar coincidencia en Google Imágenes:** [Buscar logo y comparar](https://www.google.com/search?tbm=isch&q=Warner%20Channel%20logo%20canal%20png)
 - **west tv** — ![Logo de west tv](https://i.imgur.com/SiU6l20.jpg)
   - **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20west%20tv)
   - **Verificar coincidencia en Google Imágenes:** [Buscar logo y comparar](https://www.google.com/search?tbm=isch&q=west%20tv%20logo%20canal%20png)
@@ -746,13 +746,6 @@
 - **Logo actual:** No tenía logo
 - **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20REC%20TV)
 
-### RPP
-
-- **Motivo:** No se encontró logo API verificable. Candidato iptv-org rechazado: HTTP 429
-- **Verificar coincidencia en Google Imágenes:** [Buscar logo y comparar](https://www.google.com/search?tbm=isch&q=RPP%20logo%20canal%20png)
-- **Logo actual:** https://upload.wikimedia.org/wikipedia/commons/3/36/RPP_logo.png
-- **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20RPP)
-
 ### SOMOS TV VENEZUELA
 
 - **Motivo:** No se pudo identificar de forma fiable 'SOMOS TV VENEZUELA'; no se cambió el nombre ni se inventó un logo.
@@ -892,6 +885,20 @@
 - **Verificar coincidencia en Google Imágenes:** [Buscar logo y comparar](https://www.google.com/search?tbm=isch&q=VISION%20MUSICA%20logo%20canal%20png)
 - **Logo actual:** No tenía logo
 - **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20VISION%20MUSICA)
+
+### Warner Channel
+
+- **Motivo:** No se encontró logo API verificable. Candidato iptv-org rechazado: HTTP 429
+- **Verificar coincidencia en Google Imágenes:** [Buscar logo y comparar](https://www.google.com/search?tbm=isch&q=Warner%20Channel%20logo%20canal%20png)
+- **Logo actual:** https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Warner_Channel_2026.svg/960px-Warner_Channel_2026.svg.png
+- **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20Warner%20Channel)
+
+### Warner Channel HD
+
+- **Motivo:** No se encontró logo API verificable. Candidato iptv-org rechazado: HTTP 429
+- **Verificar coincidencia en Google Imágenes:** [Buscar logo y comparar](https://www.google.com/search?tbm=isch&q=Warner%20Channel%20HD%20logo%20canal%20png)
+- **Logo actual:** No tenía logo
+- **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20Warner%20Channel%20HD)
 
 ### Willax
 
