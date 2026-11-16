@@ -5273,6 +5273,12 @@
     "ok": true,
     "result": "válido (image/png)"
   },
+  "https://i.imgur.com/wAGju8T.png": {
+    "checked_at": "2026-11-16T18:41:03.276294+00:00",
+    "next_check_after_days": 7,
+    "ok": true,
+    "result": "válido (image/png)"
+  },
   "https://i.imgur.com/wFC6Xxq.png": {
     "checked_at": "2026-10-15T13:40:57.821399+00:00",
     "next_check_after_days": 7,
@@ -7014,7 +7020,7 @@
     "result": "HTTP 429"
   },
   "https://upload.wikimedia.org/wikipedia/commons/b/b2/El_Gourmet_logo.png": {
-    "checked_at": "2026-11-09T18:55:47.668409+00:00",
+    "checked_at": "2026-11-16T18:41:04.675112+00:00",
     "next_check_after_days": 7,
     "ok": false,
     "result": "HTTP 429"
@@ -7206,7 +7212,7 @@
     "result": "válido (image/png)"
   },
   "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/TNT_Novelas_2025.svg/1920px-TNT_Novelas_2025.svg.png": {
-    "checked_at": "2026-11-09T18:55:50.333613+00:00",
+    "checked_at": "2026-11-16T18:41:06.501143+00:00",
     "next_check_after_days": 7,
     "ok": false,
     "result": "HTTP 429"
@@ -7230,10 +7236,10 @@
     "result": "HTTP 429"
   },
   "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/StudioUniversal2016.png/960px-StudioUniversal2016.png": {
-    "checked_at": "2026-11-09T18:55:50.245498+00:00",
+    "checked_at": "2026-11-16T18:41:06.432029+00:00",
     "next_check_after_days": 7,
-    "ok": false,
-    "result": "HTTP 429"
+    "ok": true,
+    "result": "válido (image/png)"
   },
   "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/TLC_Logo.svg/960px-TLC_Logo.svg.png": {
     "checked_at": "2026-10-16T00:50:42.001370+00:00",
@@ -7338,10 +7344,10 @@
     "result": "HTTP 429"
   },
   "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Warner_Channel_2026.svg/960px-Warner_Channel_2026.svg.png": {
-    "checked_at": "2026-11-09T18:55:51.607129+00:00",
+    "checked_at": "2026-11-16T18:41:03.276522+00:00",
     "next_check_after_days": 7,
-    "ok": false,
-    "result": "HTTP 429"
+    "ok": true,
+    "result": "válido (image/png)"
   },
   "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Logo_de_CNN_en_Espa%C3%B1ol_%282010-2015%29.svg/960px-Logo_de_CNN_en_Espa%C3%B1ol_%282010-2015%29.svg.png": {
     "checked_at": "2026-10-16T00:50:42.064128+00:00",
@@ -7416,7 +7422,7 @@
     "result": "HTTP 429"
   },
   "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/HBO_Mundi.svg/960px-HBO_Mundi.svg.png": {
-    "checked_at": "2026-11-09T18:55:48.053021+00:00",
+    "checked_at": "2026-11-16T18:41:04.969933+00:00",
     "next_check_after_days": 7,
     "ok": false,
     "result": "HTTP 429"

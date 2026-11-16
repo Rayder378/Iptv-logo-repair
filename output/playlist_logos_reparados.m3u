@@ -165,7 +165,7 @@ http://38.210.3.64:8090/play/a0op/index.m3u8
 http://38.210.3.64:8090/play/a0lh/index.m3u8
 #EXTINF:-1 tvg-id="MiMusicaHits.us" tvg-name="Mi Musica Hits" tvg-logo="https://i.imgur.com/z9MlLFL.png",MI MUSICA HITS
 http://38.210.3.64:8090/play/a0ge/index.m3u8
-#EXTINF:-1,MI MUSICA PERU
+#EXTINF:-1 tvg-id="MiMusicaPeru.pe" tvg-name="Mi Musica Peru" tvg-logo="https://i.imgur.com/wAGju8T.png",MI MUSICA PERU
 http://38.210.3.64:8090/play/a0gg/index.m3u8
 #EXTINF:-1,MTV HD
 http://38.210.3.64:8090/play/a0ew/index.m3u8
@@ -219,7 +219,7 @@ http://38.210.3.64:8090/play/a0o3/index.m3u8
 http://38.210.3.64:8090/play/a0iu/index.m3u8
 #EXTINF:-1 tvg-logo="https://i.imgur.com/GKc7RFz.png",Stingray Concerts HD
 http://38.210.3.64:8090/play/a0m5/index.m3u8
-#EXTINF:-1,Studio Universal HD
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/StudioUniversal2016.png/960px-StudioUniversal2016.png",Studio Universal HD
 http://38.210.3.64:8090/play/a0bt/index.m3u8
 #EXTINF:-1,TCM
 http://38.210.3.64:8090/play/a0kr/index.m3u8
@@ -263,7 +263,7 @@ http://38.210.3.64:8090/play/a0ln/index.m3u8
 http://38.210.3.64:8090/play/a0i3/index.m3u8
 #EXTINF:-1 tvg-id="WarnerChannel.us" tvg-name="Warner Channel" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Warner_Channel_2026.svg/960px-Warner_Channel_2026.svg.png",Warner Channel
 http://38.210.3.64:8090/play/a0os/index.m3u8
-#EXTINF:-1,Warner Channel HD
+#EXTINF:-1 tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Warner_Channel_2026.svg/960px-Warner_Channel_2026.svg.png",Warner Channel HD
 http://38.210.3.64:8090/play/a0j1/index.m3u8
 #EXTINF:-1,Willax
 http://38.210.3.64:8090/play/a0on/index.m3u8

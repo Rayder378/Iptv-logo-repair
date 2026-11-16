@@ -564,7 +564,7 @@
     "tvg_id": "HBOMundi.br",
     "logo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/HBO_Mundi.svg/960px-HBO_Mundi.svg.png",
     "url_status": "HTTP 429",
-    "checked_at": "2026-11-09T18:55:48.053021+00:00"
+    "checked_at": "2026-11-16T18:41:04.969933+00:00"
   },
   {
     "canal": "HBO Plus",
@@ -748,12 +748,12 @@
   },
   {
     "canal": "MI MUSICA PERU",
-    "tvg_name": "",
+    "tvg_name": "Mi Musica Peru",
     "grupo": "",
-    "tvg_id": "",
-    "logo_url": "",
-    "url_status": "sin verificar",
-    "checked_at": ""
+    "tvg_id": "MiMusicaPeru.pe",
+    "logo_url": "https://i.imgur.com/wAGju8T.png",
+    "url_status": "válido (image/png)",
+    "checked_at": "2026-11-16T18:41:03.276294+00:00"
   },
   {
     "canal": "MTV HD",
@@ -1184,8 +1184,8 @@
     "grupo": "",
     "tvg_id": "WarnerChannel.us",
     "logo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Warner_Channel_2026.svg/960px-Warner_Channel_2026.svg.png",
-    "url_status": "HTTP 429",
-    "checked_at": "2026-11-09T18:55:51.607129+00:00"
+    "url_status": "válido (image/png)",
+    "checked_at": "2026-11-16T18:41:03.276522+00:00"
   },
   {
     "canal": "Warner Channel HD",
