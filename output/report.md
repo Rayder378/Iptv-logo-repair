@@ -4,9 +4,9 @@
 
 - **Entrada:** URL configurada en M3U_URL
 - **Canales analizados:** 138
-- **Logos reparados o añadidos (incluye URL manual):** 15
-- **Logos funcionales conservados:** 31
-- **Canales sin reparar o con logo retirado manualmente:** 92
+- **Logos reparados o añadidos (incluye URL manual):** 16
+- **Logos funcionales conservados:** 29
+- **Canales sin reparar o con logo retirado manualmente:** 93
 
 > La verificación confirma que la URL entrega un archivo con firma de imagen; no garantiza por sí sola que el logo represente visualmente el canal correcto.
 > Cuando existe `group-title`, se usa como contexto de país o categoría para desempatar coincidencias; nunca se usa el grupo por sí solo para inventar la identidad del canal.
@@ -22,9 +22,9 @@
 - **Estado:** logo añadido
 - **Identificación:** similitud 93% con nombre registrado 'dire tv' a partir de 'Direc tv'
 - **Verificar coincidencia en Google Imágenes:** [Buscar logo y comparar](https://www.google.com/search?tbm=isch&q=Direc%20tv%20logo%20canal%20png)
-- **Fuente/resultado:** iptv-org: reemplazo verificado: válido (image/png) [caché persistente]; identificación: similitud 93% con nombre registrado 'dire tv' a partir de 'Direc tv'
+- **Fuente/resultado:** iptv-org: reemplazo verificado: válido (image/png); identificación: similitud 93% con nombre registrado 'dire tv' a partir de 'Direc tv'
 - **Logo:** https://i.imgur.com/zOAf02H.png
-- **Detalle:** iptv-org: reemplazo verificado: válido (image/png) [caché persistente]; identificación: similitud 93% con nombre registrado 'dire tv' a partir de 'Direc tv'
+- **Detalle:** iptv-org: reemplazo verificado: válido (image/png); identificación: similitud 93% con nombre registrado 'dire tv' a partir de 'Direc tv'
 - **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20Direc%20tv)
 
 ### Discovery Theater HD
@@ -34,10 +34,34 @@
 - **Estado:** logo añadido
 - **Identificación:** nombre/alias exacto registrado: Discovery Theater HD
 - **Verificar coincidencia en Google Imágenes:** [Buscar logo y comparar](https://www.google.com/search?tbm=isch&q=Discovery%20Theater%20HD%20logo%20canal%20png)
-- **Fuente/resultado:** iptv-org: reemplazo verificado: válido (image/png) [caché persistente]; identificación: nombre/alias exacto registrado: Discovery Theater HD
+- **Fuente/resultado:** iptv-org: reemplazo verificado: válido (image/png); identificación: nombre/alias exacto registrado: Discovery Theater HD
 - **Logo:** https://i.imgur.com/T07gvEb.png
-- **Detalle:** iptv-org: reemplazo verificado: válido (image/png) [caché persistente]; identificación: nombre/alias exacto registrado: Discovery Theater HD
+- **Detalle:** iptv-org: reemplazo verificado: válido (image/png); identificación: nombre/alias exacto registrado: Discovery Theater HD
 - **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20Discovery%20Theater%20HD)
+
+### Distrito Comedia
+
+![Logo de Distrito Comedia](https://jaruba.github.io/channel-logos/export/transparent-color/9qOOQy1cVCs84SE18ivIWpL8Mqc.png)
+
+- **Estado:** reparado
+- **Identificación:** nombre/alias exacto registrado: Distrito Comedia
+- **Verificar coincidencia en Google Imágenes:** [Buscar logo y comparar](https://www.google.com/search?tbm=isch&q=Distrito%20Comedia%20logo%20canal%20png)
+- **Fuente/resultado:** Jaruba: coincidencia exacta 'distrito comedia'; imagen verificada: válido (image/png); identificación: nombre/alias exacto registrado: Distrito Comedia
+- **Logo:** https://jaruba.github.io/channel-logos/export/transparent-color/9qOOQy1cVCs84SE18ivIWpL8Mqc.png
+- **Detalle:** Jaruba: coincidencia exacta 'distrito comedia'; imagen verificada: válido (image/png); identificación: nombre/alias exacto registrado: Distrito Comedia
+- **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20Distrito%20Comedia)
+
+### El Gourmet HD
+
+![Logo de El Gourmet HD](https://upload.wikimedia.org/wikipedia/commons/b/b2/El_Gourmet_logo.png)
+
+- **Estado:** logo añadido
+- **Identificación:** nombre/alias exacto registrado: El Gourmet HD
+- **Verificar coincidencia en Google Imágenes:** [Buscar logo y comparar](https://www.google.com/search?tbm=isch&q=El%20Gourmet%20HD%20logo%20canal%20png)
+- **Fuente/resultado:** iptv-org: reemplazo verificado: válido (image/png); identificación: nombre/alias exacto registrado: El Gourmet HD
+- **Logo:** https://upload.wikimedia.org/wikipedia/commons/b/b2/El_Gourmet_logo.png
+- **Detalle:** iptv-org: reemplazo verificado: válido (image/png); identificación: nombre/alias exacto registrado: El Gourmet HD
+- **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20El%20Gourmet%20HD)
 
 ### FOX SPORT PREMIUM
 
@@ -46,9 +70,9 @@
 - **Estado:** logo añadido
 - **Identificación:** similitud 97% con nombre registrado 'fox sports premium' a partir de 'FOX SPORT PREMIUM'
 - **Verificar coincidencia en Google Imágenes:** [Buscar logo y comparar](https://www.google.com/search?tbm=isch&q=FOX%20SPORT%20PREMIUM%20logo%20canal%20png)
-- **Fuente/resultado:** iptv-org: reemplazo verificado: válido (image/png) [caché persistente]; identificación: similitud 97% con nombre registrado 'fox sports premium' a partir de 'FOX SPORT PREMIUM'
+- **Fuente/resultado:** iptv-org: reemplazo verificado: válido (image/png); identificación: similitud 97% con nombre registrado 'fox sports premium' a partir de 'FOX SPORT PREMIUM'
 - **Logo:** https://i.imgur.com/3lOZWeD.png
-- **Detalle:** iptv-org: reemplazo verificado: válido (image/png) [caché persistente]; identificación: similitud 97% con nombre registrado 'fox sports premium' a partir de 'FOX SPORT PREMIUM'
+- **Detalle:** iptv-org: reemplazo verificado: válido (image/png); identificación: similitud 97% con nombre registrado 'fox sports premium' a partir de 'FOX SPORT PREMIUM'
 - **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20FOX%20SPORT%20PREMIUM)
 
 ### HBO Mundi
@@ -58,9 +82,9 @@
 - **Estado:** reparado
 - **Identificación:** nombre/alias exacto registrado: HBO Mundi
 - **Verificar coincidencia en Google Imágenes:** [Buscar logo y comparar](https://www.google.com/search?tbm=isch&q=HBO%20Mundi%20logo%20canal%20png)
-- **Fuente/resultado:** Jaruba: coincidencia exacta 'hbo mundi'; imagen verificada: válido (image/png) [caché persistente]; identificación: nombre/alias exacto registrado: HBO Mundi
+- **Fuente/resultado:** Jaruba: coincidencia exacta 'hbo mundi'; imagen verificada: válido (image/png); identificación: nombre/alias exacto registrado: HBO Mundi
 - **Logo:** https://jaruba.github.io/channel-logos/export/transparent-color/pSxGvTt7LVcjx0ST1bbThigqMOY.png
-- **Detalle:** Jaruba: coincidencia exacta 'hbo mundi'; imagen verificada: válido (image/png) [caché persistente]; identificación: nombre/alias exacto registrado: HBO Mundi
+- **Detalle:** Jaruba: coincidencia exacta 'hbo mundi'; imagen verificada: válido (image/png); identificación: nombre/alias exacto registrado: HBO Mundi
 - **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20HBO%20Mundi)
 
 ### HBO XTREME HD
@@ -70,9 +94,9 @@
 - **Estado:** logo añadido
 - **Identificación:** nombre/alias exacto registrado: HBO XTREME HD
 - **Verificar coincidencia en Google Imágenes:** [Buscar logo y comparar](https://www.google.com/search?tbm=isch&q=HBO%20XTREME%20HD%20logo%20canal%20png)
-- **Fuente/resultado:** iptv-org: reemplazo verificado: válido (image/jpeg) [caché persistente]; identificación: nombre/alias exacto registrado: HBO XTREME HD
+- **Fuente/resultado:** iptv-org: reemplazo verificado: válido (image/jpeg); identificación: nombre/alias exacto registrado: HBO XTREME HD
 - **Logo:** https://www.vertvcable.com/wp-content/uploads/2022/02/hboextreme.jpg
-- **Detalle:** iptv-org: reemplazo verificado: válido (image/jpeg) [caché persistente]; identificación: nombre/alias exacto registrado: HBO XTREME HD
+- **Detalle:** iptv-org: reemplazo verificado: válido (image/jpeg); identificación: nombre/alias exacto registrado: HBO XTREME HD
 - **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20HBO%20XTREME%20HD)
 
 ### Las Estrellas HD
@@ -82,22 +106,10 @@
 - **Estado:** logo añadido
 - **Identificación:** nombre/alias exacto registrado: Las Estrellas HD
 - **Verificar coincidencia en Google Imágenes:** [Buscar logo y comparar](https://www.google.com/search?tbm=isch&q=Las%20Estrellas%20HD%20logo%20canal%20png)
-- **Fuente/resultado:** iptv-org: reemplazo verificado: válido (image/png) [caché persistente]; identificación: nombre/alias exacto registrado: Las Estrellas HD
+- **Fuente/resultado:** iptv-org: reemplazo verificado: válido (image/png); identificación: nombre/alias exacto registrado: Las Estrellas HD
 - **Logo:** https://i.imgur.com/g5ShxZ7.png
-- **Detalle:** iptv-org: reemplazo verificado: válido (image/png) [caché persistente]; identificación: nombre/alias exacto registrado: Las Estrellas HD
+- **Detalle:** iptv-org: reemplazo verificado: válido (image/png); identificación: nombre/alias exacto registrado: Las Estrellas HD
 - **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20Las%20Estrellas%20HD)
-
-### Nat Geo HD
-
-![Logo de Nat Geo HD](https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Natgeologo.svg/960px-Natgeologo.svg.png)
-
-- **Estado:** logo añadido
-- **Identificación:** nombre/alias exacto registrado: Nat Geo HD
-- **Verificar coincidencia en Google Imágenes:** [Buscar logo y comparar](https://www.google.com/search?tbm=isch&q=Nat%20Geo%20HD%20logo%20canal%20png)
-- **Fuente/resultado:** iptv-org: reemplazo verificado: válido (image/png) [caché persistente]; identificación: nombre/alias exacto registrado: Nat Geo HD
-- **Logo:** https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Natgeologo.svg/960px-Natgeologo.svg.png
-- **Detalle:** iptv-org: reemplazo verificado: válido (image/png) [caché persistente]; identificación: nombre/alias exacto registrado: Nat Geo HD
-- **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20Nat%20Geo%20HD)
 
 ### Nick Music
 
@@ -106,9 +118,9 @@
 - **Estado:** logo añadido
 - **Identificación:** similitud 95% con nombre registrado 'nickmusic' a partir de 'Nick Music'
 - **Verificar coincidencia en Google Imágenes:** [Buscar logo y comparar](https://www.google.com/search?tbm=isch&q=Nick%20Music%20logo%20canal%20png)
-- **Fuente/resultado:** iptv-org: reemplazo verificado: válido (image/png) [caché persistente]; identificación: similitud 95% con nombre registrado 'nickmusic' a partir de 'Nick Music'
+- **Fuente/resultado:** iptv-org: reemplazo verificado: válido (image/png); identificación: similitud 95% con nombre registrado 'nickmusic' a partir de 'Nick Music'
 - **Logo:** https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/NickMusic_Logo_%282023%29.png/960px-NickMusic_Logo_%282023%29.png
-- **Detalle:** iptv-org: reemplazo verificado: válido (image/png) [caché persistente]; identificación: similitud 95% con nombre registrado 'nickmusic' a partir de 'Nick Music'
+- **Detalle:** iptv-org: reemplazo verificado: válido (image/png); identificación: similitud 95% con nombre registrado 'nickmusic' a partir de 'Nick Music'
 - **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20Nick%20Music)
 
 ### Plim Plim TV
@@ -118,9 +130,9 @@
 - **Estado:** logo añadido
 - **Identificación:** similitud 86% con nombre registrado 'plim plim' a partir de 'Plim Plim TV'
 - **Verificar coincidencia en Google Imágenes:** [Buscar logo y comparar](https://www.google.com/search?tbm=isch&q=Plim%20Plim%20TV%20logo%20canal%20png)
-- **Fuente/resultado:** iptv-org: reemplazo verificado: válido (image/png) [caché persistente]; identificación: similitud 86% con nombre registrado 'plim plim' a partir de 'Plim Plim TV'
+- **Fuente/resultado:** iptv-org: reemplazo verificado: válido (image/png); identificación: similitud 86% con nombre registrado 'plim plim' a partir de 'Plim Plim TV'
 - **Logo:** https://i.imgur.com/MYc8srh.png
-- **Detalle:** iptv-org: reemplazo verificado: válido (image/png) [caché persistente]; identificación: similitud 86% con nombre registrado 'plim plim' a partir de 'Plim Plim TV'
+- **Detalle:** iptv-org: reemplazo verificado: válido (image/png); identificación: similitud 86% con nombre registrado 'plim plim' a partir de 'Plim Plim TV'
 - **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20Plim%20Plim%20TV)
 
 ### Stingray Concerts HD
@@ -130,9 +142,9 @@
 - **Estado:** logo añadido
 - **Identificación:** similitud 97% con nombre registrado 'stingray iconcerts' a partir de 'Stingray Concerts HD'
 - **Verificar coincidencia en Google Imágenes:** [Buscar logo y comparar](https://www.google.com/search?tbm=isch&q=Stingray%20Concerts%20HD%20logo%20canal%20png)
-- **Fuente/resultado:** iptv-org: reemplazo verificado: válido (image/png) [caché persistente]; identificación: similitud 97% con nombre registrado 'stingray iconcerts' a partir de 'Stingray Concerts HD'
+- **Fuente/resultado:** iptv-org: reemplazo verificado: válido (image/png); identificación: similitud 97% con nombre registrado 'stingray iconcerts' a partir de 'Stingray Concerts HD'
 - **Logo:** https://i.imgur.com/GKc7RFz.png
-- **Detalle:** iptv-org: reemplazo verificado: válido (image/png) [caché persistente]; identificación: similitud 97% con nombre registrado 'stingray iconcerts' a partir de 'Stingray Concerts HD'
+- **Detalle:** iptv-org: reemplazo verificado: válido (image/png); identificación: similitud 97% con nombre registrado 'stingray iconcerts' a partir de 'Stingray Concerts HD'
 - **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20Stingray%20Concerts%20HD)
 
 ### Studio Universal HD
@@ -154,9 +166,9 @@
 - **Estado:** logo añadido
 - **Identificación:** similitud 95% con nombre registrado 'tnt serie' a partir de 'TNT Series HD'
 - **Verificar coincidencia en Google Imágenes:** [Buscar logo y comparar](https://www.google.com/search?tbm=isch&q=TNT%20Series%20HD%20logo%20canal%20png)
-- **Fuente/resultado:** iptv-org: reemplazo verificado: válido (image/png) [caché persistente]; identificación: similitud 95% con nombre registrado 'tnt serie' a partir de 'TNT Series HD'
+- **Fuente/resultado:** iptv-org: reemplazo verificado: válido (image/png); identificación: similitud 95% con nombre registrado 'tnt serie' a partir de 'TNT Series HD'
 - **Logo:** https://i.imgur.com/QZYRu0I.png
-- **Detalle:** iptv-org: reemplazo verificado: válido (image/png) [caché persistente]; identificación: similitud 95% con nombre registrado 'tnt serie' a partir de 'TNT Series HD'
+- **Detalle:** iptv-org: reemplazo verificado: válido (image/png); identificación: similitud 95% con nombre registrado 'tnt serie' a partir de 'TNT Series HD'
 - **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20TNT%20Series%20HD)
 
 ### TNT Sports Premiun HD
@@ -166,9 +178,9 @@
 - **Estado:** logo añadido
 - **Identificación:** similitud 94% con nombre registrado 'tnt sports premium' a partir de 'TNT Sports Premiun HD'
 - **Verificar coincidencia en Google Imágenes:** [Buscar logo y comparar](https://www.google.com/search?tbm=isch&q=TNT%20Sports%20Premiun%20HD%20logo%20canal%20png)
-- **Fuente/resultado:** iptv-org: reemplazo verificado: válido (image/png) [caché persistente]; identificación: similitud 94% con nombre registrado 'tnt sports premium' a partir de 'TNT Sports Premiun HD'
+- **Fuente/resultado:** iptv-org: reemplazo verificado: válido (image/png); identificación: similitud 94% con nombre registrado 'tnt sports premium' a partir de 'TNT Sports Premiun HD'
 - **Logo:** https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/TNT_Sports_Premium_%28Argentina%29.png/960px-TNT_Sports_Premium_%28Argentina%29.png?utm_source=es.wikipedia.org&utm_campaign=index&utm_content=thumbnail
-- **Detalle:** iptv-org: reemplazo verificado: válido (image/png) [caché persistente]; identificación: similitud 94% con nombre registrado 'tnt sports premium' a partir de 'TNT Sports Premiun HD'
+- **Detalle:** iptv-org: reemplazo verificado: válido (image/png); identificación: similitud 94% con nombre registrado 'tnt sports premium' a partir de 'TNT Sports Premiun HD'
 - **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20TNT%20Sports%20Premiun%20HD)
 
 ### TOP LATINO
@@ -178,9 +190,9 @@
 - **Estado:** logo añadido
 - **Identificación:** similitud 87% con nombre registrado 'top latino tv' a partir de 'TOP LATINO'
 - **Verificar coincidencia en Google Imágenes:** [Buscar logo y comparar](https://www.google.com/search?tbm=isch&q=TOP%20LATINO%20logo%20canal%20png)
-- **Fuente/resultado:** iptv-org: reemplazo verificado: válido (image/png) [caché persistente]; identificación: similitud 87% con nombre registrado 'top latino tv' a partir de 'TOP LATINO'
+- **Fuente/resultado:** iptv-org: reemplazo verificado: válido (image/png); identificación: similitud 87% con nombre registrado 'top latino tv' a partir de 'TOP LATINO'
 - **Logo:** https://i.imgur.com/VRl8nPZ.png
-- **Detalle:** iptv-org: reemplazo verificado: válido (image/png) [caché persistente]; identificación: similitud 87% con nombre registrado 'top latino tv' a partir de 'TOP LATINO'
+- **Detalle:** iptv-org: reemplazo verificado: válido (image/png); identificación: similitud 87% con nombre registrado 'top latino tv' a partir de 'TOP LATINO'
 - **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20TOP%20LATINO)
 
 ## Logos funcionales conservados
@@ -197,9 +209,6 @@
 - **Cartoon Network HD** — ![Logo de Cartoon Network HD](https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_CARTOON_NETWORK_HDSYMPLUS/images/LOGO_HD/image.png)
   - **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20Cartoon%20Network%20HD)
   - **Verificar coincidencia en Google Imágenes:** [Buscar logo y comparar](https://www.google.com/search?tbm=isch&q=Cartoon%20Network%20HD%20logo%20canal%20png)
-- **Distrito Comedia** — ![Logo de Distrito Comedia](https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/DistritoComediaLOGO2018.png/960px-DistritoComediaLOGO2018.png)
-  - **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20Distrito%20Comedia)
-  - **Verificar coincidencia en Google Imágenes:** [Buscar logo y comparar](https://www.google.com/search?tbm=isch&q=Distrito%20Comedia%20logo%20canal%20png)
 - **Enlace** — ![Logo de Enlace](https://i.imgur.com/YwUVTmS.png)
   - **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20Enlace)
 - **Europa Europa** — ![Logo de Europa Europa](https://i.imgur.com/w5SOfyJ.png)
@@ -220,9 +229,6 @@
 - **Golden Edge** — ![Logo de Golden Edge](https://i.imgur.com/SlSbcp3.png)
   - **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20Golden%20Edge)
   - **Verificar coincidencia en Google Imágenes:** [Buscar logo y comparar](https://www.google.com/search?tbm=isch&q=Golden%20Edge%20logo%20canal%20png)
-- **History Channel HD** — ![Logo de History Channel HD](https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/History_%282021%29.svg/500px-History_%282021%29.svg.png)
-  - **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20History%20Channel%20HD)
-  - **Verificar coincidencia en Google Imágenes:** [Buscar logo y comparar](https://www.google.com/search?tbm=isch&q=History%20Channel%20HD%20logo%20canal%20png)
 - **ID HD** — ![Logo de ID HD](https://i.imgur.com/o9SpbMI.png)
   - **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20ID%20HD)
 - **KARIBEÑA** — ![Logo de KARIBEÑA](https://i.imgur.com/cgHjg1e.png)
@@ -533,13 +539,6 @@
 - **Logo actual:** No tenía logo
 - **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20EWTN)
 
-### El Gourmet HD
-
-- **Motivo:** No se encontró logo API verificable. Candidato iptv-org rechazado: HTTP 429
-- **Verificar coincidencia en Google Imágenes:** [Buscar logo y comparar](https://www.google.com/search?tbm=isch&q=El%20Gourmet%20HD%20logo%20canal%20png)
-- **Logo actual:** No tenía logo
-- **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20El%20Gourmet%20HD)
-
 ### FMH FAMILY
 
 - **Motivo:** No se pudo identificar de forma fiable 'FMH FAMILY'; no se cambió el nombre ni se inventó un logo.
@@ -638,6 +637,13 @@
 - **Logo actual:** No tenía logo
 - **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20History%202)
 
+### History Channel HD
+
+- **Motivo:** No se pudo identificar de forma fiable 'History Channel HD'; tvg-name='History' tampoco permitió identificarlo; no se cambió el nombre ni se inventó un logo.
+- **Verificar coincidencia en Google Imágenes:** [Buscar logo y comparar](https://www.google.com/search?tbm=isch&q=History%20Channel%20HD%20logo%20canal%20png)
+- **Logo actual:** https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/History_%282021%29.svg/500px-History_%282021%29.svg.png
+- **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20History%20Channel%20HD)
+
 ### Home & Health HD
 
 - **Motivo:** No se pudo identificar de forma fiable 'Home & Health HD'; no se cambió el nombre ni se inventó un logo.
@@ -721,6 +727,13 @@
 - **Verificar coincidencia en Google Imágenes:** [Buscar logo y comparar](https://www.google.com/search?tbm=isch&q=NUEVO%20TIEMPO%20logo%20canal%20png)
 - **Logo actual:** No tenía logo
 - **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20NUEVO%20TIEMPO)
+
+### Nat Geo HD
+
+- **Motivo:** No se encontró logo API verificable. Candidato iptv-org rechazado: HTTP 429
+- **Verificar coincidencia en Google Imágenes:** [Buscar logo y comparar](https://www.google.com/search?tbm=isch&q=Nat%20Geo%20HD%20logo%20canal%20png)
+- **Logo actual:** No tenía logo
+- **Corrección manual:** [Gestionar logo (solo admin/colaboradores)](https://github.com/Rayder378/Iptv-logo-repair/actions/workflows/manage-logo.yml?query=Gestionar%20logo%3A%20Nat%20Geo%20HD)
 
 ### Nick Jr.
 

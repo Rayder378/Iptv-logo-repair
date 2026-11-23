@@ -78,7 +78,7 @@
     "tvg_id": "BBCNews.uk",
     "logo_url": "https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/BBC-logo_2000_X_1125_Transparent.png",
     "url_status": "válido (image/png)",
-    "checked_at": "2026-11-09T18:55:46.101457+00:00"
+    "checked_at": "2026-11-23T20:20:57.325000+00:00"
   },
   {
     "canal": "BETHEL TV",
@@ -123,7 +123,7 @@
     "tvg_id": "CNNInternational.us",
     "logo_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/CNN-International-Logo.svg/960px-CNN-International-Logo.svg.png",
     "url_status": "válido (image/png)",
-    "checked_at": "2026-11-09T18:55:46.101531+00:00"
+    "checked_at": "2026-11-23T20:20:57.325090+00:00"
   },
   {
     "canal": "Canal N",
@@ -132,7 +132,7 @@
     "tvg_id": "CanalN.pe",
     "logo_url": "https://i.imgur.com/Xytvw3J.png",
     "url_status": "válido (image/png)",
-    "checked_at": "2026-11-09T18:55:46.101555+00:00"
+    "checked_at": "2026-11-23T20:20:57.325123+00:00"
   },
   {
     "canal": "Cartoon Network HD",
@@ -141,7 +141,7 @@
     "tvg_id": "CartoonNetworkHDPlus.in",
     "logo_url": "https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_CARTOON_NETWORK_HDSYMPLUS/images/LOGO_HD/image.png",
     "url_status": "válido (image/png)",
-    "checked_at": "2026-11-09T18:55:46.101578+00:00"
+    "checked_at": "2026-11-23T20:20:57.325154+00:00"
   },
   {
     "canal": "Cartoonito",
@@ -275,8 +275,8 @@
     "grupo": "",
     "tvg_id": "DistritoComedia.mx",
     "logo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/DistritoComediaLOGO2018.png/960px-DistritoComediaLOGO2018.png",
-    "url_status": "válido (image/png)",
-    "checked_at": "2026-11-09T18:55:46.101627+00:00"
+    "url_status": "HTTP 429",
+    "checked_at": "2026-11-23T20:20:58.906031+00:00"
   },
   {
     "canal": "E! Entertainment TV",
@@ -411,7 +411,7 @@
     "tvg_id": "Enlace.cr",
     "logo_url": "https://i.imgur.com/YwUVTmS.png",
     "url_status": "válido (image/png)",
-    "checked_at": "2026-11-09T18:55:46.101667+00:00"
+    "checked_at": "2026-11-23T20:20:57.325252+00:00"
   },
   {
     "canal": "Europa Europa",
@@ -420,7 +420,7 @@
     "tvg_id": "EuropaEuropa.ar",
     "logo_url": "https://i.imgur.com/w5SOfyJ.png",
     "url_status": "válido (image/png)",
-    "checked_at": "2026-11-09T18:55:46.101684+00:00"
+    "checked_at": "2026-11-23T20:20:57.325273+00:00"
   },
   {
     "canal": "Exitosa TV",
@@ -429,7 +429,7 @@
     "tvg_id": "ExitosaTV.pe",
     "logo_url": "https://i.imgur.com/pu0BSB7.png",
     "url_status": "válido (image/png)",
-    "checked_at": "2026-11-09T18:55:46.101701+00:00"
+    "checked_at": "2026-11-23T20:20:57.325296+00:00"
   },
   {
     "canal": "FMH FAMILY",
@@ -483,7 +483,7 @@
     "tvg_id": "FilmArts.ar",
     "logo_url": "https://i.imgur.com/ukdmEKD.png",
     "url_status": "válido (image/png)",
-    "checked_at": "2026-11-09T18:55:46.101725+00:00"
+    "checked_at": "2026-11-23T20:20:57.325328+00:00"
   },
   {
     "canal": "Film&Arts",
@@ -492,7 +492,7 @@
     "tvg_id": "FilmArts.ar",
     "logo_url": "https://i.imgur.com/ukdmEKD.png",
     "url_status": "válido (image/png)",
-    "checked_at": "2026-11-09T18:55:46.101725+00:00"
+    "checked_at": "2026-11-23T20:20:57.325328+00:00"
   },
   {
     "canal": "Food Network",
@@ -510,7 +510,7 @@
     "tvg_id": "France24.fr",
     "logo_url": "https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/France%2024.png",
     "url_status": "válido (image/png)",
-    "checked_at": "2026-11-09T18:55:46.101763+00:00"
+    "checked_at": "2026-11-23T20:20:57.325379+00:00"
   },
   {
     "canal": "GLOBAL",
@@ -528,7 +528,7 @@
     "tvg_id": "GoldenEdge.mx",
     "logo_url": "https://i.imgur.com/SlSbcp3.png",
     "url_status": "válido (image/png)",
-    "checked_at": "2026-11-09T18:55:46.101781+00:00"
+    "checked_at": "2026-11-23T20:20:57.325405+00:00"
   },
   {
     "canal": "Golden HD",
@@ -564,7 +564,7 @@
     "tvg_id": "HBOMundi.br",
     "logo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/HBO_Mundi.svg/960px-HBO_Mundi.svg.png",
     "url_status": "HTTP 429",
-    "checked_at": "2026-11-16T18:41:04.969933+00:00"
+    "checked_at": "2026-11-23T20:20:59.903106+00:00"
   },
   {
     "canal": "HBO Plus",
@@ -626,8 +626,8 @@
     "grupo": "",
     "tvg_id": "History.si",
     "logo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/History_%282021%29.svg/500px-History_%282021%29.svg.png",
-    "url_status": "válido (image/png)",
-    "checked_at": "2026-11-09T18:55:46.101825+00:00"
+    "url_status": "HTTP 429",
+    "checked_at": "2026-11-23T20:21:00.769043+00:00"
   },
   {
     "canal": "Home & Health HD",
@@ -645,7 +645,7 @@
     "tvg_id": "IDHD.si",
     "logo_url": "https://i.imgur.com/o9SpbMI.png",
     "url_status": "válido (image/png)",
-    "checked_at": "2026-11-09T18:55:46.101844+00:00"
+    "checked_at": "2026-11-23T20:20:57.325473+00:00"
   },
   {
     "canal": "KARIBEÑA",
@@ -654,7 +654,7 @@
     "tvg_id": "Karibena.pe",
     "logo_url": "https://i.imgur.com/cgHjg1e.png",
     "url_status": "válido (image/png)",
-    "checked_at": "2026-11-09T18:55:46.101859+00:00"
+    "checked_at": "2026-11-23T20:20:57.325494+00:00"
   },
   {
     "canal": "Kanal D Drama",
@@ -681,7 +681,7 @@
     "tvg_id": "L1Max.pe",
     "logo_url": "https://i.imgur.com/2fziU2B.png",
     "url_status": "válido (image/png)",
-    "checked_at": "2026-11-09T18:55:46.101883+00:00"
+    "checked_at": "2026-11-23T20:20:57.325523+00:00"
   },
   {
     "canal": "La Red",
@@ -726,7 +726,7 @@
     "tvg_id": "LoveNature.ca",
     "logo_url": "https://tv.lovenature.com/wp-content/uploads/2024/10/LoveNature2024_Logo_full_colour-copy.png",
     "url_status": "válido (image/png)",
-    "checked_at": "2026-11-09T18:55:46.101908+00:00"
+    "checked_at": "2026-11-23T20:20:57.325555+00:00"
   },
   {
     "canal": "MEGA HD",
@@ -744,7 +744,7 @@
     "tvg_id": "MiMusicaHits.us",
     "logo_url": "https://i.imgur.com/z9MlLFL.png",
     "url_status": "válido (image/png)",
-    "checked_at": "2026-11-09T18:55:46.101926+00:00"
+    "checked_at": "2026-11-23T20:20:57.325579+00:00"
   },
   {
     "canal": "MI MUSICA PERU",
@@ -753,7 +753,7 @@
     "tvg_id": "MiMusicaPeru.pe",
     "logo_url": "https://i.imgur.com/wAGju8T.png",
     "url_status": "válido (image/png)",
-    "checked_at": "2026-11-16T18:41:03.276294+00:00"
+    "checked_at": "2026-11-23T20:20:57.325603+00:00"
   },
   {
     "canal": "MTV HD",
@@ -771,7 +771,7 @@
     "tvg_id": "MundodelaMusica.cl",
     "logo_url": "https://i.imgur.com/wak2YOo.png",
     "url_status": "válido (image/png)",
-    "checked_at": "2026-11-09T18:55:46.101946+00:00"
+    "checked_at": "2026-11-23T20:20:57.325628+00:00"
   },
   {
     "canal": "MUSICA VENE",
@@ -825,7 +825,7 @@
     "tvg_id": "NickHDPlus.in",
     "logo_url": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Nickelodeon_HD%2B_Logo_2024.png",
     "url_status": "válido (image/png)",
-    "checked_at": "2026-11-09T18:55:46.101977+00:00"
+    "checked_at": "2026-11-23T20:20:57.325671+00:00"
   },
   {
     "canal": "Nick Jr.",
@@ -852,7 +852,7 @@
     "tvg_id": "NuestraTeleInternacional.co",
     "logo_url": "https://i.imgur.com/JoGQqmP.png",
     "url_status": "válido (image/png)",
-    "checked_at": "2026-11-09T18:55:46.101997+00:00"
+    "checked_at": "2026-11-23T20:20:57.325697+00:00"
   },
   {
     "canal": "OROMAR TV",
@@ -897,7 +897,7 @@
     "tvg_id": "RaiItalia.it",
     "logo_url": "https://i.imgur.com/1nN4rEP.png",
     "url_status": "válido (image/png)",
-    "checked_at": "2026-11-09T18:55:46.102023+00:00"
+    "checked_at": "2026-11-23T20:20:57.325730+00:00"
   },
   {
     "canal": "REC TV",
@@ -915,7 +915,7 @@
     "tvg_id": "RPPTV.pe",
     "logo_url": "https://upload.wikimedia.org/wikipedia/commons/3/36/RPP_logo.png",
     "url_status": "válido (image/png)",
-    "checked_at": "2026-11-09T18:55:46.102041+00:00"
+    "checked_at": "2026-11-23T20:20:57.325755+00:00"
   },
   {
     "canal": "SOMOS TV VENEZUELA",
@@ -951,7 +951,7 @@
     "tvg_id": "Sextreme.br",
     "logo_url": "https://i.imgur.com/jWsW2Rd.png",
     "url_status": "válido (image/png)",
-    "checked_at": "2026-11-09T18:55:46.102060+00:00"
+    "checked_at": "2026-11-23T20:20:57.325783+00:00"
   },
   {
     "canal": "Sony HD",
@@ -1113,7 +1113,7 @@
     "tvg_id": "Telemundo.us",
     "logo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Telemundo_logo_2018.svg/960px-Telemundo_logo_2018.svg.png",
     "url_status": "válido (image/png)",
-    "checked_at": "2026-11-09T18:55:46.102104+00:00"
+    "checked_at": "2026-11-23T20:20:57.325873+00:00"
   },
   {
     "canal": "Tlnovelas",
@@ -1131,7 +1131,7 @@
     "tvg_id": "Tooncast.us",
     "logo_url": "https://i.imgur.com/3yXRbQy.png",
     "url_status": "válido (image/png)",
-    "checked_at": "2026-11-09T18:55:46.102121+00:00"
+    "checked_at": "2026-11-23T20:20:57.325900+00:00"
   },
   {
     "canal": "UFC",
@@ -1158,7 +1158,7 @@
     "tvg_id": "SanskarUSA.in",
     "logo_url": "https://i.imgur.com/5WBWruX.png",
     "url_status": "válido (image/png)",
-    "checked_at": "2026-11-09T18:55:46.102138+00:00"
+    "checked_at": "2026-11-23T20:20:57.325924+00:00"
   },
   {
     "canal": "VISION MUSICA",
@@ -1176,7 +1176,7 @@
     "tvg_id": "ViaXEsports.cl",
     "logo_url": "https://www.viaxesports.com/wp-content/themes/ViaxExports2/img/viaxesports.png",
     "url_status": "válido (image/png)",
-    "checked_at": "2026-11-09T18:55:46.102156+00:00"
+    "checked_at": "2026-11-23T20:20:57.325949+00:00"
   },
   {
     "canal": "Warner Channel",
@@ -1185,7 +1185,7 @@
     "tvg_id": "WarnerChannel.us",
     "logo_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Warner_Channel_2026.svg/960px-Warner_Channel_2026.svg.png",
     "url_status": "válido (image/png)",
-    "checked_at": "2026-11-16T18:41:03.276522+00:00"
+    "checked_at": "2026-11-23T20:20:57.325975+00:00"
   },
   {
     "canal": "Warner Channel HD",
@@ -1239,6 +1239,6 @@
     "tvg_id": "WestTV.ke",
     "logo_url": "https://i.imgur.com/SiU6l20.jpg",
     "url_status": "válido (image/jpeg)",
-    "checked_at": "2026-11-09T18:55:46.102191+00:00"
+    "checked_at": "2026-11-23T20:20:57.326007+00:00"
   }
 ]
